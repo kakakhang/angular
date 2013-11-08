@@ -27,7 +27,7 @@ class ServiceAPI {
 	function run() {
 		if( $this->authenticate($user, $function) === false) {
 			header('HTTP/1.1 401 Unauthorized');
-    		die('You are Unauthorized');
+    		die('You are Unauthorized!!!!');
 		}
 		$this->slim->run();
 	}
