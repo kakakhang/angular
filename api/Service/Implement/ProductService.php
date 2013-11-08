@@ -1,7 +1,7 @@
 <?php
-require_once 'Model.php';
+require_once 'BaseService.php';
 
-class Product extends Model {
+class ProductService extends BaseService {
 
 	function getProducts($start = 0,$limit = 100) {
 		$products = $this->objQuery->select("*","product LIMIT $limit OFFSET $start", "",null,PDO::FETCH_OBJ);
@@ -45,6 +45,7 @@ class Product extends Model {
 		);
 		echo  json_encode($result);
 	}
+
 	function updateProduct($product_id) {
 		$request = Slim::getInstance()->request();
 		$params = json_decode($request->getBody());

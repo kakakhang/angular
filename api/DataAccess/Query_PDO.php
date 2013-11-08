@@ -1,7 +1,7 @@
 <?php
 
-require  'IQuery.php';
-require  'Database.php';
+require 'IQuery.php';
+require 'Database.php';
 
 class Query_PDO implements IQuery{
     var $where = '';

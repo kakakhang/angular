@@ -1,29 +1,9 @@
-<?php 
+<?php
 
-require_once 'Model.php';
+require_once 'BaseService.php';
 
-class User extends Model {
+class UserService extends BaseService {
 
-	function logIn() {
-		$request = \Slim\Slim::getInstance()->request();
-		$params = json_decode($request->getBody());
-		$userSession = UserSession::getInstance();
-		/*
-		if(!isset($userSession->get('login_id'))) {
-			if($this->checkLogin($params->email,$params->password)) {
-				$userSession->setUserSession($login_id,$login_name,$role,$privilege);
-				echo 'true'
-				return;
-			} 
-			else {
-				echo 'false';
-				return;
-			}
-		} 
-		echo 'true';
-		*/
-
-	}
 	function logged($a) {
 		if($a != 1) {
 			header('HTTP/1.1 401 Unauthorized');
@@ -34,10 +14,12 @@ class User extends Model {
     		return true;
     	}
 	}
+
 	private function _getUsers( $start = 0,$limit = 100 ) {
 		$users = $this->objQuery->select("*","user LIMIT $limit OFFSET $start", "",null,PDO::FETCH_OBJ);
 		return $users;
 	}
+
 	private function _getUser( $email ) {
 		$user = $this->objQuery->select("*","user", "email = ?", array($email), PDO::FETCH_OBJ);
 		return $user;

@@ -1,5 +1,8 @@
 <?php
 
+require 'Slim/Slim.php';
+\Slim\Slim::registerAutoloader();
+
 class ServiceAPI {
 	var $slim; 
 	var $auth;

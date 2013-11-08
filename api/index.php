@@ -1,14 +1,15 @@
 ﻿<?php
 
 require 'config/database.php';
-require 'Utils/Query.php';
-require 'Utils/UserSession.php';
-require 'Utils/AdminAPI.php';
-require 'Model/Product.php';
-require 'Model/Test.php';
-require 'Model/User.php';
-require 'Slim/Slim.php';
-\Slim\Slim::registerAutoloader();
+require 'Service/ServiceAPI.php';
+
+$service = new ServiceAPI();
+
+
+$service->register_api('GET','/products', array("a" , "getProducts"));
+$service->run();
+
+/*
 $app = new \Slim\Slim();
 $product = new Product();
 $user = new User();
@@ -25,10 +26,16 @@ $app->get('/products/:id', array($product , "getProduct"));
 $app->post('/products', array($product , "addroduct"));
 $app->put('/products/:id', array($product , "updateProduct"));
 $app->delete('/products/:id', array($product , "deleteProduct"));
-*/
+
 $app->get('/checkLogin', array($user , "checkLogin"));
 
 $app->run();
 
+/*
+ * service init
+ * service read config
+ * service run
+ *
+ * */
 
 ?>
