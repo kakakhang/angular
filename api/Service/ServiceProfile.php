@@ -9,15 +9,12 @@
 
 class ServiceProfile {
     var $arr_profile = array();
-    function __construct(){
 
+    function __construct(){
+        $this->register_profile(new ProductProfile());
     }
     function register_profile($profile)
     {
         $this->arr_profile[] = $profile;
     }
-    function get_define_api() {
-
-    }
-
 }

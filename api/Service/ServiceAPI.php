@@ -6,6 +6,7 @@ require 'Slim/Slim.php';
 class ServiceAPI {
 	var $slim; 
 	var $auth;
+    var $service_config;
 	function __construct(){
 		$this->slim =  new \Slim\Slim();
 		$this->slim->contentType('application/json;charset=utf-8');
@@ -27,11 +28,29 @@ class ServiceAPI {
     			break;
     	}
 	}
+
+    function set_service_configuration(ServiceProfile $service_profile)
+    {
+        $this->service_config = $service_profile;
+    }
+
+    function set_up_configuration()
+    {
+        $arrProfiles = $this->service_config->arr_profile;
+        foreach($profie as $arrProfiles)
+        {
+            $apis = $profie->get_api();
+            foreach($api as $apis){
+                $this->register_api($api->http_method, $api->path, array($api->obj,$api->function));
+            }
+        }
+    }
 	function run() {
 		if( $this->authenticate($user, $function) === false) {
 			header('HTTP/1.1 401 Unauthorized');
     		die('You are Unauthorized!!!!');
 		}
+        $this->set_up_configuration();
 		$this->slim->run();
 	}
 	

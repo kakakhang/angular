@@ -4,9 +4,7 @@ require 'config/database.php';
 require 'Service/ServiceAPI.php';
 
 $service = new ServiceAPI();
-
-
-$service->register_api('GET','/products', array("a" , "getProducts"));
+$service->set_service_configuration(new ServiceProfile());
 $service->run();
 
 /*

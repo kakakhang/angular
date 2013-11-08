@@ -13,26 +13,27 @@ class BaseProfile {
     var $arrAPI;
     function __construct(){
        $this->init_profile();
-       $this->init_profile();
+       $this->init_default_interceptor();
 
-    }
-    protected function init_profile(){
-        $this->arrAPI = $this->api_profile();
     }
 
     abstract protected function init_default_interceptor();
 
     abstract protected function api_profile();
 
-    function get_profile(){
+    protected function init_profile(){
+        $this->arrAPI = $this->api_profile();
+    }
+
+    function get_api(){
         return $this->arrAPI;
     }
 
-    function add_profile(APIInfo $profile) {
+    function add_api(APIInfo $profile) {
         $this->arrAPI[] = $profile;
     }
 
-    function update_profile(){
+    function update_api(){
         $this->arrAPI = $this->api_profile();
     }
 
