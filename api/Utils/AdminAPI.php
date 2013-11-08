@@ -9,7 +9,7 @@ class AdminAPI extends AbstractInterceptor {
 			header('HTTP/1.1 401 Unauthorized');
     		die('You are Unauthorized');
 		}		
-		//echo "before call $method "; 
+		//echo "before call $method 222"; 
 	}
 }
 
