@@ -8,9 +8,16 @@
  */
 
 class ServiceProfile {
-    var $arr;
+    var $arr_profile = array();
     function __construct(){
-        $product = new AdminAPI(new Product());
-        $app->get('/products', array($product , "getProducts"));
+
     }
+    function register_profile($profile)
+    {
+        $this->arr_profile[] = $profile;
+    }
+    function get_define_api() {
+
+    }
+
 }
