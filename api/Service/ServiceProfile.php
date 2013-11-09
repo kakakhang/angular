@@ -7,11 +7,13 @@
  * To change this template use File | Settings | File Templates.
  */
 
+namespace Service;
+
 class ServiceProfile {
     var $arr_profile = array();
 
     function __construct(){
-        $this->register_profile(new ProductProfile());
+        $this->register_profile(new \Service\Implement\Product());
     }
     function register_profile($profile)
     {

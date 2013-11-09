@@ -1,9 +1,10 @@
 <?php
 
-require 'IQuery.php';
-require 'Database.php';
+//require 'IQuery.php';
+//require 'Database.php';
+namespace DataAccess;
 
-class Query_PDO implements IQuery{
+class QueryPDO implements \DataAccess\IQuery{
     var $where = '';
     var $arrWhereVal = array();
     var $conn;

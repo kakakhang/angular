@@ -1,7 +1,7 @@
 <?php
-require_once 'BaseService.php';
+namespace Service\Implement;
 
-class ProductService extends BaseService {
+class Product extends Base {
 
 	function getProducts($start = 0,$limit = 100) {
 		$products = $this->objQuery->select("*","product LIMIT $limit OFFSET $start", "",null,PDO::FETCH_OBJ);

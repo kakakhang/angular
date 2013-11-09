@@ -1,10 +1,12 @@
 ﻿<?php
 
 require 'config/database.php';
-require 'Service/ServiceAPI.php';
+require 'Service/Service.php';
 
-$service = new ServiceAPI();
-$service->set_service_configuration(new ServiceProfile());
+\Service\Service::register_autoloader();
+
+$service = new \Service\Service();
+$service->set_service_configuration(new \Service\ServiceProfile());
 $service->run();
 
 /*

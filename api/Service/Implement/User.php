@@ -1,6 +1,6 @@
 <?php
 
-require_once 'BaseService.php';
+require_once 'Base.php';
 
 class UserService extends BaseService {
 

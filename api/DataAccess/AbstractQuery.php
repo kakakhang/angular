@@ -1,5 +1,7 @@
 <?php
 
+namespace DataAccess;
+
 class AbstractQuery  {		
 	protected $IQuery;	
     function __construct() {

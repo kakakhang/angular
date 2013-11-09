@@ -1,9 +1,11 @@
 <?php
 
-require 'Slim/Slim.php';
-\Slim\Slim::registerAutoloader();
+namespace Service;
+require '/Slim/Slim.php';
 
-class ServiceAPI {
+//\Slim\Slim::registerAutoloader();
+
+class Service {
 	var $slim; 
 	var $auth;
     var $service_config;
@@ -34,6 +36,35 @@ class ServiceAPI {
         $this->service_config = $service_profile;
     }
 
+    public static function register_autoloader()
+    {
+        spl_autoload_register(__NAMESPACE__ . "\\Service::autoload");
+    }
+
+    public static function autoload($className)
+    {
+        $thisClass = str_replace(__NAMESPACE__.'\\', '', __CLASS__);
+
+        $baseDir = __DIR__;
+
+        if (substr($baseDir, -strlen($thisClass)) === $thisClass) {
+            $baseDir = substr($baseDir, 0, -strlen($thisClass));
+        }
+
+        $className = ltrim($className, '\\');
+        $fileName  = $baseDir;
+        $namespace = '';
+        if ($lastNsPos = strripos($className, '\\')) {
+            $namespace = substr($className, 0, $lastNsPos);
+            $className = substr($className, $lastNsPos + 1);
+            $fileName  .= str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
+        }
+        $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
+
+        if (file_exists($fileName)) {
+            require $fileName;
+        }
+    }
     function set_up_configuration()
     {
         $arrProfiles = $this->service_config->arr_profile;
@@ -46,10 +77,12 @@ class ServiceAPI {
         }
     }
 	function run() {
+        /*
 		if( $this->authenticate($user, $function) === false) {
 			header('HTTP/1.1 401 Unauthorized');
     		die('You are Unauthorized!!!!');
 		}
+        */
         $this->set_up_configuration();
 		$this->slim->run();
 	}

@@ -1,11 +1,14 @@
 <?php
 
-require 'AbstractQuery.php';
-require 'Query_PDO.php';
-class Query extends  AbstractQuery{	
+//require 'AbstractQuery.php';
+//require 'QueryPDO.php';
+namespace DataAccess;
+use DataAccess\QueryPDO;
+
+class Query extends  \DataAccess\AbstractQuery{
 	private  static $instance;
     function __construct() {
-    	$this->setIQuery(new Query_PDO());      		
+    	$this->setIQuery(new QueryPDO());
     }
 	static function getSingletonInstance() {
 	    if (!isset(self::$instance)){
