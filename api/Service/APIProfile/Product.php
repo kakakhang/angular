@@ -6,13 +6,16 @@
  * Time: 4:38 PM
  * To change this template use File | Settings | File Templates.
  */
+namespace Service\APIProfile;
 
-require 'BaseProfile.php';
+use Service\APIProfile\Base;
+use Service\Interceptor\AdminInterceptor;
+use Service\Implement\Product as ProductImpl;
 
-class ProductProfile extends BaseProfile {
+class Product extends Base{
 
     protected function  init_default_interceptor(){
-        $this->obj = new AdminInterceptor(new ProductService());
+        $this->obj = new AdminInterceptor(new ProductImpl());
     }
 
     protected  function api_profile()

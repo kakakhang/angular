@@ -1,5 +1,7 @@
 <?php
 
+namespace Service\Interceptor;
+
 class AbstractInterceptor {
 	public $_object;
 	public $_rootObject; 

@@ -6,8 +6,9 @@
  * Time: 4:59 PM
  * To change this template use File | Settings | File Templates.
  */
+namespace Service\APIProfile;
 
-class BaseProfile {
+class Base {
 
     var $obj;
     var $arrAPI;
