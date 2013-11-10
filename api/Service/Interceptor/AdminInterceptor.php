@@ -1,7 +1,7 @@
 <?php
 
 namespace Service\Interceptor;
-use Service\AbstractInterceptor;
+use Service\Interceptor\AbstractInterceptor;
 
 class AdminInterceptor extends AbstractInterceptor {
 	function before($object, $method, $args){

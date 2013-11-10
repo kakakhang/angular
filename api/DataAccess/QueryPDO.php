@@ -46,7 +46,7 @@ class QueryPDO implements \DataAccess\IQuery{
      * @param integer $fetchmode 
      * @return array|null
      */
-    function select($col, $table, $where = "", $arrWhereVal = array(), $fetchmode = PDO::FETCH_ASSOC) {
+    function select($col, $table, $where = "", $arrWhereVal = array(), $fetchmode = \PDO::FETCH_OBJ) {
         $sqlse = $this->buildQueryStatement($col, $table, $where, $arrWhereVal);
         return $this->getAll($sqlse, $arrWhereVal, $fetchmode);
     }
@@ -66,7 +66,7 @@ class QueryPDO implements \DataAccess\IQuery{
         return $this->db->rollback();
     }
 
-    function getAll($sql, $arrval = array(), $fetchmode = PDO::FETCH_ASSOC) {
+    function getAll($sql, $arrval = array(), $fetchmode = \PDO::FETCH_OBJ) {
     	try{
     		$sth = $this->db->prepare($sql);
 	        if ($arrval == null){
@@ -78,7 +78,7 @@ class QueryPDO implements \DataAccess\IQuery{
         return $result;
     		
     	}
-   		 catch (PDOException $e){
+   		 catch (\PDOException $e){
 	          echo 'Caught exception: ',  $e->getMessage(), "\n";
 	    }
     }
@@ -128,7 +128,7 @@ class QueryPDO implements \DataAccess\IQuery{
 	       	$ret = $this->db->exec($sqlin);
        		return $ret;	      		
     	}
-    	catch (PDOException $e){
+    	catch (\PDOException $e){
 	          echo  $e->getMessage();
 	    }
     	
@@ -158,7 +158,7 @@ class QueryPDO implements \DataAccess\IQuery{
 		        $count = $sth->execute($arrWhereVal);
 		      	return $count;
 	    	}
-	    catch (PDOException $e){
+	    catch (\PDOException $e){
 		    echo  $e->getMessage();
 	 	}
     }
@@ -176,7 +176,7 @@ class QueryPDO implements \DataAccess\IQuery{
     }
 
 
-    function get($col, $table, $where = "", $arrWhereVal = array(),$fetch = PDO::FETCH_ASSOC) {
+    function get($col, $table, $where = "", $arrWhereVal = array(),$fetch = \PDO::FETCH_OBJ) {
     	try {
 	    	$sqlse = $this->getSql($col, $table, $where, $arrWhereVal);
 			$result = array();
@@ -188,7 +188,7 @@ class QueryPDO implements \DataAccess\IQuery{
 			}		     
 	        return $result;    		   		
     	}
-    	catch (PDOException $e){
+    	catch (\PDOException $e){
 	          echo 'Caught exception: ',  $e->getMessage(), "\n";
 	    }    	
     }
@@ -200,7 +200,7 @@ class QueryPDO implements \DataAccess\IQuery{
 			$result = $sth->fetch();        
 	        return $result;	      		
     	}
-    	catch (PDOException $e){
+    	catch (\PDOException $e){
 	          echo 'Caught exception: ',  $e->getMessage(), "\n";
 	    }   
     }
@@ -220,7 +220,7 @@ class QueryPDO implements \DataAccess\IQuery{
 		        $ret = $sth->execute($arrval);
 		        return $ret;    		     		
 	    	}
-	    catch (PDOException $e){
+	    catch (\PDOException $e){
 		          echo  $e->getMessage();
 		    }  		
 	    }

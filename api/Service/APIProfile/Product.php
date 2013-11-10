@@ -10,19 +10,22 @@ namespace Service\APIProfile;
 
 use Service\APIProfile\Base;
 use Service\Interceptor\AdminInterceptor;
+use Service\APIProfile\APIInfo;
 use Service\Implement\Product as ProductImpl;
+
 
 class Product extends Base{
 
-    protected function  init_default_interceptor(){
+    protected function   init_default_interceptor(){
         $this->obj = new AdminInterceptor(new ProductImpl());
     }
 
-    protected  function api_profile()
+    protected function api_profile()
     {
         return array(
-            new APIInfo('/products', 'GET', $this->obj, 'get_Products'),
-            new APIInfo('/products/start/:start/limit/:limit', 'GET', $this->obj, 'get_Products'),
+            new APIInfo('/product/:id', 'GET', $this->obj, 'getProduct'),
+            new APIInfo('/products', 'GET', $this->obj, 'getProducts'),
+            new APIInfo('/products/start/:start/limit/:limit', 'GET', $this->obj, 'getProducts'),
         );
     }
 

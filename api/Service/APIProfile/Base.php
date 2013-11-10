@@ -8,17 +8,16 @@
  */
 namespace Service\APIProfile;
 
-class Base {
+abstract class Base {
 
     var $obj;
-    var $arrAPI;
+    var $arrAPI = array();
     function __construct(){
-       $this->init_profile();
        $this->init_default_interceptor();
-
+       $this->init_profile();
     }
 
-    abstract protected function init_default_interceptor();
+    abstract protected  function init_default_interceptor();
 
     abstract protected function api_profile();
 

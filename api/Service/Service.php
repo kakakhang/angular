@@ -67,11 +67,12 @@ class Service {
     }
     function set_up_configuration()
     {
+        $arrProfiles = array();
         $arrProfiles = $this->service_config->arr_profile;
-        foreach($profie as $arrProfiles)
+        foreach($arrProfiles as $profile)
         {
-            $apis = $profie->get_api();
-            foreach($api as $apis){
+            $apis = $profile->get_api();
+            foreach($apis as $api){
                 $this->register_api($api->http_method, $api->path, array($api->obj,$api->function));
             }
         }

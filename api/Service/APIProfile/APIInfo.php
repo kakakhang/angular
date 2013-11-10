@@ -6,6 +6,7 @@
  * Time: 4:08 PM
  * To change this template use File | Settings | File Templates.
  */
+namespace Service\APIProfile;
 
 class APIInfo {
     var $path;

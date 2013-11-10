@@ -33,7 +33,7 @@ class AbstractQuery  {
      * @param integer $fetchmode 
      * @return array|null
      */
-    function select($col, $table, $where, $arrWhereVal, $fetchmode) {
+    function select($col, $table, $where='' , $arrWhereVal=array(), $fetchmode=\PDO::FETCH_OBJ) {
         return $this->IQuery->select($col, $table, $where, $arrWhereVal, $fetchmode);
     }
     function commit() {

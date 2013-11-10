@@ -4,12 +4,12 @@ namespace Service\Implement;
 class Product extends Base {
 
 	function getProducts($start = 0,$limit = 100) {
-		$products = $this->objQuery->select("*","product LIMIT $limit OFFSET $start", "",null,PDO::FETCH_OBJ);
+		$products = $this->objQuery->select("*","product LIMIT $limit OFFSET $start");
 		echo  json_encode($products);
 	}
 
 	function getProduct($product_id) {
-		$product = $this->objQuery->select('*','product', ' product_id = ?', array($product_id),PDO::FETCH_OBJ);
+		$product = $this->objQuery->select('*','product', ' product_id = ?', array($product_id),\PDO::FETCH_OBJ);
 		echo  json_encode($product);
 	}
 

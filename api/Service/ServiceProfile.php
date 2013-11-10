@@ -13,7 +13,7 @@ class ServiceProfile {
     var $arr_profile = array();
 
     function __construct(){
-        $this->register_profile(new \Service\Implement\Product());
+        $this->register_profile(new \Service\APIProfile\Product());
     }
     function register_profile($profile)
     {
