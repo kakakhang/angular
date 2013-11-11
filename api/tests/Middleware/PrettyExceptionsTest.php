@@ -72,7 +72,7 @@ class PrettyExceptionsTest extends PHPUnit_Framework_TestCase
         $mw->setApplication($app);
         $mw->setNextMiddleware($app);
         $mw->call();
-        $this->assertEquals(1, preg_match('@Slim Application Error@', $app->response()->body()));
+        $this->assertEquals(1, preg_match('@Application Error@', $app->response()->body()));
         $this->assertEquals(500, $app->response()->status());
     }
 

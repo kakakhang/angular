@@ -1,7 +1,5 @@
 <?php
 
-//require 'IQuery.php';
-//require 'Database.php';
 namespace DataAccess;
 
 class QueryPDO implements \DataAccess\IQuery{

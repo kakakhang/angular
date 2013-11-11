@@ -1,7 +1,5 @@
 <?php
 
-//require 'AbstractQuery.php';
-//require 'QueryPDO.php';
 namespace DataAccess;
 use DataAccess\QueryPDO;
 

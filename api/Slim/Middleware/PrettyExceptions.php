@@ -83,7 +83,7 @@ class PrettyExceptions extends \Slim\Middleware
      */
     protected function renderBody(&$env, $exception)
     {
-        $title = 'Slim Application Error';
+        $title = 'Application Error';
         $code = $exception->getCode();
         $message = $exception->getMessage();
         $file = $exception->getFile();

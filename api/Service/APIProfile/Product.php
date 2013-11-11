@@ -23,9 +23,12 @@ class Product extends Base{
     protected function api_profile()
     {
         return array(
-            new APIInfo('/product/:id', 'GET', $this->obj, 'getProduct'),
-            new APIInfo('/products', 'GET', $this->obj, 'getProducts'),
-            new APIInfo('/products/start/:start/limit/:limit', 'GET', $this->obj, 'getProducts'),
+            new APIInfo('/products', APIInfo::HTTP_GET, $this->obj, 'getProducts'),
+            new APIInfo('/products/start/:start/limit/:limit', APIInfo::HTTP_GET, $this->obj, 'getProducts'),
+            new APIInfo('/product/:id', APIInfo::HTTP_GET, $this->obj, 'getProduct'),
+            new APIInfo('/product', APIInfo::HTTP_POST, $this->obj, 'addroduct'),
+            new APIInfo('/product/:id', APIInfo::HTTP_PUT, $this->obj, 'updateProduct'),
+            new APIInfo('/product/:id', APIInfo::HTTP_DELETE, $this->obj, 'deleteProduct')
         );
     }
 

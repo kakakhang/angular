@@ -9,6 +9,10 @@
 namespace Service\APIProfile;
 
 class APIInfo {
+    const HTTP_GET = 'GET';
+    const HTTP_POST = 'POST';
+    const HTTP_PUT = 'PUT';
+    const HTTP_DELETE = 'DELETE';
     var $path;
     var $http_method;
     var $obj;

@@ -12,7 +12,8 @@ class AdminInterceptor extends AbstractInterceptor {
     		die('You are Unauthorized');
 		}
         */
-		echo "before call $method 222";
+		echo "before call:  $method ;";
+
 	}
 }
 

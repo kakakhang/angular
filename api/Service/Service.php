@@ -3,8 +3,6 @@
 namespace Service;
 require '/Slim/Slim.php';
 
-//\Slim\Slim::registerAutoloader();
-
 class Service {
 	var $slim; 
 	var $auth;
@@ -67,7 +65,6 @@ class Service {
     }
     function set_up_configuration()
     {
-        $arrProfiles = array();
         $arrProfiles = $this->service_config->arr_profile;
         foreach($arrProfiles as $profile)
         {
