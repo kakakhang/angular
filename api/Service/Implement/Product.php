@@ -1,6 +1,7 @@
 <?php
 namespace Service\Implement;
 
+
 class Product extends Base {
 
 	function getProducts($start = 0,$limit = 100) {
@@ -14,7 +15,8 @@ class Product extends Base {
 	}
 
 	function addProduct() {
-		$request = Slim::getInstance()->request();
+
+		$request = $this->objService->get_request();
 		$params = json_decode($request->getBody());
 		$result = $this->objQuery->insert(	'product',
 											'	price_standard,
@@ -47,7 +49,7 @@ class Product extends Base {
 	}
 
 	function updateProduct($product_id) {
-		$request = Slim::getInstance()->request();
+        $request = $this->objService->get_request();
 		$params = json_decode($request->getBody());
 		$result = $this->objQuery->update(	'product', 
 										   	array(

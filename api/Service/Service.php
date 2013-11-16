@@ -74,6 +74,19 @@ class Service {
             }
         }
     }
+
+    public static function getSingletonInstance() {
+        if (!isset(self::$instance)){
+            $className = __CLASS__;
+            self::$instance = new $className;
+        }
+        return self::$instance;
+    }
+
+    function get_request(){
+        return $this->slim->request();
+    }
+
 	function run() {
         /*
 		if( $this->authenticate($user, $function) === false) {
