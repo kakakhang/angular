@@ -3,27 +3,6 @@
 var eshopApp = angular.module('eshopApp',['ui.router']);
 
 eshopApp.config(function ($stateProvider,$urlRouterProvider,$httpProvider) {
-    /*$routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/admin/login', {
-        templateUrl: 'views/admin/login.html',
-        controller: 'AdminLoginCtrl'
-      })
-      .when('/admin/index', {
-        templateUrl: 'views/admin/index.html'
-      })
-      .when('/admin/product/index', {
-        templateUrl: 'views/admin/product/index.html'
-      })
-      .when('/admin/product/edit', {
-        templateUrl: 'views/admin/product/edit.html'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });*/
     // For any unmatched url, redirect to index
     $urlRouterProvider.otherwise("/");
 
@@ -32,6 +11,26 @@ eshopApp.config(function ($stateProvider,$urlRouterProvider,$httpProvider) {
             url: "/",
             templateUrl: "views/main.html",
             controller: "MainCtrl"
+        })
+        .state('admin', {
+            templateUrl: "views/admin/main_frame.html",
+            abstract: true,
+            url: '/admin'
+        })
+        .state('admin.basic', {
+            templateUrl: "views/admin/basic/index.html",
+            parent: "admin",
+            url: '/index'
+        })
+        .state('admin.product', {
+            url: "/product",
+            parent: "admin",
+            templateUrl: "views/admin/product/index.html"
+        })
+        .state('admin.product.list', {
+            url: "/product/list",
+            parent: "admin",
+            templateUrl: "views/admin/product/index.html"
         })
         .state('admin_login', {
             url: "/admin/login",
