@@ -1,8 +1,9 @@
 'use strict';
-var eshopApp = angular.module('eshopApp',[]);
 
-eshopApp.config(function ($routeProvider,$httpProvider) {
-    $routeProvider
+var eshopApp = angular.module('eshopApp',['ui.router']);
+
+eshopApp.config(function ($stateProvider,$urlRouterProvider,$httpProvider) {
+    /*$routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
@@ -14,11 +15,31 @@ eshopApp.config(function ($routeProvider,$httpProvider) {
       .when('/admin/index', {
         templateUrl: 'views/admin/index.html'
       })
+      .when('/admin/product/index', {
+        templateUrl: 'views/admin/product/index.html'
+      })
+      .when('/admin/product/edit', {
+        templateUrl: 'views/admin/product/edit.html'
+      })
       .otherwise({
         redirectTo: '/'
-      });
+      });*/
+    // For any unmatched url, redirect to index
+    $urlRouterProvider.otherwise("/");
 
-       //================================================
+    $stateProvider
+        .state('home', {
+            url: "/",
+            templateUrl: "views/main.html",
+            controller: "MainCtrl"
+        })
+        .state('admin_login', {
+            url: "/admin/login",
+            templateUrl: "views/admin/login.html",
+            controller: "AdminLoginCtrl"
+        });
+
+    //================================================
     // Add an interceptor for AJAX errors
     //================================================
     $httpProvider.responseInterceptors.push(function($q, $location) {

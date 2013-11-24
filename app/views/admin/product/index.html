@@ -1,0 +1,127 @@
+<div id="products" class="contents-main">
+
+            <form name="search_form" id="search_form" method="post" action="?">
+                <input type="hidden" name="mode" value="search_product" />
+                <h2>Product Search Condition</h2>
+
+                <table>
+                    <tr>
+                        <th>Product ID </th>
+                        <td colspan="3">
+                            <span class="attention"></span>
+                            <input type="text" name="product_id" value="" maxlength="" style="" size="30" class="box30"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <td>
+                            <span class="attention"></span>
+                            <input type="text" name="name_LIKE" value="" maxlength="" style="" size="30" class="box30" />
+                        </td>
+                        <th>Mode</th>
+                        <td>
+
+                            <input type="radio" name="display_mode" value="1">Public
+                            <input type="radio" name="display_mode" value="0">Private
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Price From </th>
+                        <td>
+                            <span class="attention"></span>
+                            <input type="text" name="price_sale_FROM" value="" maxlength="" style="" size="30" class="box30" />
+                        </td>
+                        <th>To </th>
+                        <td>
+                            <span class="attention"></span>
+                            <input type="text" name="price_sale_TO" value="" maxlength="" style="" size="30" class="box30" />
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Category</th>
+                        <td>
+                            <span class="attention"></span>
+                            <select name="category_id">
+                                <option value=''>Please select</option>
+
+                            </select>
+                        </td>
+                        <th>Status</th>
+                        <td>
+                            <span class="attention"></span>
+
+                            <input type="checkbox" name="status_id" value="1" > New &nbsp;
+                            <input type="checkbox" name="status_id" value="2" > Sale&nbsp;
+                            <input type="checkbox" name="status_id" value="3" > Hot
+                        </td>
+                    </tr>
+                </table>
+                <div class="btn">
+                    <p class="page_rows">Rows/Page
+
+                        <select name="page" style="">
+
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+
+                        </select>Rows</p>
+
+                    <div class="btn-area">
+                        <ul>
+                            <li><a class="btn-action" href="javascript:;" ><span class="btn-next">Search</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </form>
+
+
+
+            <form name="form1" id="form1" method="post" action="?">
+                <input type="hidden" name="mode" value="" />
+                <input type="hidden" name="product_id" value="" />
+                <h2>Product List</h2>
+                <div class="btn">
+                    <span class="attention">10&nbsp;Rows</span>&nbsp;has found
+                </div>
+
+                <table class="list" id="products-search-result">
+                    <col width="10%" />
+                    <col width="25%" />
+                    <col width="30%" />
+                    <col width="15%" />
+                    <col width="10%" />
+                    <col width="5%" />
+                    <col width="5%" />
+                    <tr>
+                        <th>Product ID</th>
+                        <th >Image</th>
+                        <th >Name</th>
+                        <th >Price</th>
+                        <th >Stock</th>
+                        <th >Edit</th>
+                        <th >Delete</th>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><img src="" style="width:100px;height:100px"/></td>
+                        <td><%=product.getName() %></td>
+                        <td class='right'></td>
+                        <td class='right'></td>
+                        <td class='center'><a href='javascript:;' >Edit</a></td>
+                        <td class='center'><a href='javascript:;' >Delete</a></td>
+                    </tr>
+
+
+                </table>
+
+
+
+
+            </form>
+
+</div>
