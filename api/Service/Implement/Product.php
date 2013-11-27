@@ -3,7 +3,7 @@ namespace Service\Implement;
 
 
 class Product extends Base {
-
+    /*this is new comment*/
 	function getProducts($start = 0,$limit = 100) {
 		$products = $this->objQuery->select("*","product LIMIT $limit OFFSET $start");
 		echo  json_encode($products);
