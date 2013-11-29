@@ -87,6 +87,11 @@ class Service {
         return $this->slim->request();
     }
 
+    function get_request_params(){
+        $request = $this->slim->request();
+        return json_decode($request->getBody());
+    }
+
 	function run() {
         /*
 		if( $this->authenticate($user, $function) === false) {
