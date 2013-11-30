@@ -14,7 +14,7 @@ eshopApp.config(function ($stateProvider,$urlRouterProvider,$httpProvider) {
         })
         .state('admin', {
             templateUrl: "views/admin/main_frame.html",
-            abstract: true,
+            controller: "AdminMainCtrl",
             url: '/admin'
         })
         .state('admin.basic', {
@@ -31,6 +31,11 @@ eshopApp.config(function ($stateProvider,$urlRouterProvider,$httpProvider) {
             url: "/product/list",
             parent: "admin",
             templateUrl: "views/admin/product/index.html"
+        })
+        .state('admin.product.edit', {
+            url: "/product/edit",
+            parent: "admin",
+            templateUrl: "views/admin/product/edit.html"
         })
         .state('admin_login', {
             url: "/admin/login",

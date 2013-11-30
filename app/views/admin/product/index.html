@@ -1,4 +1,4 @@
-<div class="nav_title"> <h1><span class="title">Product > Search</span></h1> </div>
+
 <div id="products" class="contents-main">
 
             <form name="search_form" id="search_form" method="post" action="?">
@@ -58,10 +58,10 @@
                         </td>
                     </tr>
                 </table>
-                <div class="btn">
+                <div>
                     <p class="page_rows">Rows/Page
 
-                        <select name="page" style="">
+                        <select class="row_page" name="page" style="">
 
                             <option value="10">10</option>
                             <option value="20">20</option>
@@ -85,7 +85,7 @@
                 <input type="hidden" name="mode" value="" />
                 <input type="hidden" name="product_id" value="" />
                 <h2>Product List</h2>
-                <div class="btn">
+                <div>
                     <span class="attention">10&nbsp;Rows</span>&nbsp;has found
                 </div>
 
@@ -110,7 +110,7 @@
                     <tr>
                         <td></td>
                         <td><img src="" style="width:100px;height:100px"/></td>
-                        <td><%=product.getName() %></td>
+                        <td></td>
                         <td class='right'></td>
                         <td class='right'></td>
                         <td class='center'><a href='javascript:;' >Edit</a></td>

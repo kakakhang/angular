@@ -1,0 +1,140 @@
+
+    <form name="form1" id="form1" method="post" action="?" enctype="multipart/form-data">
+        <input type='hidden' id="image_key" name='image_key' value=''/>
+        <input type="hidden" id="mode" name="mode" value="" />
+        <input type='hidden' name='product_id' value='<%=product_id_value[0]%>'/>
+        <div id="products" class="contents-main">
+            <h2>Edit Product</h2>
+            <table class="form">
+                <tr>
+                    <th>Product ID</th>
+                    <td><%=product_id_value[0]%></td>
+                </tr>
+                <tr>
+                    <th>Name<span class="attention"> *</span></th>
+                    <td>
+                        <span class="attention"></span>
+                        <input type="text" name="name" value="<%=name_value[0]%>" maxlength="100" style="" size="60" class="box60" />
+                        <span class="attention"> (Max 100 Char)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Category<span class="attention"> *</span></th>
+                    <td>
+                        <select name="category_id">
+                            <option value=''>Please select</option>
+                            <%
+                            for (Category category: categoryLst) {
+                            String selected =" ";
+                            if(category_value[0].equals(Integer.toString(category.getCategoryId())))
+                            selected =" selected=true ";
+                            out.print("<option value="+ category.getCategoryId()+selected+">"+category.getCategoryName()+"</option>");
+                            }
+                            %>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>
+                        <%
+                        String check1="";
+                        String check2="";
+                        String check3="";
+                        for(String status: status_value){
+                        if(status.equals("1"))
+                        check1=" checked=true ";
+                        if(status.equals("2"))
+                        check2=" checked=true ";
+                        if(status.equals("3"))
+                        check3=" checked=true ";
+                        }
+                        %>
+                        <input type="checkbox" name="status_id" value="1" <%=check1 %>> New &nbsp;
+                        <input type="checkbox" name="status_id" value="2" <%=check2 %>> Sale&nbsp;
+                        <input type="checkbox" name="status_id" value="3" <%=check3 %>> Hot
+                    </td>
+                </tr>
+                <tr>
+                    <th>Price Standard</th>
+                    <td>
+                        <span class="attention"></span>
+                        <input type="text" name="price_standard" value="<%=price_standard_value[0]%>" style="" size="30" class="box30" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Price Sale<span class="attention">*</span></th>
+                    <td>
+                        <span class="attention"></span>
+                        <input type="text" name="price_sale" value="<%=price_sale_value[0]%>" style="" size="30" class="box30" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Stock<span class="attention">*</span></th>
+                    <td>
+                        <span class="attention"></span>
+                        <input type="text" name="stock" value="<%=stock_value[0]%>" style="" size="30" class="box30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Mode<span class="attention">*</span></th>
+                    <td>
+                        <input type="radio" name="display_mode" value="1" <% if(display_mode_value[0].equals("1")) out.write("checked=true"); %> >Public &nbsp;
+                        <input type="radio" name="display_mode" value="0" <% if(display_mode_value[0].equals("0")) out.write("checked=true"); %> >Private
+                    </td>
+                </tr>
+
+
+
+
+
+
+
+                <tr>
+                    <th>Description</th>
+                    <td>
+                        <span class="attention"></span>
+                        <textarea name="description" cols="60" rows="8" class="area60" maxlength="1000" style=""><%=description_value[0]%></textarea><br />
+                        <span class="attention"> (Max 1000 Char)</span>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <th>List Image<br />[100×100]</th>
+                    <td>
+                        <% if(!list_image_value[0].isEmpty()){ %>
+                        <img src="<%= WebConstant.UPLOAD_IMAGE_PATH%><%=list_image_value[0] %>" style="width:100px;height:100px"/></br>
+                        <% } %>
+                        <input type='hidden' name='list_image' value='<%=list_image_value[0] %>' />
+                        <input type="file" name="f_list_image" size="40"/>
+                        <!--       <a class="btn-normal" href="javascript:;" name="btn" onclick="fnModeSubmit('upload_image', 'image_key', 'f_list_image'); return false;">Upload</a>  -->
+                    </td>
+                </tr>
+                <tr>
+
+                    <th>Main Image<br />[200×200]<%=main_image_value[0]%></th>
+                    <td>
+                        <% if(!main_image_value[0].isEmpty()) { %>
+                        <img src="<%= WebConstant.UPLOAD_IMAGE_PATH%><%=main_image_value[0] %>" style="width:100px;height:100px"/></br>
+                        <% } %>
+                        <input type='hidden' name='main_image' value='<%=main_image_value[0] %>' />
+                        <input type="file" name="f_main_image" size="40" style="<!--{$arrErr[$key]|sfGetErrorColor}-->" />
+                        <!--    <a class="btn-normal" href="javascript:;" name="btn" onclick="fnModeSubmit('upload_image', 'image_key', 'f_main_image'); return false;">Upload</a>  -->
+                    </td>
+                </tr>
+
+
+            </table>
+
+
+
+            <div class="btn-area">
+                <ul>
+                    <li><a class="btn-action" href="javascript:;" onclick=""><span class="btn-prev">Reset Value</span></a></li>
+                    <li><a class="btn-action" href="javascript:;" onclick="s"><span class="btn-next">Confirm</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </form>

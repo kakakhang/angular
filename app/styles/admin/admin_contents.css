@@ -37,6 +37,13 @@ input, textarea {
 select {
     font-size: 100%;
 }
+select.row_page{
+    width: 60px;
+    height : 28px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+
+}
 select.top,
 input.top,
 textarea.top {
@@ -45,6 +52,7 @@ textarea.top {
 
 .page_rows{
     margin-bottom:20px;
+    float:right;
 }
 
 img {
@@ -83,7 +91,7 @@ h1 span.subtitle {
 }
 
 #contents h2 {
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
     padding: 5px 0;
     line-height: 15px;
     border-bottom: 3px solid #ccc;
@@ -1287,7 +1295,8 @@ body > #container {
 /* フォーム
 ----------------------------------------------- */
 div.btn,p.remark {
-    margin: 0 0 20px 0;
+    display: block;
+    margin: 0 0 20px 0 !important;
 }
 
 /*FORM*/
@@ -1558,4 +1567,12 @@ body#popup {
     margin:0;
     padding: 0;
     font-size: 16px;
+}
+
+
+
+#search_form input[type="radio"],
+#search_form input[type="checkbox"]
+{
+    margin :-2px 5px 0px 0px;
 }
