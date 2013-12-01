@@ -13,14 +13,13 @@
 <!--* HEADER *-->
 
 <!--* NAVIGATION BAR *-->
-<div id="navi-wrap">
-    <ul id="navi" class="clearfix">
-        <div ng-include src="'views/admin/basic/subnavi.html'"></div>
-        <div ng-include src="'views/admin/product/subnavi.html'"></div>
-    </ul>
+<div ng-controller="AdminMainCtrl">
+    <div id="navi-wrap" ng-bind-html="admin_nav_bar">
+    </div>
+    <div class="nav_title"> <h1><span class="title">{{nav_title}} </span></h1> </div>
 </div>
 <!--* NAVIGATION BAR *-->
-<div ng-controller="AdminMainCtrl" class="nav_title"> <h1><span class="title">Product > Search {{someThings}} </span></h1> </div>
+
 <!--{* CONTENTS *}-->
 
 <div id='contents' ui-view></div>

@@ -6,15 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-eshopApp.controller('AdminMainCtrl', function ($scope,$location) {
-    $scope.someThings = '111';
-
-
-
-
-
-
-
-//console.log(eshopApp.config.navigation_bar);
-
+eshopApp.controller('AdminMainCtrl', function ($scope,$location,$sce) {
+    $scope.nav_title = eshopApp.config.nav_title[$location.path()];
+    $scope.admin_nav_bar = $sce.trustAsHtml(eshopApp.config.admin_nav_bar);
 });

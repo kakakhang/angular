@@ -27,8 +27,8 @@ eshopApp.config(function ($stateProvider,$urlRouterProvider,$httpProvider) {
             parent: "admin",
             templateUrl: "views/admin/product/index.html"
         })
-        .state('admin.product.list', {
-            url: "/product/list",
+        .state('admin.product.search', {
+            url: "/product/search",
             parent: "admin",
             templateUrl: "views/admin/product/index.html"
         })
