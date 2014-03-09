@@ -13,6 +13,11 @@ class Product extends Base {
 		$product = $this->objQuery->select('*','product', ' product_id = ?', array($product_id),\PDO::FETCH_OBJ);
 		echo  json_encode($product);
 	}
+    function getProductSearchCondition(){
+        $status = $this->objQuery->select('*','m_status', ' type = ?', array(1),\PDO::FETCH_OBJ);
+        $category = $this->objQuery->select('*','m_category',\PDO::FETCH_OBJ);
+        echo  json_encode(array('cat'=>$category,'status'=>$status));
+    }
 
 	function addProduct() {
 

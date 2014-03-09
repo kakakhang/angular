@@ -11,6 +11,13 @@ eshopApp.controller('MainCtrl', function ($scope) {
     	$scope.awesomeThings.push($scope.thing);
     	$scope.thing = '';
     }
+    $scope.$on('$stateChangeSuccess', function(event,toState,toParams,fromState, formParams){
+        console.log('from State: ') ;
+        console.log(fromState) ;
+        console.log('to State: ') ;
+        console.log(toState) ;
+
+    });
   });
 
  /*

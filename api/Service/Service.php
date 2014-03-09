@@ -7,6 +7,7 @@ class Service {
 	var $slim; 
 	var $auth;
     var $service_config;
+    private static $instance;
 	function __construct(){
 		$this->slim =  new \Slim\Slim();
 		$this->slim->contentType('application/json;charset=utf-8');

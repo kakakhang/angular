@@ -11,8 +11,9 @@ class AdminInterceptor extends AbstractInterceptor {
 			header('HTTP/1.1 401 Unauthorized');
     		die('You are Unauthorized');
 		}
-        */
+
 		echo "before call:  $method ;";
+        */
 
 	}
 }

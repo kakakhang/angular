@@ -7,6 +7,10 @@
  */
 
 eshopApp.controller('AdminMainCtrl', function ($scope,$location,$sce) {
-    $scope.nav_title = eshopApp.config.nav_title[$location.path()];
+    $scope.nav_title = eshopApp.config.nav_title["#"+$location.path()];
     $scope.admin_nav_bar = $sce.trustAsHtml(eshopApp.config.admin_nav_bar);
+    $scope.$on('$stateChangeSuccess', function(event,toState,toParams,fromState, formParams){
+        $scope.nav_title = eshopApp.config.nav_title["#"+$location.path()];
+    });
+
 });

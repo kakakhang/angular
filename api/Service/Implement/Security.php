@@ -10,8 +10,8 @@ class Security extends Base {
      */
     function login() {
         $params = $this->objService->get_request_params();
-        $isSuccess = $this->objQuery->count('user','email= ? AND password = ?', array($params['email'],$params['password']));
-        return json_encode($isSuccess);
+        $isSuccess = $this->objQuery->count('user','email= ? AND password = ?', array($params->email,$params->password));
+        echo $isSuccess;
     }
 }
 

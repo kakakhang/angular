@@ -14,6 +14,7 @@ class ServiceProfile {
 
     function __construct(){
         $this->register_profile(new \Service\APIProfile\Product());
+        $this->register_profile(new \Service\APIProfile\Security());
     }
     function register_profile($profile)
     {

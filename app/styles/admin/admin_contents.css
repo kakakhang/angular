@@ -969,6 +969,11 @@ body > #container {
     text-align: left;
 }
 
+#login .error {
+    color: red;
+    font-weight: bold;
+}
+
 
 /* エラーメッセージ
 ----------------------------------------------- */

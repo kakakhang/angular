@@ -5,7 +5,15 @@
  * Time: 9:56 PM
  * To change this template use File | Settings | File Templates.
  */
-eshopApp.controller('ProductSearchCtrl', function ($scope,$location,$sce) {
-    $scope.nav_title = "Product > Search";
-    //$scope.admin_nav_bar = $sce.trustAsHtml(eshopApp.config.admin_nav_bar);
+eshopApp.controller('ProductSearchCtrl', function ($scope,$http) {
+    $http({
+        url: eshopApp.config.api_end_point + "/productSearchCondition",
+        method: "GET"
+    }).success(function(data, status, headers, config) {
+            $scope.cats = data.cat;
+            $scope.status = data.status;
+    }).
+    error(function(data, status, headers, config) {
+           console.log('Load error!');
+    });
 });

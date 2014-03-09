@@ -11,30 +11,30 @@ var config = eshopApp.config || (eshopApp.config = {});
 (function (config) {
     var general = {
         id: "general",
-        url: "/admin/general",
+        url: "#/admin/index",
         text: "General Infomation",
         childs: [
             {
-                url: "/admin/general/home",
+                url: "#/admin/general/home",
                 text: "Home"
             },
             {
-                url: "/admin/general/basic",
+                url: "#/admin/general/basic",
                 text: "Basic Information"
             }
         ]
     };
     var product = {
         id: "product",
-        url: "/admin/product",
+        url: "#/admin/product",
         text: "Product",
         childs: [
             {
-                url: "/admin/product/search",
+                url: "#/admin/product/search",
                 text: "Search Product"
             },
             {
-                url: "/admin/product/edit",
+                url: "#/admin/product/edit",
                 text: "Edit Product"
             }
         ]
@@ -107,5 +107,5 @@ var config = eshopApp.config || (eshopApp.config = {});
     BuildNavTitleArray(navigation_bar,null,nav_title);
     config.nav_title = nav_title;
     config.admin_nav_bar = RenderConfigurationToNavBar(navigation_bar);
-
+    config.api_end_point = 'http://localhost/angular/api';
 })(config);

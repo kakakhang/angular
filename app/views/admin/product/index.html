@@ -1,5 +1,5 @@
 
-<div id="products" class="contents-main">
+<div ng-controller="ProductSearchCtrl" id="products" class="contents-main">
 
             <form name="search_form" id="search_form" method="post" action="?">
                 <input type="hidden" name="mode" value="search_product" />
@@ -45,16 +45,13 @@
                             <span class="attention"></span>
                             <select name="category_id">
                                 <option value=''>Please select</option>
-
+                                <option ng-repeat="cat in cats" value='{{cat.category_id}}'>{{cat.category_name}}</option>
                             </select>
                         </td>
                         <th>Status</th>
                         <td>
                             <span class="attention"></span>
-
-                            <input type="checkbox" name="status_id" value="1" > New &nbsp;
-                            <input type="checkbox" name="status_id" value="2" > Sale&nbsp;
-                            <input type="checkbox" name="status_id" value="3" > Hot
+                               <span  ng-repeat="s in status"> <input type="checkbox" name="status_id" value="{{s.status_id}}"  /> {{s.name}} &nbsp; </span>
                         </td>
                     </tr>
                 </table>
