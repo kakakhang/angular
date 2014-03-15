@@ -80,5 +80,38 @@ class Product extends Base {
 		$result = $this->objQuery->delete('product', 'product_id = ?', array($product_id));
 		echo  json_encode($result);
 	}
+
+    function getProductBySearchCondition($condition){
+        $params = json_decode(urldecode($condition));
+        $sql = "    Select  Product.*,
+                            Product_Category.category_id,
+                            m_category.category_name,
+                            Product_Status.status_id,
+                            m_status.name
+                    From Product
+                    Left Join Product_Category on Product.Product_id = Product_Category.Product_id
+                    Left Join m_category on m_category.category_id = Product_Category.category_id
+                    Left Join Product_Status on Product.Product_id = Product_Status.Product_id
+                    Left Join m_status on m_status.status_id = Product_Status.status_id ";
+        if(isset($params)){
+            $sql .= " Where 1=1 ";
+        }
+        $arrCondition = array();
+        if(isset($params->category_id) && strlen($params->category_id) > 0){
+            $arrCondition[] = $params->category_id;
+            $sql .= " and Product_Category.category_id = ? ";
+        }
+        if(isset($params->product_id) && strlen($params->product_id) > 0 ){
+            $arrCondition[] = $params->product_id;
+            $sql .= "  and Product.product_id = ? ";
+        }
+        if(isset($params->name) && strlen($params->name) > 0){
+            $arrCondition[] = "%$params->name%";
+            $sql .= "  and Product.name LIKE ? ";
+        }
+
+        $result = $this->objQuery->getAll($sql,$arrCondition);
+        echo json_encode($result);
+    }
 }
 

@@ -6,14 +6,35 @@
  * To change this template use File | Settings | File Templates.
  */
 eshopApp.controller('ProductSearchCtrl', function ($scope,$http) {
-    $http({
-        url: eshopApp.config.api_end_point + "/productSearchCondition",
-        method: "GET"
-    }).success(function(data, status, headers, config) {
-            $scope.cats = data.cat;
-            $scope.status = data.status;
-    }).
-    error(function(data, status, headers, config) {
-           console.log('Load error!');
-    });
+
+    init();
+    //btn search click
+    $scope.search = function(){
+        var jsonData = JSON.stringify($scope.form);
+        var request = encodeURIComponent(jsonData);
+        $http({
+            url: eshopApp.config.api_end_point + '/product/search/'+request,
+            method: "GET"
+        }).success(function (data, status, headers, config) {
+                console.log('data: '+ data + ' status: '+ status);
+        }).error(function (data, status, headers, config) {
+                console.log('data: '+ data + ' status: '+ status);
+        });
+    };
+
+
+    function init(){
+        //init combo box and check list
+        $http({
+            url: eshopApp.config.api_end_point + "/productSearchCondition",
+            method: "GET"
+        }).success(function(data, status, headers, config) {
+                $scope.cats = data.cat;
+                $scope.status = data.status;
+            }).
+            error(function(data, status, headers, config) {
+                console.log('data: '+ data + ' status: '+ status);
+            });
+        $scope.form = {};
+    };
 });

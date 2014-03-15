@@ -6,4 +6,5 @@
  * To change this template use File | Settings | File Templates.
  */
 var adminApp = angular.module('adminApp',[]);
+
 adminApp.service();
