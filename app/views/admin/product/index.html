@@ -22,8 +22,8 @@
                         <th>Mode</th>
                         <td>
 
-                            <input type="radio" name="display_mode" value="1">Public
-                            <input type="radio" name="display_mode" value="0">Private
+                            <input type="radio" ng-model="form.display_mode" name="display_mode" value="1">Public
+                            <input type="radio" ng-model="form.display_mode" name="display_mode" value="0">Private
                         </td>
                     </tr>
                     <tr>
@@ -63,7 +63,6 @@
                             <option value="20">20</option>
                             <option value="30">30</option>
                             <option value="40">40</option>
-
                         </select>Rows</p>
 
                     <div class="btn-area">
@@ -82,12 +81,13 @@
                 <input type="hidden" name="product_id" value="" />
                 <h2>Product List</h2>
                 <div>
-                    <span class="attention">10&nbsp;Rows</span>&nbsp;has found
+                    <span class="attention">{{products.length}}&nbsp;Rows</span>&nbsp;has found
                 </div>
 
                 <table class="list" id="products-search-result">
                     <col width="10%" />
-                    <col width="25%" />
+                    <col width="10%" />
+                    <col width="15%" />
                     <col width="30%" />
                     <col width="15%" />
                     <col width="10%" />
@@ -95,6 +95,7 @@
                     <col width="5%" />
                     <tr>
                         <th>Product ID</th>
+                        <th>Category</th>
                         <th >Image</th>
                         <th >Name</th>
                         <th >Price</th>
@@ -103,12 +104,13 @@
                         <th >Delete</th>
                     </tr>
 
-                    <tr>
-                        <td></td>
+                    <tr ng-repeat="product in products">
+                        <td>{{product.product_id}}</td>
+                        <td>{{product.category_name}}</td>
                         <td><img src="" style="width:100px;height:100px"/></td>
-                        <td></td>
-                        <td class='right'></td>
-                        <td class='right'></td>
+                        <td>{{product.name}}</td>
+                        <td class='right'>{{product.price_sale}}</td>
+                        <td class='right'>{{product.stock}}</td>
                         <td class='center'><a href='javascript:;' >Edit</a></td>
                         <td class='center'><a href='javascript:;' >Delete</a></td>
                     </tr>

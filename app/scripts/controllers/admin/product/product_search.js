@@ -16,7 +16,7 @@ eshopApp.controller('ProductSearchCtrl', function ($scope,$http) {
             url: eshopApp.config.api_end_point + '/product/search/'+request,
             method: "GET"
         }).success(function (data, status, headers, config) {
-                console.log('data: '+ data + ' status: '+ status);
+                $scope.products = data;
         }).error(function (data, status, headers, config) {
                 console.log('data: '+ data + ' status: '+ status);
         });
@@ -36,5 +36,8 @@ eshopApp.controller('ProductSearchCtrl', function ($scope,$http) {
                 console.log('data: '+ data + ' status: '+ status);
             });
         $scope.form = {};
+        $scope.form.display_mode =1;
+        $scope.products = [];
+
     };
 });

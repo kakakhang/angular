@@ -87,7 +87,7 @@ class Product extends Base {
                             Product_Category.category_id,
                             m_category.category_name,
                             Product_Status.status_id,
-                            m_status.name
+                            m_status.name as status_name
                     From Product
                     Left Join Product_Category on Product.Product_id = Product_Category.Product_id
                     Left Join m_category on m_category.category_id = Product_Category.category_id
@@ -108,6 +108,27 @@ class Product extends Base {
         if(isset($params->name) && strlen($params->name) > 0){
             $arrCondition[] = "%$params->name%";
             $sql .= "  and Product.name LIKE ? ";
+        }
+        if(isset($params->price_sale_from) && strlen($params->price_sale_from) > 0){
+            $arrCondition[] = $params->price_sale_from;
+            $sql .= "  and Product.price_sale >= ? ";
+        }
+        if(isset($params->price_sale_to) && strlen($params->price_sale_to) > 0){
+            $arrCondition[] = $params->price_sale_from;
+            $sql .= "  and Product.price_sale <= ? ";
+        }
+        if(isset($params->status) && count($params->status)> 0){
+            $status_sql = "( ";
+            foreach( $params->status as $status_id ){
+                $arrCondition[] = $status_id;
+                $status_sql .= "Product_Status.status_id = ? or ";
+            }
+            $status_sql = substr($status_sql,0,strlen($status_sql)-3) . " )";
+            $sql .= " and $status_sql ";
+        }
+        if(isset($params->display_mode )){
+            $arrCondition[] = $params->display_mode;
+            $sql .= "  and Product.display_mode = ? ";
         }
 
         $result = $this->objQuery->getAll($sql,$arrCondition);
