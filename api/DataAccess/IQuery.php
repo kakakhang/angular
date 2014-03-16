@@ -8,7 +8,7 @@ interface IQuery
     function commit();
     function begin();
     function rollback();    
-    function getOne($sql, $arrval);   
+    function getOne($sql, $arrval);
     function getAll($sql, $arrval, $fetchmode);
 	function insert($table, $strcol,$arrVal);
 	function delete($table, $where, $arrval);

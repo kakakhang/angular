@@ -34,9 +34,15 @@ eshopApp.config(function ($stateProvider,$urlRouterProvider,$httpProvider) {
             controller: "ProductSearchCtrl",
             templateUrl: "views/admin/product/index.html"
         })
-        .state('admin.product.edit', {
+        .state('admin.product.add', {
             url: "/product/edit",
             parent: "admin",
+            templateUrl: "views/admin/product/edit.html"
+        })
+        .state('admin.product.edit', {
+            url: "/product/edit/{product_id}",
+            parent: "admin",
+            controller: "ProductEditCtrl",
             templateUrl: "views/admin/product/edit.html"
         })
         .state('admin_login', {

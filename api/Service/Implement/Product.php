@@ -3,7 +3,6 @@ namespace Service\Implement;
 
 
 class Product extends Base {
-    /*this is new comment*/
 	function getProducts($start = 0,$limit = 100) {
 		$products = $this->objQuery->select("*","product LIMIT $limit OFFSET $start");
         echo  json_encode($products);
@@ -11,7 +10,7 @@ class Product extends Base {
 
 	function getProduct($product_id) {
 		$product = $this->objQuery->select('*','product', ' product_id = ?', array($product_id),\PDO::FETCH_OBJ);
-		echo  json_encode($product);
+		echo  json_encode($product[0]);
 	}
     function getProductSearchCondition(){
         $status = $this->objQuery->select('*','m_status', ' type = ?', array(1),\PDO::FETCH_OBJ);
