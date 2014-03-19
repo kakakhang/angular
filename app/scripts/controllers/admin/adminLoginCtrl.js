@@ -31,8 +31,8 @@ define(['appModule'], function(eshopApp) {
     eshopApp.lazy = eshopApp.lazy || eshopApp;
 
     eshopApp.lazy.controller('adminLoginCtrl', function ($scope,$http,$location) {
-		$scope.error = '';
-		$scope.login = function(){			 
+		$scope.login = function(){
+			 $scope.error = '';
 			 $http({
 				url: eshopApp.config.api_end_point + '/admin/login',
 				method: "POST",
