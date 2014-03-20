@@ -1,13 +1,13 @@
 
 
-define(['appModule'], function(eshopApp) {
+define(['adminModule'], function(eshopApp) {
 
     eshopApp.lazy = eshopApp.lazy || eshopApp;
 
     
 	eshopApp.controller('adminProductSearchCtrl', function ($scope,$http,ProductService) {
 
-		init();
+		//init();
 		//btn search click
 		$scope.search = function(){
 			var jsonData = JSON.stringify($scope.form);
