@@ -14,7 +14,7 @@ define(['appModule'], function(eshopApp) {
 			var request = encodeURIComponent(jsonData);
 			$(document.body).mask("Loading...");
 			$http({
-				url: eshopApp.config.api_end_point + '/product/search/'+request,
+				url: eshopApp.config.apiEndPoint + '/product/search/'+request,
 				method: "GET"
 			}).success(function (data, status, headers, config) {
 					$scope.products = data;

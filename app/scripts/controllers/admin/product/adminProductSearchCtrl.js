@@ -1,24 +1,22 @@
 
+define(['adminModule'], function (adminModule) {
 
-define(['adminModule'], function(eshopApp) {
-
-    eshopApp.lazy = eshopApp.lazy || eshopApp;
-
+    adminModule.lazy = adminModule.lazy || adminModule;
     
-	eshopApp.controller('adminProductSearchCtrl', function ($scope,$http,ProductService) {
+    adminModule.lazy.controller('adminProductSearchCtrl', function ($scope, $http, adminProductService) {
 
-		//init();
+		init();
 		//btn search click
 		$scope.search = function(){
 			var jsonData = JSON.stringify($scope.form);
 			var request = encodeURIComponent(jsonData);
-			$(document.body).mask("Loading...");
+			/*$(document.body).mask("Loading...");*/
 			$http({
-				url: eshopApp.config.api_end_point + '/product/search/'+request,
+				url: eshopApp.config.apiEndPoint + '/product/search/'+request,
 				method: "GET"
 			}).success(function (data, status, headers, config) {
 					$scope.products = data;
-					$(document.body).unmask();
+				/*	$(document.body).unmask();*/
 			}).error(function (data, status, headers, config) {
 					console.log('data: '+ data + ' status: '+ status);
 			});
@@ -26,7 +24,7 @@ define(['adminModule'], function(eshopApp) {
 
 
 		function init(){
-			ProductService.getCategoryAndStatus()
+		    adminProductService.getCategoryAndStatus()
 								.then(function(data) {
 									$scope.cats = data.cat;
 									$scope.status = data.status;

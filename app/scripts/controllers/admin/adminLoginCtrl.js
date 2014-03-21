@@ -6,7 +6,7 @@ define(['adminModule','config'], function(adminModule) {
 		$scope.login = function(){
 			 $scope.error = '';
 			 $http({
-				url: eshopApp.config.api_end_point + '/admin/login',
+				url: eshopApp.config.apiEndPoint + '/admin/login',
 				method: "POST",
 				data: $scope.user,
 				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
@@ -18,7 +18,7 @@ define(['adminModule','config'], function(adminModule) {
 					else {
 						console.log('Log in success!');
 						$scope.error ='';
-						$location.url('/admin/index');
+						$location.url('/admin/product/search');
 					}
 			  }).error(function (data, status, headers, config) {
 					$location.url('/admin/login');
