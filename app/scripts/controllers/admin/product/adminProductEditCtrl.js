@@ -1,20 +1,24 @@
-/**
- * Created with JetBrains PhpStorm.
- * User: Administrator
- * Date: 12/1/13
- * Time: 9:56 PM
- * To change this template use File | Settings | File Templates.
- */
+"use strict";
+define(['adminModule'], function (adminModule) {
 
+    adminModule.lazy = adminModule.lazy || adminModule;
 
-eshopApp.controller('ProductEditCtrl', function ($scope,$http,$stateParams,ProductService) {
-    //if exist product id
-    $scope.product = {};
-    if($stateParams.product_id){
-        ProductService.getProduct($stateParams.product_id)
-                      .then(function(data) {
-                            $scope.product = data;
-                      });
-    }
+    adminModule.lazy.controller('adminProductEditCtrl', function ($scope, $stateParams, adminProductService) {
 
+        
+        adminProductService.getCategoryAndStatus().then(function (data) {
+            $scope.cats = data.cat;
+            $scope.status = data.status;
+        });
+        //if exist product id
+        if ($stateParams.productId) {
+            adminProductService.getProduct($stateParams.productId)
+                          .then(function (data) {
+                              $scope.product = data;
+                          });
+        }
+
+    });
 });
+
+

@@ -1,8 +1,8 @@
-<div ng-controller="ProductEditCtrl" >
+<div ng-controller="adminProductEditCtrl" >
     <form name="form1" id="form1" method="post" action="?" enctype="multipart/form-data">
         <input type='hidden' id="image_key" name='image_key' value=''/>
         <input type="hidden" id="mode" name="mode" value="" />
-        <input type='hidden' name='product_id' value=''/>
+        <input type='hidden' ng-model="product.product_id" name='product_id' value='{{product.product_id}}'/>
         <div id="products" class="contents-main">
             <h2>Edit Product</h2>
             <table class="form">
@@ -14,68 +14,62 @@
                     <th>Name<span class="attention"> *</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="name" value="{{product.name}}" maxlength="100" style="" size="60" class="box60" />
+                        <input type="text" name="name" ng-model="product.name"  value="{{product.name}}" maxlength="100" style="" size="60" class="box60" />
                         <span class="attention"> (Max 100 Char)</span>
                     </td>
                 </tr>
                 <tr>
                     <th>Category<span class="attention"> *</span></th>
                     <td>
-                        <select ng-model="product.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
-                            <option>  </option>
-                        </select>
+    
+                            <select ng-model="product.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
+                                <option>  </option>
+                            </select>
                     </td>
                 </tr>
                 <tr>
                     <th>Status</th>
                     <td>
-
-                        <input type="checkbox" name="status_id" value="1"  New &nbsp;
-                        <input type="checkbox" name="status_id" value="2"  Sale&nbsp;
-                        <input type="checkbox" name="status_id" value="3"  Hot
+                         <span  ng-repeat="s in status">
+                            <input type="checkbox" checklist-model="product.status" checklist-value="s.status_id"> {{s.name}} &nbsp;
+                          </span>
                     </td>
                 </tr>
                 <tr>
                     <th>Price Standard</th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="price_standard" value="" style="" size="30" class="box30" />
+                        <input type="text" ng-model="product.price_standard" name="price_standard" value="{{product.price_standard}}" style="" size="30" class="box30" />
                     </td>
                 </tr>
                 <tr>
                     <th>Price Sale<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="price_sale" value="" style="" size="30" class="box30" />
+                        <input type="text" ng-model="product.price_sale" name="price_sale" value="{{product.price_sale}}" style="" size="30" class="box30" />
                     </td>
                 </tr>
                 <tr>
                     <th>Stock<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="stock" value="" style="" size="30" class="box30" />
+                        <input type="text" ng-model="product.stock" name="stock" value="{{product.stock}}" style="" size="30" class="box30" />
                     </td>
                 </tr>
 
                 <tr>
                     <th>Mode<span class="attention">*</span></th>
                     <td>
-                        <input type="radio" name="display_mode" value="1" >Public &nbsp;
-                        <input type="radio" name="display_mode" value="0"  >Private
+                        <input type="radio" ng-model="product.display_mode" name="display_mode" value="1" >Public &nbsp;
+                        <input type="radio" ng-model="product.display_mode" name="display_mode" value="0"  >Private
                     </td>
                 </tr>
-
-
-
-
-
-
 
                 <tr>
                     <th>Description</th>
                     <td>
                         <span class="attention"></span>
-                        <textarea name="description" cols="60" rows="8" class="area60" maxlength="1000" style=""></textarea><br />
+                        <textarea name="description" ng-model="product.description"  cols="60" rows="8" class="area60" maxlength="1000" style=""></textarea><br />
                         <span class="attention"> (Max 1000 Char)</span>
                     </td>
                 </tr>

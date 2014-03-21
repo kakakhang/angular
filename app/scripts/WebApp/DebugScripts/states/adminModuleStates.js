@@ -32,7 +32,8 @@ define(['config'], function () {
 				path: '/product',
                 templateUrl: eshopApp.config.viewDir + 'admin/product/index.html',
                 dependencies: [
-                    'controllers/admin/product/adminProductSearchCtrl'
+                    'controllers/admin/product/adminProductSearchCtrl',
+                    'directives/checklistModel'
                 ]
             },
 			'adminProductSearch': {
@@ -40,7 +41,8 @@ define(['config'], function () {
 				path: '/product/search',
                 templateUrl: eshopApp.config.viewDir + 'admin/product/index.html',
                 dependencies: [
-                    'controllers/admin/product/adminProductSearchCtrl'
+                    'controllers/admin/product/adminProductSearchCtrl',
+                     'directives/checklistModel'
                 ]
             },
 			'adminProductAdd': {
@@ -48,15 +50,17 @@ define(['config'], function () {
 				path: '/product/edit',
                 templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
                 dependencies: [
-                    'controllers/admin/product/ProductEditCtrl'
+                    'controllers/admin/product/adminProductEditCtrl',
+                     'directives/checklistModel'
                 ]
             },
 			'adminProductEdit': {
 				parent: 'admin',
-				path: '/product/edit/{product_id}',
+				path: '/product/edit/{productId}',
                 templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
                 dependencies: [
-                    'controllers/admin/product/ProductEditCtrl'
+                    'controllers/admin/product/adminProductEditCtrl',
+                     'directives/checklistModel'
                 ]
             }          
         }

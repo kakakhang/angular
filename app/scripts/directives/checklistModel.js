@@ -1,11 +1,12 @@
-/**
- * Created with JetBrains PhpStorm.
- * User: Administrator
- * Date: 3/15/14
- * Time: 9:22 PM
- * To change this template use File | Settings | File Templates.
- */
-eshopApp.directive('checklistModel', ['$parse', '$compile', function($parse, $compile) {
+"use strict";
+/*	this directive using AngularJS directive for list of checkboxes
+    http://http://vitalets.github.io/checklist-model/
+*/
+define(['adminModule'], function (adminModule) {
+
+    adminModule.lazy = adminModule.lazy || adminModule;
+
+    adminModule.lazy.directive('checklistModel', ['$parse', '$compile', function ($parse, $compile) {
         // contains
         function contains(arr, item) {
             if (angular.isArray(arr)) {
@@ -56,7 +57,7 @@ eshopApp.directive('checklistModel', ['$parse', '$compile', function($parse, $co
             var value = $parse(attrs.checklistValue)(scope.$parent);
 
             // watch UI checked change
-            scope.$watch('checked', function(newValue, oldValue) {
+            scope.$watch('checked', function (newValue, oldValue) {
                 if (newValue === oldValue) {
                     return;
                 }
@@ -69,7 +70,7 @@ eshopApp.directive('checklistModel', ['$parse', '$compile', function($parse, $co
             });
 
             // watch original model change
-            scope.$parent.$watch(attrs.checklistModel, function(newArr, oldArr) {
+            scope.$parent.$watch(attrs.checklistModel, function (newArr, oldArr) {
                 scope.checked = contains(newArr, value);
             }, true);
         }
@@ -79,7 +80,7 @@ eshopApp.directive('checklistModel', ['$parse', '$compile', function($parse, $co
             priority: 1000,
             terminal: true,
             scope: true,
-            compile: function(tElement, tAttrs) {
+            compile: function (tElement, tAttrs) {
                 if (tElement[0].tagName !== 'INPUT' || !tElement.attr('type', 'checkbox')) {
                     throw 'checklist-model should be applied to `input[type="checkbox"]`.';
                 }
@@ -98,3 +99,5 @@ eshopApp.directive('checklistModel', ['$parse', '$compile', function($parse, $co
             }
         };
     }]);
+});
+
