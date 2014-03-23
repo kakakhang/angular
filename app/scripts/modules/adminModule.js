@@ -7,7 +7,7 @@
 	if you were to try to register a new controller with an already bootstrapped --> through exception 
 	No need to load controller and service before define 
 */
-define( ['./modules/states/adminModuleStates', './services/dependencyResolver','config','helpers','angular','uiRouter'],
+define( ['./modules/states/adminModuleStates', './services/dependencyResolver','config','helpers','jquery','angular','uiRouter'],
     function (adminModuleStates, dependencyResolver) {
 		// Define module angular 
 		var adminModule = angular.module('adminModule', ['ui.router'] );
@@ -44,6 +44,7 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 		});
 	
 		adminModule.run( function( $rootScope, $location, $sce){
+			debugger;
 			// Build nav title base on config ex: Product > Search 
 			var navTitle = {};
 			eshopApp.helpers.buildNavTitleArray(eshopApp.config.navigationBarInfo,null,navTitle);
@@ -60,6 +61,7 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 			*     get navigation title of product/edit
 			*     replace  product/edit/3 to product/edit
 			*/
+			
 			$rootScope.$on('$stateChangeSuccess', function(event,toState,toParams,fromState, formParams){
 				var path = "#" + $location.path();
 				var patt1 = new RegExp("\/\\d+$","g");

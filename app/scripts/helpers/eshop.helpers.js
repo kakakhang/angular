@@ -41,7 +41,7 @@ String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
 		a =  ("<a href='{0}'><span>{1}</span></a>").format([node.url, node.text]),
 		result = $("<ul></ul>");
 		if(node.hasOwnProperty("childs")){
-			li = ("<li class='on-level{0}'></li>").format([level.toString()]);
+			li = ("<li class='on_level{0}'></li>").format([level.toString()]);
 			var ul = "<ul class='level{0}'></ul>".format([level.toString()]);;
 			result.append(li).find("li").append(a).append(ul);
 			var current_ul = result.find("ul");
@@ -73,12 +73,14 @@ String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
 				elementLi.append(ul);
 				var elementUl = elementLi.find("ul");
 				$(element.childs).each(function(){
-					var childHtml = eshopApp.helpers.renderNavBarElement($(this)[0],1);
+					var childHtml = eshopApp.helpers.renderNavBarElement($(this)[0],2);
 					elementUl.append(childHtml);
 				});
 			}
 		});
-		return "<ul id='navi' class='clearfix'>" + navBarBuilElements.html() + "</ul>";
+		
+		var scriptRegisterHoverEvent = "<script type='text/javascript'>$('#navi li').hover( function(){ $(this).addClass('sfhover');}, function(){$(this).removeClass('sfhover');});</script>";
+		return "<ul id='navi' class='clearfix'>" + navBarBuilElements.html() + "</ul>" + scriptRegisterHoverEvent;
 	},
 	/** Build Navigation Title
 	 *	

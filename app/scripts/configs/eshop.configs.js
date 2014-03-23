@@ -24,7 +24,17 @@
         childs: [
             {
                 url: "#/admin/product/search",
-                text: "Search Product"
+                text: "Search Product",
+				childs: [
+					{
+						url: "#/admin/product/search/conheo",
+						text: "Search Con1"
+					},
+					{
+						url: "#/admin/product/edit/conbeo",
+						text: "Search Con2"
+					}
+				]
             },
             {
                 url: "#/admin/product/edit",
@@ -38,7 +48,7 @@
     ];
 
 	//API host
-    config.apiEndPoint = 'http://192.168.194.11/angular/api';
+    config.apiEndPoint = 'http://localhost/angular/api';
 	
 	//View Directory
     config.viewDir = '/angular/app/views/';

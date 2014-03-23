@@ -578,8 +578,11 @@ a:hover {
 }
 
 
-/* ヘッダーナビ
+/* 
 ----------------------------------------------- */
+#navi-wrap {
+    width: 1030px;
+}
 #navi {
     z-index: 90;
     height: 29px;
@@ -705,7 +708,7 @@ a:hover {
 #navi li li a:hover span {
     background: #666;
 }
-
+/*
 #navi li.on li a, #navi li.on li a span, #navi li li.on a, #navi li li.on a span, {
     background: transparent;
 }
@@ -713,6 +716,23 @@ a:hover {
 #navi li.sfhover li a, #navi li.sfhover li a span, #navi li li.sfhover a, #navi li li.sfhover a span {
     background: transparent;
 }
+*/
+
+#navi li.on li a,
+#navi li.on li a span,
+#navi li li.on a,
+#navi li li.on a span,
+ {
+    background: transparent;
+}
+
+#navi li.sfhover li a,
+#navi li.sfhover li a span,
+#navi li li.sfhover a,
+#navi li li.sfhover a span {
+    background: transparent;
+}
+
 
 #navi li.sfhover li a:hover {
     background: url('../../images/admin/header/subnavi_bak_on.gif') top left no-repeat #474747;
@@ -731,7 +751,12 @@ a:hover {
     font-weight: normal;
 }
 
-#navi li li li, #navi li li a, #navi li li li a span {
+
+
+
+#navi li li li,
+#navi li li a,
+#navi li li li a span {
     margin-left: 0;
     display: block;
     width: 180px;
