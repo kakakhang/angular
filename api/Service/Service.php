@@ -87,10 +87,19 @@ class Service {
     function get_request(){
         return $this->slim->request();
     }
+    function isAjax(){
+        return $this->slim->request()->isAjax();
+    }
 
     function get_request_params(){
         $request = $this->slim->request();
         return json_decode($request->getBody());
+    }
+
+    function responseError(){
+        echo json_encode(array('status' => "ERROR"));
+        header('HTTP/1.1 500 Internal Server Error');
+        die();
     }
 
 	function run() {

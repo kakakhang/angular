@@ -79,11 +79,13 @@
                     <th>List Image<br />[100×100]</th>
                     <td>
 
-                        <img src="" style="width:100px;height:100px"/></br>
+                        <!--<img src="" style="width:100px;height:100px"/></br> -->
 
-                        <input type='hidden' name='list_image' value='' />
-                        <input type="file" name="f_list_image" size="40"/>
-                        <!--       <a class="btn-normal" href="javascript:;" name="btn" onclick="fnModeSubmit('upload_image', 'image_key', 'f_list_image'); return false;">Upload</a>  -->
+                            <input type='hidden' name='list_image' value='' />
+                            <input type="file"  id='list_image' name="f_list_image" size="40"/>
+                            <a class="btn-normal" href="javascript:;" ng-click="uploadImage()" name="btn" >Upload</a>
+
+
                     </td>
                 </tr>
                 <tr>

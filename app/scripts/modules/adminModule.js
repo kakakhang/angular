@@ -44,7 +44,6 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 		});
 	
 		adminModule.run( function( $rootScope, $location, $sce){
-			debugger;
 			// Build nav title base on config ex: Product > Search 
 			var navTitle = {};
 			eshopApp.helpers.buildNavTitleArray(eshopApp.config.navigationBarInfo,null,navTitle);

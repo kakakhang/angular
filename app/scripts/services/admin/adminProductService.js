@@ -30,9 +30,45 @@ define(['adminModule', 'config', 'helpers'], function (adminModule) {
             return defer.promise;
         };
 
+        //upload Image
+        var imageUpload = function(files){
+            var defer = $q.defer();
+            var data = new FormData();
+            data.append( 'file', files);
+            $.ajax({
+                url: eshopApp.config.apiEndPoint +'/uploadImage',
+                type: 'POST',
+                data: data,
+                cache: false,
+                dataType: 'json',
+                processData: false, // Don't process the files
+                contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+                success: function(data, textStatus, jqXHR)
+                {
+                    if(typeof data.error === 'undefined')
+                    {
+                        defer.resolve(data);
+                    }
+                    else
+                    {
+                        // Handle errors here
+                        defer.reject(data);
+                    }
+                },
+                error: function(jqXHR, textStatus, errorThrown)
+                {
+                    // Handle errors here
+                    defer.reject('ERRORS: ' + textStatus);
+                }
+            });
+            return defer.promise;
+        }
+
+
         return {            
             getCategoryAndStatus: getCategoryAndStatus,
-            getProduct: getProduct
+            getProduct: getProduct,
+            imageUpload: imageUpload
         };
 
     });

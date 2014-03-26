@@ -1,6 +1,6 @@
 <?php
 namespace Service\Implement;
-
+use Utils\ImageUpload;
 
 class Product extends Base {
 	function getProducts($start = 0,$limit = 100) {
@@ -133,5 +133,32 @@ class Product extends Base {
         $result = $this->objQuery->getAll($sql,$arrCondition);
         echo json_encode($result);
     }
+
+
+    function uploadImage(){
+        $this->objService->responseError();
+        //check if this is an ajax request
+        $isXHR = $this->objService->isAjax();
+        if (!$isXHR){
+            $this->objService->responseError();
+        }
+
+        // check $_FILES['file'] not empty
+        if(!isset($_FILES['file']) || !is_uploaded_file($_FILES['file']['tmp_name']))
+        {
+            die('Something wrong with uploaded file, something missing!'); // output error when above checks fail.
+        }
+
+        $image_upload = new ImageUpload($_FILES,'file');
+        $result = $image_upload->resizeImage();
+
+        if($result){
+            echo json_encode($image_upload->dest_rand_image_name);
+        }else{
+            $this->objService->responseError();
+        }
+    }
+
+
 }
 
