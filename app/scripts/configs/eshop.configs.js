@@ -49,7 +49,8 @@
 
 	//API host
     config.apiEndPoint = 'http://localhost/angular/api';
-	
+    //Image URI
+    config.imagePath = config.apiEndPoint + '/upload/';
 	//View Directory
     config.viewDir = '/angular/app/views/';
     

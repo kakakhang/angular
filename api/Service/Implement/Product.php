@@ -136,7 +136,6 @@ class Product extends Base {
 
 
     function uploadImage(){
-        $this->objService->responseError();
         //check if this is an ajax request
         $isXHR = $this->objService->isAjax();
         if (!$isXHR){
@@ -153,10 +152,15 @@ class Product extends Base {
         $result = $image_upload->resizeImage();
 
         if($result){
-            echo json_encode($image_upload->dest_rand_image_name);
+            echo json_encode($image_upload->new_image_name);
         }else{
             $this->objService->responseError();
         }
+    }
+
+    function deleteImage($image_name){
+        unlink(realpath("upload/")."/$image_name");
+        echo json_encode(array('status'=>'OK'));
     }
 
 

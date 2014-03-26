@@ -79,11 +79,12 @@
                     <th>List Image<br />[100×100]</th>
                     <td>
 
-                        <!--<img src="" style="width:100px;height:100px"/></br> -->
-
-                            <input type='hidden' name='list_image' value='' />
-                            <input type="file"  id='list_image' name="f_list_image" size="40"/>
-                            <a class="btn-normal" href="javascript:;" ng-click="uploadImage()" name="btn" >Upload</a>
+                        <img id="img_list_image" src="" style="width:100px;height:100px"/>
+                        <a  href="javascript:;" ng-click="deleteImage()" id="list_image_delete" >[Delete]</a>
+                        </br>
+                        <input type='hidden' id='list_image_input' name='list_image' value='' />
+                        <input type="file"  id='list_image' name="f_list_image" size="40"/>
+                        <a class="btn-normal" href="javascript:;" ng-click="uploadImage()" id='btn_list_image_upload' name="btn" >Upload</a>
 
 
                     </td>

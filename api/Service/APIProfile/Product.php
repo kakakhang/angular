@@ -31,7 +31,8 @@ class Product extends Base{
             new APIInfo('/product/:id', APIInfo::HTTP_DELETE, $this->obj, 'deleteProduct'),
             new APIInfo('/productSearchCondition', APIInfo::HTTP_GET, $this->obj, 'getProductSearchCondition'),
             new APIInfo('/product/search/:condition', APIInfo::HTTP_GET, $this->obj, 'getProductBySearchCondition'),
-            new APIInfo('/uploadImage', APIInfo::HTTP_POST, $this->obj, 'uploadImage'),
+            new APIInfo('/productImage', APIInfo::HTTP_POST, $this->obj, 'uploadImage'),
+            new APIInfo('/productImage/:imageName', APIInfo::HTTP_DELETE, $this->obj, 'deleteImage'),
         );
     }
 

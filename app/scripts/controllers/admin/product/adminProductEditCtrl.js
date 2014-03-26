@@ -5,6 +5,8 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy.controller('adminProductEditCtrl', function ($scope, $stateParams, $http,adminProductService) {
 
+        $('#img_list_image').hide();
+        $('#list_image_delete').hide();
         
         adminProductService.getCategoryAndStatus().then(function (data) {
             $scope.cats = data.cat;
@@ -17,25 +19,31 @@ define(['adminModule'], function (adminModule) {
                               $scope.product = data;
                           });
         }
+        console.log('image path: '+ eshopApp.config.imagePath);
         $scope.uploadImage = function(){
-            var data = new FormData();
-            data.append( 'file', $( '#list_image' )[0].files[0] );
-            debugger;
-            $.ajax({
-                url: eshopApp.config.apiEndPoint +'/uploadImage',
-                type: 'POST',
-                data: data,
-                cache: false,
-                dataType: 'json',
-                processData: false, // Don't process the files
-                contentType: false, // Set content type to false as jQuery will tell the server its a query string request
-                success: function(data, textStatus, jqXHR)
-                {
-                    console.log(data);
-                }
+            adminProductService.imageUpload($('#list_image')[0].files[0]).then(function(data){
+                $('#img_list_image').show();
+                $('#img_list_image').attr('src', eshopApp.config.imagePath + data);
+                $('#list_image_delete').show();
+                $('#list_image_input').val(data);
+                $('#list_image').hide();
+                $('#btn_list_image_upload').hide();
 
             });
-        }
+
+        };
+        $scope.deleteImage = function(){
+            adminProductService.deleteImage($('#list_image_input').val()).then(function(data){
+                $('#img_list_image').hide();
+                $('#img_list_image').attr('src', eshopApp.config.imagePath + data);
+                $('#list_image_delete').hide();
+                $('#list_image').show();
+                $('#btn_list_image_upload').show();
+
+            });
+
+        };
+
 
     });
 });

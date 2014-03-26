@@ -30,13 +30,26 @@ define(['adminModule', 'config', 'helpers'], function (adminModule) {
             return defer.promise;
         };
 
+        //delete Image
+        var deleteImage = function (imageName) {
+            var defer = $q.defer();
+            $http.delete(eshopApp.config.apiEndPoint + '/productImage/' + imageName)
+                .success(function (response) {
+                    defer.resolve(response);
+                })
+                .error(function (data) {
+                    defer.reject(data);
+                });
+            return defer.promise;
+        };
+
         //upload Image
         var imageUpload = function(files){
             var defer = $q.defer();
             var data = new FormData();
             data.append( 'file', files);
             $.ajax({
-                url: eshopApp.config.apiEndPoint +'/uploadImage',
+                url: eshopApp.config.apiEndPoint +'/productImage',
                 type: 'POST',
                 data: data,
                 cache: false,
@@ -68,7 +81,8 @@ define(['adminModule', 'config', 'helpers'], function (adminModule) {
         return {            
             getCategoryAndStatus: getCategoryAndStatus,
             getProduct: getProduct,
-            imageUpload: imageUpload
+            imageUpload: imageUpload,
+            deleteImage: deleteImage
         };
 
     });
