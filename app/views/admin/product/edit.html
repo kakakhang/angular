@@ -14,7 +14,7 @@
                     <th>Name<span class="attention"> *</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="name" ng-model="product.name"  value="{{product.name}}" maxlength="100" style="" size="60" class="box60" />
+                        <input type="text" name="name"    ng-model="product.name"  maxlength="100" style="" size="60" class="box60" />
                         <span class="attention"> (Max 100 Char)</span>
                     </td>
                 </tr>
@@ -39,21 +39,21 @@
                     <th>Price Standard</th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" ng-model="product.price_standard" name="price_standard" value="{{product.price_standard}}" style="" size="30" class="box30" />
+                        <input type="text" name="price_standard"  ng-model="product.price_standard"  style="" size="30" class="box30" />
                     </td>
                 </tr>
                 <tr>
                     <th>Price Sale<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" ng-model="product.price_sale" name="price_sale" value="{{product.price_sale}}" style="" size="30" class="box30" />
+                        <input type="text"  ng-model="product.price_sale"   name="price_sale" style="" size="30" class="box30" />
                     </td>
                 </tr>
                 <tr>
                     <th>Stock<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" ng-model="product.stock" name="stock" value="{{product.stock}}" style="" size="30" class="box30" />
+                        <input type="text" ng-model="product.stock"  name="stock"  style="" size="30" class="box30" />
                     </td>
                 </tr>
 
@@ -69,39 +69,23 @@
                     <th>Description</th>
                     <td>
                         <span class="attention"></span>
-                        <textarea name="description" ng-model="product.description"  cols="60" rows="8" class="area60" maxlength="1000" style=""></textarea><br />
+                        <textarea name="description" ng-model="product.description"  cols="60" rows="8" class="area60" maxlength="1000"></textarea><br />
                         <span class="attention"> (Max 1000 Char)</span>
                     </td>
                 </tr>
 
                 <tr>
-
-                    <th>List Image<br />[100×100]</th>
+                    <th>List Image <br />[100×100]</th>
                     <td>
-
-                        <img id="img_list_image" src="" style="width:100px;height:100px"/>
-                        <a  href="javascript:;" ng-click="deleteImage()" id="list_image_delete" >[Delete]</a>
-                        </br>
-                        <input type='hidden' id='list_image_input' name='list_image' value='' />
-                        <input type="file"  id='list_image' name="f_list_image" size="40"/>
-                        <a class="btn-normal" href="javascript:;" ng-click="uploadImage()" id='btn_list_image_upload' name="btn" >Upload</a>
-
-
+                        <image-upload image-src="{{test}}" img-width="100px" img-height="100px"/>
                     </td>
                 </tr>
                 <tr>
-
-                    <th>Main Image<br />[200×200]</th>
+                    <th>Main Image <br />[200×200]</th>
                     <td>
-
-                        <img src="" style="width:100px;height:100px"/></br>
-
-                        <input type='hidden' name='main_image' value='' />
-                        <input type="file" name="f_main_image" size="40" style="<!--{$arrErr[$key]|sfGetErrorColor}-->" />
-                        <!--    <a class="btn-normal" href="javascript:;" name="btn" onclick="fnModeSubmit('upload_image', 'image_key', 'f_main_image'); return false;">Upload</a>  -->
+                        <image-upload image-src="{{test}}" img-width="200px" img-height="200px"/>
                     </td>
                 </tr>
-
 
             </table>
 

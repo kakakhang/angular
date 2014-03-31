@@ -5,9 +5,45 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy.controller('adminProductEditCtrl', function ($scope, $stateParams, $http,adminProductService) {
 
-        $('#img_list_image').hide();
-        $('#list_image_delete').hide();
-        
+        //Show and hide image upload element
+        var showImageAndDeleteLink = function(imageSelector,imgName,linkSelector){
+            $(imageSelector).show();
+            $(imageSelector).attr('src', eshopApp.config.imagePath + imgName);
+            $(linkSelector).show();
+        };
+        var hideImageAndDeleteLink = function (imageSelector,linkSelector){
+            $(imageSelector).hide();
+            $(imageSelector).attr('src', '');
+            $(linkSelector).hide();
+        };
+        var showUploadImage = function(inputSelector,btnSelector){
+            $(inputSelector).show();
+            $(btnSelector).show();
+        };
+        var hideUploadImage = function(inputSelector,btnSelector){
+            $(inputSelector).hide();
+            $(inputSelector).val('').clone(true);
+            $(btnSelector).hide();
+        };
+        var initDisplayImage = function(imageName1,imageName2){
+
+            if(imageName1.length > 0){
+                showImageAndDeleteLink('#img_list_image',imageName1,'#list_image_delete');
+                hideUploadImage('#f_list_image','#btn_list_image_upload');
+            }else{
+                hideImageAndDeleteLink('#img_list_image','#list_image_delete');
+                showUploadImage('#f_list_image','#btn_list_image_upload');
+            }
+
+            if(imageName2.length > 0){
+                showImageAndDeleteLink('#img_main_image',imageName2,'#main_image_delete');
+                hideUploadImage('#f_main_image','#btn_main_image_upload');
+            }else{
+                hideImageAndDeleteLink('#img_main_image','#main_image_delete');
+                showUploadImage('#f_main_image','#btn_main_image_upload');
+            }
+        };
+
         adminProductService.getCategoryAndStatus().then(function (data) {
             $scope.cats = data.cat;
             $scope.status = data.status;
@@ -17,32 +53,37 @@ define(['adminModule'], function (adminModule) {
             adminProductService.getProduct($stateParams.productId)
                           .then(function (data) {
                               $scope.product = data;
+                              $scope.product.imageName1 = data.list_image;
+                              //initDisplayImage(data.list_image,data.main_image)
                           });
+        }else{
+           // initDisplayImage('','');
         }
-        console.log('image path: '+ eshopApp.config.imagePath);
-        $scope.uploadImage = function(){
-            adminProductService.imageUpload($('#list_image')[0].files[0]).then(function(data){
-                $('#img_list_image').show();
-                $('#img_list_image').attr('src', eshopApp.config.imagePath + data);
-                $('#list_image_delete').show();
-                $('#list_image_input').val(data);
-                $('#list_image').hide();
-                $('#btn_list_image_upload').hide();
 
+
+       $scope.uploadImage = function(inputElement,imageSelector,linkDeleteSelector,btnUploadSelector){
+
+            adminProductService.imageUpload($(inputElement)[0].files[0])
+                .then(function(data){
+                    showImageAndDeleteLink(imageSelector,data,linkDeleteSelector);
+                    hideUploadImage(inputElement,btnUploadSelector);
+                    $scope.product.list_image = data;
+                });
+        };
+
+
+        $scope.deleteImage = function(imageSelector,linkDeleteSelector,inputElement,btnUploadSelector){
+
+            adminProductService.deleteImage($scope.imageName).then(function(data){
+                hideImageAndDeleteLink(imageSelector,linkDeleteSelector);
+                showUploadImage(inputElement,btnUploadSelector);
             });
 
         };
-        $scope.deleteImage = function(){
-            adminProductService.deleteImage($('#list_image_input').val()).then(function(data){
-                $('#img_list_image').hide();
-                $('#img_list_image').attr('src', eshopApp.config.imagePath + data);
-                $('#list_image_delete').hide();
-                $('#list_image').show();
-                $('#btn_list_image_upload').show();
 
-            });
 
-        };
+
+
 
 
     });

@@ -159,7 +159,10 @@ class Product extends Base {
     }
 
     function deleteImage($image_name){
-        unlink(realpath("upload/")."/$image_name");
+        $image_path = realpath("upload/")."/$image_name";
+        if(file_exists($image_path)){
+            unlink($image_path);
+        }
         echo json_encode(array('status'=>'OK'));
     }
 
