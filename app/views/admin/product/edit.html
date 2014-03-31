@@ -73,20 +73,18 @@
                         <span class="attention"> (Max 1000 Char)</span>
                     </td>
                 </tr>
-
                 <tr>
                     <th>List Image <br />[100×100]</th>
                     <td>
-                        <image-upload image-src="{{test}}" img-width="100px" img-height="100px"/>
+                        <image-upload image-src="product.list_image" img-width="100px" img-height="100px"/>
                     </td>
                 </tr>
                 <tr>
                     <th>Main Image <br />[200×200]</th>
                     <td>
-                        <image-upload image-src="{{test}}" img-width="200px" img-height="200px"/>
+                        <image-upload image-src="product.main_image" img-width="200px" img-height="200px"/>
                     </td>
                 </tr>
-
             </table>
 
 
@@ -94,7 +92,7 @@
             <div class="btn-area">
                 <ul>
                     <li><a class="btn-action" href="javascript:;" onclick=""><span class="btn-prev">Reset Value</span></a></li>
-                    <li><a class="btn-action" href="javascript:;" onclick="s"><span class="btn-next">Confirm</span></a></li>
+                    <li><a class="btn-action" href="javascript:;" ng-click="changeToConfirmView()"><span class="btn-next">Confirm</span></a></li>
                 </ul>
             </div>
         </div>

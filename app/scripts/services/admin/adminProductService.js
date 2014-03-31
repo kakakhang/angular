@@ -5,6 +5,7 @@ define(['adminModule', 'config', 'helpers'], function (adminModule) {
     adminModule.lazy = adminModule.lazy || adminModule;
 
     adminModule.lazy.service('adminProductService', function ($http, $q) {
+        var productModel = {};
         //get category and status of all product
         var getCategoryAndStatus = function () {
             var defer = $q.defer();
@@ -75,14 +76,24 @@ define(['adminModule', 'config', 'helpers'], function (adminModule) {
                 }
             });
             return defer.promise;
-        }
+        };
+
+        var setProductModel = function(data){
+            productModel =  data;
+        };
+        var getProductModel = function(){
+            return productModel;
+        };
+
 
 
         return {            
             getCategoryAndStatus: getCategoryAndStatus,
             getProduct: getProduct,
             imageUpload: imageUpload,
-            deleteImage: deleteImage
+            deleteImage: deleteImage,
+            setProductModel: setProductModel,
+            getProductModel: getProductModel
         };
 
     });

@@ -4,9 +4,11 @@ define(['adminModule'], function (adminModule) {
     adminModule.lazy = adminModule.lazy || adminModule;
 
     adminModule.lazy.directive('imageUpload', function (adminProductService) {
+        //config path to image folfer
+        var imagePath = eshopApp.config.imagePath;
         //wrap div tag external to prevent parse template error. Template only allow inside single tag
         var template =  '<div>'+
-                        '   <img ng-src="{{imageSrc}}" style="width:{{imgWidth}};height:{{imgHeight}} "/> ' +
+                        '   <img ng-src="'+ imagePath +'{{imageSrc}}" style="width:{{imgWidth}};height:{{imgHeight}} "/> ' +
                         '   <a  href="javascript:;"  ng-click="deleteImage()">[Delete]</a>' +
                         '   </br>'+
                         '   <input type="file"  name="f_list_image2" size="40"/>' +
@@ -33,7 +35,7 @@ define(['adminModule'], function (adminModule) {
 
         return {
             scope: {
-                imageSrc: "@", // 1 way binding,
+                imageSrc: "=", // 2 way binding,
                 imgWidth: "@",
                 imgHeight: "@"
             }, //isolate scope
@@ -59,20 +61,14 @@ define(['adminModule'], function (adminModule) {
                 });
 
                 scope.deleteImage = function(){
-                    adminProductService.deleteImage(scope.imageSrc).then(function(data){
-                        hideImageAndDeleteLink(img, btnDelete);
-                        showUploadImage(file,btnUpload);
+                    adminProductService.deleteImage(scope.imageSrc).then(function(){
                         scope.imageSrc = '';
                     });
-
                 }
 
                 scope.uploadImage = function(){
-
                   adminProductService.imageUpload(file.files[0])
                         .then(function(data){
-                            showImageAndDeleteLink(img, data, btnDelete);
-                            hideUploadImage(file,btnUpload);
                             scope.imageSrc = data;
                         });
                 }

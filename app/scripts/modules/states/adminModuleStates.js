@@ -64,7 +64,15 @@ define(['config'], function () {
                     'directives/checklistModel',
                     'directives/imageUpload',
                 ]
-            }          
+            },
+            'adminProductConfirm': {
+                parent: 'admin',
+                path: '/product/confirm',
+                templateUrl: eshopApp.config.viewDir + 'admin/product/confirm.html',
+                dependencies: [
+                    'controllers/admin/product/adminProductConfirmCtrl',
+                ]
+            }
         }
     };
 });
