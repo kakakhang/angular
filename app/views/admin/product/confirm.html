@@ -1,3 +1,75 @@
-<input type='text'  ng-model="product.product_id"> </br>
-<input type='text'  ng-model="product.price_standard"> </br>
-<input type='text'  ng-model="product.price_sale"> </br>
+
+<div ng-controller="adminProductConfirmCtrl" id="products" class="contents-main">
+
+<table>
+    <tr>
+        <th>Product Name</th>
+        <td>
+            {{product.name}}
+        </td>
+    </tr>
+
+    <tr>
+        <th>Category</th>
+        <td>
+            {{product.name}}
+        </td>
+    </tr>
+
+    <tr>
+        <th>Product Status</th>
+        <td>
+
+        </td>
+    </tr>
+
+
+    <tr>
+        <th>Price Standard</th>
+        <td>{{product.price_standard}}</td>
+    </tr>
+
+    <tr>
+        <th>Price Sale</th>
+        <td>{{product.price_sale}}</td>
+    </tr>
+
+    <tr>
+        <th>Stock</th>
+        <td>{{product.stock}}</td>
+    </tr>
+
+    <tr>
+        <th>Display mode</th>
+        <td>{{product.display_mode}}</td>
+    </tr>
+
+    <tr>
+        <th>Description</th>
+        <td>{{product.description}}</td>
+    </tr>
+
+
+    <tr>
+        <th>List image</th>
+        <td>
+            <img ng-src="{{product.list_image}}" /><br />
+        </td>
+    </tr>
+
+    <tr>
+        <th>Main image</th>
+        <td>
+            <img ng-src="{{product.main_image}}" /><br />
+        </td>
+    </tr>
+</table>
+
+<div class="btn-area">
+    <ul>
+        <li><a class="btn-action" href="javascript:;"><span class="btn-prev">Edit</span></a></li>
+        <li><a class="btn-action" href="javascript:;"><span class="btn-next">Save</span></a></li>
+    </ul>
+</div>
+</div>
+

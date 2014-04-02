@@ -24,21 +24,16 @@
         childs: [
             {
                 url: "#/admin/product/search",
-                text: "Search Product",
-				childs: [
-					{
-						url: "#/admin/product/search/conheo",
-						text: "Search Con1"
-					},
-					{
-						url: "#/admin/product/edit/conbeo",
-						text: "Search Con2"
-					}
-				]
+                text: "Search Product"
             },
             {
                 url: "#/admin/product/edit",
                 text: "Edit Product"
+            },
+            {
+                url: "#/admin/product/confirm",
+                text: "Preview",
+                display: "none"
             }
         ]
     };

@@ -37,7 +37,10 @@ String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
 	 *	 @param level keep track node level 
 	 */
 	helpers.renderNavBarElement = function(node,level){
-		var li = "<li id='navi-contents-index'></li>",
+
+        var display = typeof node.display !== 'undefined' ? 'display:' + node.display : '';
+        debugger;
+		var li = ("<li id='navi-contents-index' style='{0}'></li>").format([display]),
 		a =  ("<a href='{0}'><span>{1}</span></a>").format([node.url, node.text]),
 		result = $("<ul></ul>");
 		if(node.hasOwnProperty("childs")){

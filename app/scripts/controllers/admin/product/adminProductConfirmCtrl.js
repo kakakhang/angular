@@ -7,6 +7,7 @@ define(['adminModule'], function (adminModule) {
 
 
         $scope.product = adminProductService.getProductModel();
+        debugger;
 
 
     });
