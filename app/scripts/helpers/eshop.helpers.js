@@ -39,7 +39,6 @@ String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
 	helpers.renderNavBarElement = function(node,level){
 
         var display = typeof node.display !== 'undefined' ? 'display:' + node.display : '';
-        debugger;
 		var li = ("<li id='navi-contents-index' style='{0}'></li>").format([display]),
 		a =  ("<a href='{0}'><span>{1}</span></a>").format([node.url, node.text]),
 		result = $("<ul></ul>");
@@ -103,6 +102,7 @@ String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
 			}
 		});
 	}
+
 
 }(window.eshopApp = window.eshopApp || {}, jQuery));
 

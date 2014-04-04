@@ -72,6 +72,14 @@ define(['config'], function () {
                 dependencies: [
                     'controllers/admin/product/adminProductConfirmCtrl',
                 ]
+            },
+            'adminProductComplete': {
+                parent: 'admin',
+                path: '/product/complete',
+                templateUrl: eshopApp.config.viewDir + 'admin/product/complete.html',
+                dependencies: [
+                    'controllers/admin/product/adminProductCompleteCtrl',
+                ]
             }
         }
     };

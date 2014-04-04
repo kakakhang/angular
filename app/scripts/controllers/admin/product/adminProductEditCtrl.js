@@ -17,10 +17,18 @@ define(['adminModule'], function (adminModule) {
                           .then(function (data) {
                               $scope.product = data;
                           });
+        }else{
+            var productTemp = adminProductService.getProductModel();
+            if( productTemp != null ){
+                $scope.product = productTemp;
+            }
         }
 
+        $scope.goToSearchForm = function(){
+            $location.path('/admin/product/search');
+        };
+
         $scope.changeToConfirmView = function(){
-            debugger;
             adminProductService.setProductModel($scope.product);
             var confirmUrl = '/admin/product/confirm';
             $location.path(confirmUrl);

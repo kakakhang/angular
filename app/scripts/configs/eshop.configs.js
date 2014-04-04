@@ -34,6 +34,11 @@
                 url: "#/admin/product/confirm",
                 text: "Preview",
                 display: "none"
+            },
+            {
+                url: "#/admin/product/complete",
+                text: "Complete",
+                display: "none"
             }
         ]
     };

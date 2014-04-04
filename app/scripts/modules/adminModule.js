@@ -13,7 +13,7 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 		var adminModule = angular.module('adminModule', ['ui.router'] );
 		// Set up configuration for module
 		adminModule.config( function(  $stateProvider, $controllerProvider, $compileProvider,
-									$filterProvider, $provide ) {
+									$filterProvider, $provide,$httpProvider) {
 			//lazy load controller & service & directive..
 			adminModule.lazy = {
 				controller: $controllerProvider.register,
@@ -41,6 +41,34 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 				url: "*path",
 				templateUrl: "views/error.html"
 			});
+
+            // alternatively, register the interceptor via an anonymous factory
+            // alternatively, register the interceptor via an anonymous factory
+            $httpProvider.interceptors.push(function($q) {
+                return {
+                    'request': function(config) {
+                      //  $('body').append('<div class="overlay"></div>');
+                        // do something on success
+                        console.log(config);
+                        if(config.headers.LoadOverlay == '1'){
+                            $('body').append('<div class="overlay"></div>');
+                        }
+                        return config || $q.when(config);
+                        // same as above
+                    },
+
+                    'response': function(response) {
+                        // same as above
+                        if(response.config.headers.LoadOverlay == '1'){
+                            $('.overlay').remove();
+                        }
+                     //   $('.overlay').remove();
+                        console.log(response);
+                        return response || $q.when(response);
+                    }
+                };
+            });
+
 		});
 	
 		adminModule.run( function( $rootScope, $location, $sce){
@@ -71,6 +99,8 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 					$rootScope.navTitle = navTitle[path];
 				}
 			});
+
+
 		});
 		
 		return adminModule;

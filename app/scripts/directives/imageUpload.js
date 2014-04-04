@@ -1,5 +1,5 @@
 "use strict";
-define(['adminModule'], function (adminModule) {
+define(['adminModule','jqueryLoadMask'], function (adminModule) {
 
     adminModule.lazy = adminModule.lazy || adminModule;
 
@@ -67,8 +67,10 @@ define(['adminModule'], function (adminModule) {
                 }
 
                 scope.uploadImage = function(){
+                  $(elem).mask("Uploading...");
                   adminProductService.imageUpload(file.files[0])
                         .then(function(data){
+                          $(elem).unmask();
                             scope.imageSrc = data;
                         });
                 }

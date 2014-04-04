@@ -13,7 +13,8 @@ define(['adminModule'], function (adminModule) {
 			/*$(document.body).mask("Loading...");*/
 			$http({
 				url: eshopApp.config.apiEndPoint + '/product/search/'+request,
-				method: "GET"
+				method: "GET",
+                headers: {'LoadOverlay': '1'}
 			}).success(function (data, status, headers, config) {
 					$scope.products = data;
 				/*	$(document.body).unmask();*/

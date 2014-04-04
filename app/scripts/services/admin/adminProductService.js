@@ -1,11 +1,11 @@
 "use strict";
 
-define(['adminModule', 'config', 'helpers'], function (adminModule) {
+define(['adminModule'], function (adminModule) {
 
     adminModule.lazy = adminModule.lazy || adminModule;
 
     adminModule.lazy.service('adminProductService', function ($http, $q) {
-        var productModel = {};
+        var productModel = null;
         //get category and status of all product
         var getCategoryAndStatus = function () {
             var defer = $q.defer();
@@ -21,7 +21,7 @@ define(['adminModule', 'config', 'helpers'], function (adminModule) {
         //get product by product id
         var getProduct = function (productId) {
             var defer = $q.defer();
-            $http.get(eshopApp.config.apiEndPoint + '/product/' + productId)
+            $http.get(eshopApp.config.apiEndPoint + '/product/' + productId,{headers: {'LoadOverlay': '1'}})
                 .success(function (response) {
                     defer.resolve(response);
                 })

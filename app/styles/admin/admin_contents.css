@@ -13,11 +13,14 @@ option {
 
 html {
     height: 100%;
+    min-height:100%;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    min-height:100%;
+   /* width: 100%;
+    height: 100%;*/
     background: #fff;
     font-family: "ＭＳ Ｐゴシック","Hiragino Maru Gothic Pro","ヒラギノ丸ゴ Pro W4",Osaka,sans-serif;
     font-size: 80%;
@@ -862,7 +865,7 @@ a:hover {
 }
 
 
-/* ページャ */
+
 #contents .pager ul {
     margin: 10px 0;
     list-style-type: none;
@@ -887,8 +890,7 @@ a:hover {
 }
 
 
-/* コンテンツ
------------------------------------------------ */
+
 * html div#container {
     position: relative;
     height: 100%;
@@ -936,8 +938,7 @@ body > #container {
 }
 
 
-/* ログイン
------------------------------------------------ */
+
 #login {
     margin: 0 auto;
     padding: 0;
@@ -1000,11 +1001,7 @@ body > #container {
 }
 
 
-/* エラーメッセージ
------------------------------------------------ */
 
-
-/*以下インストールページと共通■触るべからず*/
 
 #out-wrap {
     margin: 100px auto;
@@ -1028,7 +1025,7 @@ body > #container {
     background: url('../../images/admin/contents/login_back_top.jpg') bottom left no-repeat;
 }
 
-/*以上インストールページと共通■触るべからず*/
+
 
 
 #error .contents {
@@ -1064,8 +1061,7 @@ body > #container {
 }
 
 
-/* 完了メッセージ
------------------------------------------------ */
+
 #complete {
     margin: 40px 0 0 80px;
     width: 560px;
@@ -1117,8 +1113,6 @@ body > #container {
 }
 
 
-/* メインページ
------------------------------------------------ */
 #home-main {
     margin-right: 300px;
 }
@@ -1167,9 +1161,7 @@ body > #container {
 }
 
 
-/* 基本情報管理
------------------------------------------------ */
-/* 郵便番号DB登録 */
+
 .basis-zip-item {
     margin-bottom: 30px;
 }
@@ -1187,8 +1179,7 @@ body > #container {
 }
 
 
-/* 商品管理
------------------------------------------------ */
+
 #products-category-left, #products-rank-left {
     float: left;
     width: 285px;
@@ -1254,16 +1245,13 @@ body > #container {
 }
 
 
-/* 期間別集計
------------------------------------------------ */
+
 #graph-image {
     margin: 0 0 20px 0;
 }
 
 
-/* デザイン管理
------------------------------------------------ */
-/* レイアウト設定 */
+
 .design-layout {
     table-layout: fixed;
 }
@@ -1315,15 +1303,14 @@ body > #container {
 }
 
 
-/* コンテンツ管理
------------------------------------------------ */
+
 #contents-csv-sqltbl {
     margin-bottom: 40px;
 }
 
 
-/* フォーム
------------------------------------------------ */
+
+
 div.btn,p.remark {
     display: block;
     margin: 0 0 20px 0 !important;
@@ -1490,7 +1477,7 @@ div.btn,p.remark {
 }
 
 
-/* フロート解除 */
+
 .clearfix:after {
     display:block;
     clear:both;
@@ -1501,7 +1488,7 @@ div.btn,p.remark {
 }
 
 
-/* 権限 */
+
 x-dummy
 ,.authority_1 #navi-basis-masterdata
 ,.authority_1 #navi-contents-file
@@ -1510,7 +1497,7 @@ x-dummy
 ,.authority_1 #navi-design-add
 ,.authority_1 #navi-system
 ,.authority_1 #navi-ownersstore {
-/* display: none; --- IE で不具合 */
+
     border: none;
     width: 0;
     height: 0;
@@ -1519,20 +1506,19 @@ x-dummy
 }
 
 
-/* DnD並び替え系の設定 */
 tr.movingHandle td {
     background-color: #eee;
 }
 
 
-.dragHandle { /* ハンドルの設定 */
+.dragHandle {
     font-weight: bold;
     text-align: center;
     cursor: n-resize;
 }
 
 
-.activeHandle { /* アクティブハンドルの設定 */
+.activeHandle {
     color: #f9a406;
 }
 
@@ -1546,7 +1532,7 @@ table.layout, table.layout th, table.layout td {
 }
 
 
-/* ログ表示用 */
+
 .log td {
     padding-top: 0;
     padding-bottom: 0;
@@ -1558,7 +1544,7 @@ table.layout, table.layout th, table.layout td {
 }
 
 
-/* ポップアップ画面用 */
+
 body#popup {
     width: 100%;
 }
@@ -1582,7 +1568,7 @@ body#popup {
 }
 
 
-/*以下インストールページと共通■触るべからず*/
+
 
 #outside {
     margin:0 auto;
@@ -1631,7 +1617,7 @@ body#popup {
 }
 .loadmask-msg div {
     padding:5px 10px 5px 25px;
-    background: #fbfbfb url('../../images/admin/common/loading.gif') no-repeat 5px 5px;
+    background: #fbfbfb url('../../images/admin/common/loading-mini.gif') no-repeat 5px 5px;
     line-height: 16px;
     border:1px solid #a3bad9;
     color:#222;
@@ -1646,4 +1632,14 @@ body#popup {
 }
 .masked-hidden {
     visibility: hidden !important;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0,0,0,0.9)  url('../../images/admin/common/loading.gif') no-repeat 50% 40%;
 }
