@@ -6,10 +6,28 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy.service('adminProductService', function ($http, $q) {
         var productModel = null;
+        /* Search product by search condition
+        *  Params: object
+        */
+        var searchProduct = function(conditionParams){
+            var  jsonData = JSON.stringify(conditionParams),
+                 request  = encodeURIComponent(jsonData),
+                 defer    = $q.defer();
+            $http({
+                url: eshopApp.config.apiEndPoint + '/product/search/'+request,
+                method: "GET",
+                headers: {'LoadOverlay': '1'}
+            }).success(function (response) {
+                    defer.resolve(response);
+                }).error(function (data, status, headers, config) {
+                    defer.reject('data: '+ data + ' status: '+ status);
+                });
+            return defer.promise;
+        };
         //get category and status of all product
         var getCategoryAndStatus = function () {
             var defer = $q.defer();
-            $http.get(eshopApp.config.apiEndPoint + "/productSearchCondition")
+            $http.get(eshopApp.config.apiEndPoint + "/productSearchCondition",{ cache: true})
              .success(function (response) {
                  defer.resolve(response);
              })
@@ -30,7 +48,6 @@ define(['adminModule'], function (adminModule) {
                 });
             return defer.promise;
         };
-
         //delete Image
         var deleteImage = function (imageName) {
             var defer = $q.defer();
@@ -43,7 +60,6 @@ define(['adminModule'], function (adminModule) {
                 });
             return defer.promise;
         };
-
         //upload Image
         var imageUpload = function(files){
             var defer = $q.defer();
@@ -77,7 +93,7 @@ define(['adminModule'], function (adminModule) {
             });
             return defer.promise;
         };
-
+        //store temporary to pass through controller
         var setProductModel = function(data){
             productModel =  data;
         };
@@ -86,14 +102,55 @@ define(['adminModule'], function (adminModule) {
         };
 
 
+        var saveProduct = function (product, category, status){
+            var defer = $q.defer();
+            $http({
+                url: eshopApp.config.apiEndPoint + '/product',
+                method: 'POST',
+                data: product
+            }).success(function (response) {
+                    defer.resolve(response);
+                }).error(function (data, status, headers, config) {
+                    defer.reject('data: '+ data + ' status: '+ status);
+                });
+            return defer.promise;
+        };
 
-        return {            
+        var updateProduct = function (product, category, status){
+            var defer = $q.defer();
+            $http({
+                url: eshopApp.config.apiEndPoint + '/product/'+ product.product_id,
+                method: 'PUT',
+                data: product
+            }).success(function (response) {
+                    defer.resolve(response);
+                }).error(function (data, status, headers, config) {
+                    defer.reject('data: '+ data + ' status: '+ status);
+                });
+            return defer.promise;
+        };
+
+        var saveOrUpdateProduct = function(product, category, status){
+            debugger;
+            if(typeof product.product_id !== 'undefined' && product.product_id > 0){
+                return updateProduct(product, category, status);
+            }
+            return saveProduct(product, category, status);
+        }
+
+
+
+
+
+        return {
+            searchProduct: searchProduct,
             getCategoryAndStatus: getCategoryAndStatus,
             getProduct: getProduct,
             imageUpload: imageUpload,
             deleteImage: deleteImage,
             setProductModel: setProductModel,
-            getProductModel: getProductModel
+            getProductModel: getProductModel,
+            saveOrUpdateProduct: saveOrUpdateProduct
         };
 
     });

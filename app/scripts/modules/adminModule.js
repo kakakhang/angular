@@ -42,14 +42,13 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 				templateUrl: "views/error.html"
 			});
 
-            // alternatively, register the interceptor via an anonymous factory
-            // alternatively, register the interceptor via an anonymous factory
+
             $httpProvider.interceptors.push(function($q) {
                 return {
                     'request': function(config) {
                       //  $('body').append('<div class="overlay"></div>');
                         // do something on success
-                        console.log(config);
+                        //console.log(config);
                         if(config.headers.LoadOverlay == '1'){
                             $('body').append('<div class="overlay"></div>');
                         }
@@ -62,8 +61,8 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
                         if(response.config.headers.LoadOverlay == '1'){
                             $('.overlay').remove();
                         }
-                     //   $('.overlay').remove();
-                        console.log(response);
+                        //   $('.overlay').remove();
+                       // console.log(response);
                         return response || $q.when(response);
                     }
                 };

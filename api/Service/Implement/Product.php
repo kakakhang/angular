@@ -43,9 +43,9 @@ class Product extends Base {
 												$params->description,
 												$params->name,
 												$params->stock,
-												$params->create_date,
+                                                date('Y/m/d H:i:s'),
 												$params->update_date,
-												$params->delete_flg,
+												0,
 												$params->display_mode
 											)
 		);
@@ -65,8 +65,8 @@ class Product extends Base {
 										   		'name' => $params->name,
 										   		'stock' => $params->stock,
 										   		'price_standard' => $params->price_standard,
-										   		'update_date' => $params->update_date,
-										   		'delete_flg' => $params->delete_flg,
+										   		'update_date' => date('Y/m/d H:i:s'),
+										   		'delete_flg' => 0,
 										   		'display_mode' => $params->display_mode
 										   	),
 										   	'product_id = ?',

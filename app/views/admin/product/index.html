@@ -109,7 +109,7 @@
                     <tr ng-repeat="product in products">
                         <td>{{product.product_id}}</td>
                         <td>{{product.category_name}}</td>
-                        <td><img src="" style="width:100px;height:100px"/></td>
+                        <td><img ng-src="{{imagePath}}{{product.list_image}}" style="width:100px;height:100px"/></td>
                         <td>{{product.name}}</td>
                         <td class='right'>{{product.price_sale}}</td>
                         <td class='right'>{{product.stock}}</td>

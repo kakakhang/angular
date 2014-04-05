@@ -13,12 +13,13 @@ define(['adminModule'], function (adminModule) {
         $scope.editProduct = function(){
             $location.path('/admin/product/edit');
         };
+        $scope.imagePath = eshopApp.config.imagePath;
         //save
         $scope.saveProduct = function(){
-            //adminProductService.saveProduct()
-            //adminProductService.setProductModel(null);
-            var completeUrl = '/admin/product/complete';
-            $location.path(completeUrl);
+            adminProductService.saveOrUpdateProduct($scope.product).then(function(){
+                var completeUrl = '/admin/product/complete';
+                $location.path(completeUrl);
+            });
         };
 
 

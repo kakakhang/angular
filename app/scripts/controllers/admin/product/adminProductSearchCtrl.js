@@ -8,21 +8,11 @@ define(['adminModule'], function (adminModule) {
 		init();
 		//btn search click
 		$scope.search = function(){
-			var jsonData = JSON.stringify($scope.form);
-			var request = encodeURIComponent(jsonData);
-			/*$(document.body).mask("Loading...");*/
-			$http({
-				url: eshopApp.config.apiEndPoint + '/product/search/'+request,
-				method: "GET",
-                headers: {'LoadOverlay': '1'}
-			}).success(function (data, status, headers, config) {
-					$scope.products = data;
-				/*	$(document.body).unmask();*/
-			}).error(function (data, status, headers, config) {
-					console.log('data: '+ data + ' status: '+ status);
-			});
+              adminProductService.searchProduct($scope.form).then(
+                function(data){
+                    $scope.products = data;
+              });
 		};
-
 
 		function init(){
 		    adminProductService.getCategoryAndStatus()
@@ -31,6 +21,7 @@ define(['adminModule'], function (adminModule) {
 									$scope.status = data.status;
 								});
 			$scope.form = {};
+            $scope.imagePath = eshopApp.config.imagePath;
 			$scope.form.display_mode =1;
 			$scope.products = [];
 		};
