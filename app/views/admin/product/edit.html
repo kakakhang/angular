@@ -46,7 +46,7 @@
                     <th>Price Sale<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text"  ng-model="product.price_sale"   name="price_sale" style="" size="30" class="box30" />
+                        <input type="text"  ng-model="product.price_sale"  format-model='number' name="price_sale" style="" size="30" class="box30" />
                     </td>
                 </tr>
                 <tr>
@@ -83,6 +83,21 @@
                     <th>Main Image <br />[200×200]</th>
                     <td>
                         <image-upload image-src="product.main_image" img-width="200px" img-height="200px"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>test khang</th>
+                    <td>
+                       <!-- <div input-validation>
+                            <input  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="9" required/>
+                        </div>-->
+<!--                        <input input-validation  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="9" required/>-->
+                    </td>
+                </tr>
+                <tr>
+                    <th>test choiw</th>
+                    <td>
+                        {{form1.khang.$invalid}}
                     </td>
                 </tr>
             </table>

@@ -43,41 +43,41 @@ define(['adminModule','jqueryLoadMask'], function (adminModule) {
             replace: true, // specify that element in view will be replaced by directive template
             template : template,
             link : function(scope,elem,attrs){
-                var file = $('input',elem)[0],
-                    btnDelete = $('a',elem)[0],
-                    btnUpload = $('a',elem)[1],
-                    img = $('img',elem)[0];
+            var file = $('input',elem)[0],
+                btnDelete = $('a',elem)[0],
+                btnUpload = $('a',elem)[1],
+                img = $('img',elem)[0];
 
 
 
-                scope.$watch('imageSrc', function() {
-                    if(typeof scope.imageSrc !== 'undefined' && scope.imageSrc.length > 1){
-                        showImageAndDeleteLink(img, btnDelete);
-                        hideUploadImage(file,btnUpload);
-                    }else{
-                        hideImageAndDeleteLink(img,btnDelete);
-                        showUploadImage(file,btnUpload);
-                    }
+            scope.$watch('imageSrc', function() {
+                if(typeof scope.imageSrc !== 'undefined' && scope.imageSrc.length > 1){
+                    showImageAndDeleteLink(img, btnDelete);
+                    hideUploadImage(file,btnUpload);
+                }else{
+                    hideImageAndDeleteLink(img,btnDelete);
+                    showUploadImage(file,btnUpload);
+                }
+            });
+
+            scope.deleteImage = function(){
+                adminProductService.deleteImage(scope.imageSrc).then(function(){
+                    scope.imageSrc = '';
                 });
-
-                scope.deleteImage = function(){
-                    adminProductService.deleteImage(scope.imageSrc).then(function(){
-                        scope.imageSrc = '';
-                    });
-                }
-
-                scope.uploadImage = function(){
-                  $(elem).mask("Uploading...");
-                  adminProductService.imageUpload(file.files[0])
-                        .then(function(data){
-                          $(elem).unmask();
-                            scope.imageSrc = data;
-                        });
-                }
-
-
             }
-        };
+
+            scope.uploadImage = function(){
+                $(elem).mask("Uploading...");
+                adminProductService.imageUpload(file.files[0])
+                    .then(function(data){
+                        $(elem).unmask();
+                        scope.imageSrc = data;
+                    });
+            }
+
+
+        }
+    };
     });
 });
 

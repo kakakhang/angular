@@ -51,8 +51,10 @@ define(['config'], function () {
                 templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
                 dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
-                     'directives/checklistModel',
+                    'directives/checklistModel',
                     'directives/imageUpload',
+                    'directives/inputValidation',
+                    'directives/formatModel',
                 ]
             },
 			'adminProductEdit': {
@@ -63,6 +65,8 @@ define(['config'], function () {
                     'controllers/admin/product/adminProductEditCtrl',
                     'directives/checklistModel',
                     'directives/imageUpload',
+                    'directives/inputValidation',
+                    'directives/formatModel',
                 ]
             },
             'adminProductConfirm': {
