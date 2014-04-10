@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8146aee4-f2a8-4a88-a89f-ea68d74121ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/directives/formatModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/directives/inputValidation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/states/adminModuleStates.js" afterPath="$PROJECT_DIR$/app/scripts/modules/states/adminModuleStates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/admin/admin_contents.css" afterPath="$PROJECT_DIR$/app/styles/admin/admin_contents.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/product/edit.html" afterPath="$PROJECT_DIR$/app/views/admin/product/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/imageUpload.js" afterPath="$PROJECT_DIR$/app/scripts/directives/imageUpload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angular.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397090597281" ignored="false" />
+    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397093934062" ignored="false" />
     <file path="/ServiceAPI.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383987548828" ignored="false" />
     <file path="/index.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383988303375" ignored="false" />
     <file path="/BaseService.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383986461251" ignored="false" />
@@ -142,7 +136,7 @@
       <file leaf-file-name="formatModel.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/directives/formatModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="543" selection-end="543" vertical-scroll-proportion="0.40328467">
+            <state line="28" column="19" selection-start="974" selection-end="974" vertical-scroll-proportion="0.6849817">
               <folding>
                 <element signature="e#0#165#0" expanded="false" />
               </folding>
@@ -654,7 +648,11 @@
       <created>1396657432513</created>
       <updated>1396657432513</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="filter &amp; validation">
+      <created>1397093941250</created>
+      <updated>1397093941250</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -681,12 +679,13 @@
     <frame x="-4" y="-4" width="1374" height="746" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33052278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16526139" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22954546" sideWeight="0.5531197" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24318182" sideWeight="0.6722689" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29166666" sideWeight="0.6762226" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29166666" sideWeight="0.6762226" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -696,7 +695,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40809444" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33052278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16287878" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -744,7 +742,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add upload image service" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter &amp; validation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -764,6 +762,7 @@
     <MESSAGE value="search product" />
     <MESSAGE value="add service product" />
     <MESSAGE value="add upload image service" />
+    <MESSAGE value="filter &amp; validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,7 +882,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/formatModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="543" selection-end="543" vertical-scroll-proportion="0.40328467">
+        <state line="28" column="19" selection-start="974" selection-end="974" vertical-scroll-proportion="0.6849817">
           <folding>
             <element signature="e#0#165#0" expanded="false" />
           </folding>
