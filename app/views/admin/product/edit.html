@@ -53,7 +53,9 @@
                     <th>Stock<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" ng-model="product.stock"  name="stock"  style="" size="30" class="box30" />
+                        <input type="text"  ng-minlength="3" ng-maxlength="9" ng-model="product.stock"  name="stock"  style="" size="30" class="box30" />
+                        <span ng-show="form1.stock.$error.minlength && !form1.stock.$pristine" >nhap hon 3 </span>
+                        <span ng-show="form1.stock.$error.maxlength && !form1.stock.$pristine" >nhap hon 9 </span>
                     </td>
                 </tr>
 
@@ -88,16 +90,9 @@
                 <tr>
                     <th>test khang</th>
                     <td>
-                       <!-- <div input-validation>
-                            <input  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="9" required/>
-                        </div>-->
-<!--                        <input input-validation  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="9" required/>-->
-                    </td>
-                </tr>
-                <tr>
-                    <th>test choiw</th>
-                    <td>
-                        {{form1.khang.$invalid}}
+                        <div input-validation>
+                            <input  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="4" required  />
+                        </div>
                     </td>
                 </tr>
             </table>

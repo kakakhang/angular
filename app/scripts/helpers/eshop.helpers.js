@@ -102,6 +102,15 @@ String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
 			}
 		});
 	}
+    helpers.isNotUndefined = function(value){
+        return (typeof value !== 'undefined');
+    }
+    helpers.isEmpty = function isEmpty(str) {
+        return (!str || 0 === str.length);
+    }
+    helpers.isNotEmpty = function isEmpty(str) {
+        return !eshopApp.helpers.isEmpty(str)
+}
 
 
 }(window.eshopApp = window.eshopApp || {}, jQuery));
