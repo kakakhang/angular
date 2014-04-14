@@ -30,8 +30,7 @@ define(['adminModule'], function (adminModule) {
 
         $scope.changeToConfirmView = function(){
             adminProductService.setProductModel($scope.product);
-            var confirmUrl = '/admin/product/confirm';
-            $location.path(confirmUrl);
+            $location.path('/admin/product/confirm');
         }
 
 

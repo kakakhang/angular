@@ -9,11 +9,14 @@
 */
 define( ['./modules/states/adminModuleStates', './services/dependencyResolver','config','helpers','jquery','angular','uiRouter'],
     function (adminModuleStates, dependencyResolver) {
+
 		// Define module angular 
 		var adminModule = angular.module('adminModule', ['ui.router'] );
+
 		// Set up configuration for module
 		adminModule.config( function(  $stateProvider, $controllerProvider, $compileProvider,
 									$filterProvider, $provide,$httpProvider) {
+
 			//lazy load controller & service & directive..
 			adminModule.lazy = {
 				controller: $controllerProvider.register,
@@ -21,21 +24,26 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 				filter: $filterProvider.register,
 				factory: $provide.factory,
 				service: $provide.service
-			};			
+			};
+
 			// Config state for angular module
-			if ( adminModuleStates.states !== undefined ) {
+			if ( eshopApp.helpers.isNotUndefined( adminModuleStates.states ) ) {
 				angular.forEach( adminModuleStates.states, function( state, stateName ) {
+
 					var stateConfig = {	url : state.path,
 										templateUrl: state.templateUrl,
 										resolve: dependencyResolver(state.dependencies)
-									};
+									  };
+
 					//set parent state
-					if( state.parent !== undefined ) {
+					if( eshopApp.helpers.isNotUndefined( state.parent ) ) {
 					    stateConfig.parent = state.parent;
 					}
+
 					$stateProvider.state( stateName,stateConfig );
 				});
 			}
+
 			// Other path not in rule will show default page
 			$stateProvider.state( "otherwise", {
 				url: "*path",
@@ -71,6 +79,7 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 		});
 	
 		adminModule.run( function( $rootScope, $location, $sce){
+
 			// Build nav title base on config ex: Product > Search 
 			var navTitle = {};
 			eshopApp.helpers.buildNavTitleArray(eshopApp.config.navigationBarInfo,null,navTitle);
@@ -87,7 +96,6 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 			*     get navigation title of product/edit
 			*     replace  product/edit/3 to product/edit
 			*/
-			
 			$rootScope.$on('$stateChangeSuccess', function(event,toState,toParams,fromState, formParams){
 				var path = "#" + $location.path();
 				var patt1 = new RegExp("\/\\d+$","g");

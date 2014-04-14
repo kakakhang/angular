@@ -9,7 +9,13 @@ define(['config'], function () {
 				path : '/admin',
                 templateUrl: eshopApp.config.viewDir + 'admin/main_frame.html',				
                 dependencies: [
-                    'services/admin/adminProductService'
+                    'services/admin/adminProductService',
+                    'directives/validation/inputValidation',
+                    'directives/validation/minValue',
+                    'directives/validation/maxValue',
+                    'directives/validation/isNumber',
+                    'directives/formatModel',
+                    'directives/paging',
                 ]
             },
 			'adminLogin': {
@@ -52,9 +58,7 @@ define(['config'], function () {
                 dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
                     'directives/checklistModel',
-                    'directives/imageUpload',
-                    'directives/inputValidation',
-                    'directives/formatModel',
+                    'directives/imageUpload'
                 ]
             },
 			'adminProductEdit': {
@@ -64,9 +68,7 @@ define(['config'], function () {
                 dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
                     'directives/checklistModel',
-                    'directives/imageUpload',
-                    'directives/inputValidation',
-                    'directives/formatModel',
+                    'directives/imageUpload'
                 ]
             },
             'adminProductConfirm': {

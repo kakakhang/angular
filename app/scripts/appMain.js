@@ -8,8 +8,8 @@ require.config({
     paths: {
         jquery: ['../bower_components/jquery/jquery.min'],
         angular: ['../bower_components/angular/angular'],
-		uiRouter: ['../bower_components/angular-ui-router/release/angular-ui-router.min'],		
-		jqueryLoadMask : ['../bower_components/jquery-loadmask/jquery.loadmask.min'],
+		uiRouter: ['../bower_components/angular-ui-router/release/angular-ui-router.min'],
+        jqueryLoadMask : ['../bower_components/jquery-loadmask/jquery.loadmask.min'],
 		helpers: ['./helpers/eshop.helpers'],
         config: ['./configs/eshop.configs'],      
 		adminModule:['./modules/adminModule']
@@ -17,7 +17,7 @@ require.config({
     shim: {
 		"uiRouter":{
 			deps : ['angular']
-		},        
+		},
         'config': {
             deps: ['jquery']
         },

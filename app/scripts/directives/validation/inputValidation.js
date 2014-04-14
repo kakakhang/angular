@@ -5,22 +5,33 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy.directive('inputValidation', function ($compile) {
 
-        var isNotEmpty = eshopApp.helpers.isNotEmpty;
+        var isNotEmpty = eshopApp.helpers.isNotEmpty;                       //check if value is not empty
 
-        var isNotUndefined = eshopApp.helpers.isNotUndefined;
+        var isNotUndefined = eshopApp.helpers.isNotUndefined;               //check if object is not undefined
 
-        var errorWrapTpl = '<p ng-show="{0}" class="attention">{1}</p>';
+        var errorWrapTpl = '<p ng-show="{0}" ng-animate="\'animate-enter\'" class="attention">{1}</p>';    //template for error message
 
-        var errorType = { required: 1, minlength: 2, maxlength: 3 };
+        var errorType = { required: 1, minlength: 2, maxlength: 3, minvalue:4, maxvalue:5 , isnumber:6};        //error type
 
-        var validationType = ["required", "minlength","maxlength"];
+        var validationType = ["required", "minlength","maxlength", "minvalue", "maxvalue", "isnumber"];         //validation type
 
+        /* Build error message html tag base on User define message, Error type
+        *  Options: Attribute of input element include validation type, error message
+        *  options  = {
+        *       errormessage: ' {"required": "Required field"} ' ,
+        *       required: "",
+        *       minlength: "3",
+        *       maxlenght: "10"
+        *  }
+        * Result : html tag ex: <p ng-show="formName.inputName.$error.ERROR_TYPE" class="attention"> Error message is displayed</p>
+        * */
         var buildErrorMessgeTag = function (options,inputName) {
 
             var messages = {},
                 errorCondition = '',
                 resultTag = '';
 
+            //parse error message
             if(isNotEmpty(options.errormessage))
                 messages =  JSON.parse(options.errormessage);
 
@@ -38,6 +49,7 @@ define(['adminModule'], function (adminModule) {
             return resultTag;
         };
 
+        //Get default error message text
         var getErrorText = function(type,value) {
 
             switch (type) {
@@ -51,12 +63,22 @@ define(['adminModule'], function (adminModule) {
                 case errorType.maxlength:
                         return ("Maximum length is : {0}").format([value]);
 
+                case errorType.maxvalue:
+                    return ("Maximum value is : {0}").format([value]);
+
+                case errorType.minvalue:
+                    return ("Minimum value is : {0}").format([value]);
+
+                case errorType.isnumber:
+                    return "Value must be a number";
+
                 default :
                     return "";
             }
 
         };
 
+        //Get error condition related to error type
         var getErrorCondition = function(type,inputName) {
             switch (type) {
                 case errorType.required:
@@ -68,13 +90,22 @@ define(['adminModule'], function (adminModule) {
                 case errorType.maxlength:
                     return ("{0}.$error.maxlength && !{0}.$pristine ").format([inputName]);
 
+                case errorType.minvalue:
+                    return ("{0}.$error.minvalue && !{0}.$pristine ").format([inputName]);
+
+                case errorType.maxvalue:
+                    return ("{0}.$error.maxvalue && !{0}.$pristine ").format([inputName]);
+
+                case errorType.isnumber:
+                    return ("{0}.$error.isnumber && !{0}.$pristine ").format([inputName]);
+
                 default :
                     return ("{0}.$invalid && !{0}.$pristine").format([inputName]);
             }
         };
 
         var linker = function(scope,elem,attrs){
-
+            //find form name
            var  input       =   $('input',elem),
                 formName    =   $(input).parents().find('form').attr('name'),
                 inputName   =   formName+'.'+input.attr('name'),
@@ -90,14 +121,25 @@ define(['adminModule'], function (adminModule) {
             //buil error tag
             var errorTag = buildErrorMessgeTag(options, inputName);
 
-            //watch error
+            //watch error condition to notify
+
+
+
             scope.$watch(('{0}.$valid').format([inputName]), function (validity) {
+
                 if (validity)
                     $(input).removeClass('has-error');
                 else {
                     $(input).addClass('has-error');
                 }
             });
+
+            scope.$watch(('{0}.$pristine').format([inputName]),function(isPristine){
+                if (isPristine)
+                    $(input).removeClass('has-error');
+            });
+
+
 
             //recompile template
             var templateCompiled = angular.element($compile(errorTag)(scope));

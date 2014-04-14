@@ -82,39 +82,42 @@ class Product extends Base {
 
     function getProductBySearchCondition($condition){
         $params = json_decode(urldecode($condition));
-        $sql = "    Select  Product.*,
+        $select = "    Select  Product.*,
                             Product_Category.category_id,
                             m_category.category_name,
                             Product_Status.status_id,
-                            m_status.name as status_name
+                            m_status.name as status_name";
+
+        $from = "
                     From Product
                     Left Join Product_Category on Product.Product_id = Product_Category.Product_id
                     Left Join m_category on m_category.category_id = Product_Category.category_id
                     Left Join Product_Status on Product.Product_id = Product_Status.Product_id
                     Left Join m_status on m_status.status_id = Product_Status.status_id ";
+        $where = '';
         if(isset($params)){
-            $sql .= " Where 1=1 ";
+            $where .= " Where 1=1 ";
         }
         $arrCondition = array();
         if(isset($params->category_id) && strlen($params->category_id) > 0){
             $arrCondition[] = $params->category_id;
-            $sql .= " and Product_Category.category_id = ? ";
+            $where .= " and Product_Category.category_id = ? ";
         }
         if(isset($params->product_id) && strlen($params->product_id) > 0 ){
             $arrCondition[] = $params->product_id;
-            $sql .= "  and Product.product_id = ? ";
+            $where .= "  and Product.product_id = ? ";
         }
         if(isset($params->name) && strlen($params->name) > 0){
             $arrCondition[] = "%$params->name%";
-            $sql .= "  and Product.name LIKE ? ";
+            $where .= "  and Product.name LIKE ? ";
         }
         if(isset($params->price_sale_from) && strlen($params->price_sale_from) > 0){
             $arrCondition[] = $params->price_sale_from;
-            $sql .= "  and Product.price_sale >= ? ";
+            $where .= "  and Product.price_sale >= ? ";
         }
         if(isset($params->price_sale_to) && strlen($params->price_sale_to) > 0){
-            $arrCondition[] = $params->price_sale_from;
-            $sql .= "  and Product.price_sale <= ? ";
+            $arrCondition[] = $params->price_sale_to;
+            $where .= "  and Product.price_sale <= ? ";
         }
         if(isset($params->status) && count($params->status)> 0){
             $status_sql = "( ";
@@ -123,15 +126,27 @@ class Product extends Base {
                 $status_sql .= "Product_Status.status_id = ? or ";
             }
             $status_sql = substr($status_sql,0,strlen($status_sql)-3) . " )";
-            $sql .= " and $status_sql ";
+            $where .= " and $status_sql ";
         }
         if(isset($params->display_mode )){
             $arrCondition[] = $params->display_mode;
-            $sql .= "  and Product.display_mode = ? ";
+            $where .= "  and Product.display_mode = ? ";
+        }
+        if(isset($params->display_mode )){
+            $arrCondition[] = $params->display_mode;
+            $where .= "  and Product.display_mode = ? ";
         }
 
+        $sql = $select .$from . $where;
+
+        if(isset($params->currentPage) && isset($params->pageSize)){
+            $offset = $params->pageSize * ($params->currentPage - 1);
+            $sql .= "  LIMIT $params->pageSize OFFSET $offset";
+        }
+        $countSql = " Select count(*) as count $from  $where " ;
+        $rowCount = $this->objQuery->getOne($countSql,$arrCondition);
         $result = $this->objQuery->getAll($sql,$arrCondition);
-        echo json_encode($result);
+        echo json_encode(array('count'=>$rowCount->count,'products'=>$result));
     }
 
 

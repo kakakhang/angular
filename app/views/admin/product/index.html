@@ -58,14 +58,8 @@
                 </table>
                 <div>
                     <p class="page_rows">Rows/Page
-
-                        <select class="row_page" name="page" style="">
-
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                        </select>Rows</p>
+                        <select class="row_page" ng-model="form.pageSize" ng-options="p.value as p.text for p in pageSizes"></select>Rows
+                    </p>
 
                     <div class="btn-area">
                         <ul>
@@ -83,9 +77,17 @@
                 <input type="hidden" name="product_id" value="" />
                 <h2>Product List</h2>
                 <div>
-                    <span class="attention">{{products.length}}&nbsp;Rows</span>&nbsp;has found
+                    <span class="attention">{{form.total}}&nbsp;Rows</span>&nbsp;has found
                 </div>
 
+                <div class="pagination"
+                     paging
+                     page="form.currentPage"
+                     page-size="form.pageSize"
+                     ulClass=""
+                     paging-action="searchPageProducts('',page)"
+                     total="form.total">
+                </div>
                 <table class="list" id="products-search-result">
                     <col width="10%" />
                     <col width="10%" />

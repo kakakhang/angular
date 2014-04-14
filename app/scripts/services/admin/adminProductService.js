@@ -16,7 +16,6 @@ define(['adminModule'], function (adminModule) {
             $http({
                 url: eshopApp.config.apiEndPoint + '/product/search/'+request,
                 method: "GET",
-                headers: {'LoadOverlay': '1'}
             }).success(function (response) {
                     defer.resolve(response);
                 }).error(function (data, status, headers, config) {

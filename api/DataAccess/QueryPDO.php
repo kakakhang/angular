@@ -191,11 +191,11 @@ class QueryPDO implements \DataAccess\IQuery{
 	    }    	
     }
 
-    function getOne($sql, $arrval = array()) {
+    function getOne($sql, $arrval = array(),$fetch = \PDO::FETCH_OBJ) {
     	try {
 	    	$sth = $this->db->prepare($sql);	    	
 			$sth->execute($arrval);
-			$result = $sth->fetch();        
+			$result = $sth->fetch($fetch);
 	        return $result;	      		
     	}
     	catch (\PDOException $e){

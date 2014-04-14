@@ -22,15 +22,17 @@
                     <th>Category<span class="attention"> *</span></th>
                     <td>
     
-                            <select ng-model="product.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
+                            <select  ng-model="product.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
                                 <option>  </option>
                             </select>
+
+                        </select>
                     </td>
                 </tr>
                 <tr>
                     <th>Status</th>
                     <td>
-                         <span  ng-repeat="s in status">
+                         <span ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"  ng-repeat="s in status">
                             <input type="checkbox" checklist-model="product.status" checklist-value="s.status_id"> {{s.name}} &nbsp;
                           </span>
                     </td>
@@ -91,7 +93,8 @@
                     <th>test khang</th>
                     <td>
                         <div input-validation>
-                            <input  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="4" required  />
+                            <!--<input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="4" required  />-->
+                            <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" />
                         </div>
                     </td>
                 </tr>
