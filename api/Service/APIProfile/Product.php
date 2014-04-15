@@ -26,7 +26,7 @@ class Product extends Base{
             new APIInfo('/products', APIInfo::HTTP_GET, $this->obj, 'getProducts'),
             new APIInfo('/products/start/:start/limit/:limit', APIInfo::HTTP_GET, $this->obj, 'getProducts'),
             new APIInfo('/product/:id', APIInfo::HTTP_GET, $this->obj, 'getProduct'),
-            new APIInfo('/product', APIInfo::HTTP_POST, $this->obj, 'addroduct'),
+            new APIInfo('/product', APIInfo::HTTP_POST, $this->obj, 'addProduct'),
             new APIInfo('/product/:id', APIInfo::HTTP_PUT, $this->obj, 'updateProduct'),
             new APIInfo('/product/:id', APIInfo::HTTP_DELETE, $this->obj, 'deleteProduct'),
             new APIInfo('/productSearchCondition', APIInfo::HTTP_GET, $this->obj, 'getProductSearchCondition'),

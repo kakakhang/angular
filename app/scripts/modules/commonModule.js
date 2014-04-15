@@ -1,14 +1,7 @@
 "use strict";
-/*  Set up lazy 
-	In traditional way :
-				angular.module('app').controller('SomeLazyController', function($scope){
-					$scope.key = '...';
-				});
-	if you were to try to register a new controller with an already bootstrapped --> through exception 
-	No need to load controller and service before define 
-*/
-define( ['./modules/states/adminModuleStates', './services/dependencyResolver','config','helpers','jquery','angular','uiRouter'],
-    function (adminModuleStates, dependencyResolver) {
+
+define( ['config','helpers','jquery','angular'],
+    function () {
 
 		// Define module angular 
 		var adminModule = angular.module('adminModule', ['ui.router'] );
@@ -51,22 +44,27 @@ define( ['./modules/states/adminModuleStates', './services/dependencyResolver','
 			});
 
 
-            $httpProvider.interceptors.push(function() {
+            $httpProvider.interceptors.push(function($q) {
                 return {
                     'request': function(config) {
-
+                      //  $('body').append('<div class="overlay"></div>');
+                        // do something on success
+                        //console.log(config);
                         if(config.headers.LoadOverlay == '1'){
                             $('body').append('<div class="overlay"></div>');
                         }
-                        return config;
+                        return config || $q.when(config);
+                        // same as above
                     },
 
                     'response': function(response) {
-
+                        // same as above
                         if(response.config.headers.LoadOverlay == '1'){
-                            $( ".overlay" ).fadeOut( "slow");
+                            setTimeout(function(){$('.overlay').remove();},10000);
                         }
-                        return response;
+                        //   $('.overlay').remove();
+                       // console.log(response);
+                        return response || $q.when(response);
                     }
                 };
             });

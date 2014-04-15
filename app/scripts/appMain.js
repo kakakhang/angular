@@ -6,10 +6,10 @@ require.config({
     // Never includes a ".js" extension since
     // Paths config could be for a directory
     paths: {
-        jquery: ['../bower_components/jquery/jquery.min'],
-        angular: ['../bower_components/angular/angular'],
-		uiRouter: ['../bower_components/angular-ui-router/release/angular-ui-router.min'],
-        jqueryLoadMask : ['../bower_components/jquery-loadmask/jquery.loadmask.min'],
+        jquery: ['../lib/jquery/jquery.min'],
+        angular: ['../lib/angular/angular'],
+		uiRouter: ['../lib/angular-ui-router/release/angular-ui-router.min'],
+        jqueryLoadMask : ['../lib/jquery-loadmask/jquery.loadmask.min'],
 		helpers: ['./helpers/eshop.helpers'],
         config: ['./configs/eshop.configs'],      
 		adminModule:['./modules/adminModule']
@@ -18,6 +18,9 @@ require.config({
 		"uiRouter":{
 			deps : ['angular']
 		},
+        "angularUi":{
+            deps : ['angular']
+        },
         'config': {
             deps: ['jquery']
         },

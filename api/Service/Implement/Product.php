@@ -22,6 +22,14 @@ class Product extends Base {
 
 		$request = $this->objService->get_request();
 		$params = json_decode($request->getBody());
+        $price_standard = !empty($params->price_standard) ? $params->price_standard : null;
+        $price_sale = !empty($params->price_sale) ? $params->price_sale : null;
+        $list_image = !empty($params->list_image) ? $params->list_image : null;
+        $main_image = !empty($params->main_image) ? $params->main_image : null;
+        $description = !empty($params->description) ? $params->description : '';
+        $name = !empty($params->name) ? $params->name : '';
+        $stock = !empty($params->stock) ? $params->stock : null;
+
 		$result = $this->objQuery->insert(	'product',
 											'	price_standard,
 												price_sale,
@@ -36,15 +44,15 @@ class Product extends Base {
 												display_mode
 											',
 											array(
-												$params->price_standard,
-												$params->price_sale,
-												$params->list_image,
-												$params->main_image,
-												$params->description,
-												$params->name,
-												$params->stock,
+                                                $price_standard,
+                                                $price_sale,
+                                                $list_image,
+												$main_image,
+												$description,
+												$name,
+												$stock,
                                                 date('Y/m/d H:i:s'),
-												$params->update_date,
+                                                date('Y/m/d H:i:s'),
 												0,
 												$params->display_mode
 											)
@@ -151,6 +159,7 @@ class Product extends Base {
 
 
     function uploadImage(){
+        $this->objService->responseError();
         //check if this is an ajax request
         $isXHR = $this->objService->isAjax();
         if (!$isXHR){

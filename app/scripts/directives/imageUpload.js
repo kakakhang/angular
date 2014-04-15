@@ -82,12 +82,22 @@ define(['adminModule','jqueryLoadMask'], function (adminModule) {
 
                 //upload image. Show loading mask while uploading
                 scope.uploadImage = function(){
-                    $(elem).mask("Uploading...");
+                    if(eshopApp.helpers.isNotUndefined( file.files[0])) {
 
-                    adminProductService.imageUpload( file.files[0] ).then(function(data){
-                        $(elem).unmask();
-                        scope.imageSrc = data;
-                    });
+                        $(elem).mask("Uploading...");
+
+                        adminProductService.imageUpload( file.files[0] ).then(
+                            function(data){
+                                $(elem).unmask();
+                                scope.imageSrc = data;
+                            },
+                            function(error){
+                                console.log('upload error: '+ error);
+                                $(elem).unmask();
+                                scope.imageSrc = '';
+                            }
+                        );
+                    }
                 }
             }
     };
