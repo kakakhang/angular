@@ -12,7 +12,10 @@ require.config({
         jqueryLoadMask : ['../lib/jquery-loadmask/jquery.loadmask.min'],
 		helpers: ['./helpers/eshop.helpers'],
         config: ['./configs/eshop.configs'],      
-		adminModule:['./modules/adminModule']
+        adminModule: ['./modules/adminModule'],
+        interceptors: ['./modules/interceptors/interceptors'],
+        commonModule: ['./modules/commonModule'],
+        directiveDefinition: ['./directives/directiveDefinition'],
     },
     shim: {
 		"uiRouter":{
