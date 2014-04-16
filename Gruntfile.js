@@ -12,14 +12,42 @@ module.exports = function(grunt) {
 		
 	 */
 	copy: {
-	  build: {
+       main: {
+            files: [
+                {expand: true, cwd: 'app/',src: ['*'], dest: 'build/',filter: 'isFile'},
+                {expand: true, cwd: 'app/',src: ['images/**/*'], dest: 'build/'},
+                {expand: true, cwd: 'app/',src: ['views/**/*'], dest: 'build/'},
+                {expand: true, cwd: 'app/',src: ['lib/requirejs/require.js'], dest: 'build/'},
+                // includes files within path
+                {expand: true,cwd: 'app/', src: ['scripts/controllers/**/*'], dest: 'build/'},
+
+                // flattens results to a single level
+                {expand: true, cwd: 'app/',src: ['scripts/services/**/*'], dest: 'build/'},
+                {expand: true, cwd: 'app/',src: ['scripts/directives/imageUpload.js'], dest: 'build/'},
+            ],
+        },
+        main8: {
+            cwd: 'app/',
+            src: 'index.html',
+            dest: 'build/',
+            options: {
+                process: function (content, srcpath) {
+                    return content.replace(/scripts\/appMain/gi,"application");
+                }
+            },
+            expand:true
+        },
+
+
+/*
+        build: {
 		cwd: 'app',
 		src: [ '**' ],
 		dest: 'build',
 		expand: true
-	  },
+	  },*/
 	},
-	
+
 	clean: {
 	  build: {
 		src: [ 'build' ]
@@ -98,11 +126,12 @@ module.exports = function(grunt) {
 	  'Compiles the stylesheets.', 
 	  [ 'cssmin' ]
 	);
+
 	
 	grunt.registerTask(
 	  'build', 
 	  'Compiles all of the assets and copies the files to the build directory.', 
-	  [ 'clean', 'copy','stylesheets','requirejs' ]
+	  [ 'clean', 'copy' ]
 	);
  
 	// define the tasks
