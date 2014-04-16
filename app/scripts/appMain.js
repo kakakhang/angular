@@ -21,8 +21,8 @@ require.config({
 		"uiRouter":{
 			deps : ['angular']
 		},
-        "angularUi":{
-            deps : ['angular']
+		"jqueryLoadMask": {
+		    deps: ['jquery']
         },
         'config': {
             deps: ['jquery']

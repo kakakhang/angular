@@ -1,6 +1,6 @@
 "use strict";
 
-define(['directiveDefinition', 'config', 'helpers', 'jquery', 'angular'],
+define(['directiveDefinition', 'config', 'helpers', 'jquery', 'angular', 'jqueryLoadMask'],
     function (directiveDefinition) {
 
 		// Define module angular 
