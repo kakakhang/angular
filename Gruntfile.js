@@ -12,40 +12,47 @@ module.exports = function(grunt) {
 		
 	 */
 	copy: {
-       main: {
+		main: {
             files: [
                 {expand: true, cwd: 'app/',src: ['*'], dest: 'build/',filter: 'isFile'},
                 {expand: true, cwd: 'app/',src: ['images/**/*'], dest: 'build/'},
                 {expand: true, cwd: 'app/',src: ['views/**/*'], dest: 'build/'},
-                {expand: true, cwd: 'app/',src: ['lib/requirejs/require.js'], dest: 'build/'},
+				// flattens results to a single level
+                {expand: true, cwd: 'app/',src: ['lib/requirejs/require.js'], dest: 'build/', flatten: true},
                 // includes files within path
-                {expand: true,cwd: 'app/', src: ['scripts/controllers/**/*'], dest: 'build/'},
-
-                // flattens results to a single level
+                {expand: true,cwd: 'app/', src: ['scripts/controllers/**/*'], dest: 'build/'},                
                 {expand: true, cwd: 'app/',src: ['scripts/services/**/*'], dest: 'build/'},
                 {expand: true, cwd: 'app/',src: ['scripts/directives/imageUpload.js'], dest: 'build/'},
             ],
         },
-        main8: {
-            cwd: 'app/',
-            src: 'index.html',
-            dest: 'build/',
+        replaceDataMain: { expand:true, cwd: 'app/', src: 'index.html', dest: 'build/',
             options: {
-                process: function (content, srcpath) {
+                processContent: function (content, srcpath) {				
+					content = content.replace(/\.\/lib\/requirejs\/require.js/gi,"require.js");
                     return content.replace(/scripts\/appMain/gi,"application");
                 }
-            },
-            expand:true
+            },            
         },
-
-
-/*
-        build: {
-		cwd: 'app',
-		src: [ '**' ],
-		dest: 'build',
-		expand: true
-	  },*/
+		replaceCss: { expand:true, cwd: 'build/', src: 'application.css', dest: 'build/',
+            options: {
+                processContent: function (content, srcpath) {				
+                    return content.replace(/\.\.\/\.\.\/images/gi,"images");
+                }
+            },            
+        },		
+	},
+	
+	processhtml: {
+		options: {
+		  data: {
+			message: 'Replace link and script to production link'
+		  }
+		},
+		dist: {
+		  files: {
+			'build/index.html': ['build/index.html']
+		  }
+		}
 	},
 
 	clean: {
@@ -57,7 +64,7 @@ module.exports = function(grunt) {
 	cssmin: {
 	  build: {
 		files: {
-		  'build/styles/application.css': [ 'build/styles/**/*.css' ]
+		  'build/application.css': [ 'app/styles/**/*.css' ]
 		}
 	  }
 	},
@@ -68,7 +75,7 @@ module.exports = function(grunt) {
 				// name is required
 				name: "appMain",
 				// the base path of our optimization
-				baseUrl: "./build/scripts",
+				baseUrl: "./app/scripts",
 				paths: {
 					jquery: '../lib/jquery/jquery.min',
 					angular: '../lib/angular/angular.min',
@@ -100,12 +107,12 @@ module.exports = function(grunt) {
 				//include: "../lib/almond-0.2.5",
 				// use our original main configuration file to avoid
 				// duplication.  this file will pull in all our dependencies
-				mainConfigFile: "build/scripts/appMain.js",
-				optimize: "none",
+				mainConfigFile: "app/scripts/appMain.js",
+				//optimize: "none",
 				inlineText: true,
 				removeCombined: true,
 				// the output optimized file name
-				out: "build/scripts/application.js"
+				out: "build/application.js"
 			}
 		}
 	}
@@ -117,21 +124,21 @@ module.exports = function(grunt) {
 	// run by typing grunt copy
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks("grunt-contrib-requirejs");
+	grunt.loadNpmTasks('grunt-processhtml');
+	
 	// define the tasks
 	grunt.registerTask(
 	  'stylesheets', 
 	  'Compiles the stylesheets.', 
 	  [ 'cssmin' ]
 	);
-
 	
 	grunt.registerTask(
 	  'build', 
 	  'Compiles all of the assets and copies the files to the build directory.', 
-	  [ 'clean', 'copy' ]
+	  [ 'clean', 'copy','processhtml','stylesheets','copy:replaceCss','requirejs']
 	);
  
 	// define the tasks

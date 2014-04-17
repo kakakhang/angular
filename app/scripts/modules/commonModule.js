@@ -1,11 +1,20 @@
 "use strict";
 
-define(['directiveDefinition', 'config', 'helpers', 'jquery', 'angular', 'jqueryLoadMask'],
+define(['directiveDefinition', 'interceptors', 'config', 'helpers', 'jquery', 'angular', 'jqueryLoadMask'],
     function (directiveDefinition) {
 
 		// Define module angular 
-        var commonModule = angular.module('commonModule', []);
-        debugger;
+        var commonModule = angular.module('commonModule', ['ng']);
+       
+ /*       var FAA = function (a,b) {
+            console.log(a);
+            console.log(b);
+        };
+        FAA.$inject = ["$provide","$controllerProvider"];
+        
+        // Set up configuration for module
+        commonModule.config(FAA);*/
+       
         commonModule.directive('formatModel', directiveDefinition.common.formatModel);
         commonModule.directive('paging', directiveDefinition.common.paging);
         commonModule.directive('checklistModel', directiveDefinition.common.checkListModel);
