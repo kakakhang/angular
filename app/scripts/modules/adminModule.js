@@ -7,18 +7,18 @@
 	if you were to try to register a new controller with an already bootstrapped --> through exception 
 	No need to load controller and service before define 
 */
-
 define(['./modules/states/adminModuleStates',
         './services/dependencyResolver',
         'interceptors',
         'uiRouter',
         'commonModule'],
     function (adminModuleStates, dependencyResolver, interceptors) {
-
 		// Define module angular 
         var adminModule = angular.module('adminModule', ['ng','ui.router', 'commonModule']);
 
-
+        /**
+         * function to load a given css file
+        */
         var moduleConfiguration = function($stateProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $httpProvider) {
 
             //lazy load controller & service & directive..
@@ -57,6 +57,7 @@ define(['./modules/states/adminModuleStates',
 
             //Register interceptors
             $httpProvider.interceptors.push(interceptors.loadingOverlay);
+
         };
         moduleConfiguration.$inject = ["$stateProvider", "$controllerProvider", "$compileProvider", "$filterProvider", "$provide", "$httpProvider"];
 

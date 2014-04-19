@@ -94,20 +94,22 @@
                     <th>test khang</th>
                     <td>
                         <div input-validation>
-                            <!--<input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="4" required  />-->
-                            <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" />
+                          <!--  <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="4" required  />-->
+                           <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" />
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <th>test khang</th>
                     <td>
-                        <select id="e1">
-                            <option value="AL">Alabama</option>
-                            <option value="Ao">ALo</option>
-                            <option value="Ai">Ala</option>
-                            <option value="At">Ama</option>
-                            <option value="W">Wyoming</option>
+                        <div input-validation>
+                            <input type='text' required  ui-date-format="DD, d MM, yy" ng-model="myDate" ui-date="dateOptions" name="DateOfBirth">
+
+                        </div>
+                        <select ui-select2 ng-model="select2">
+                            <option value="one">Firstdddddddddddd</option>
+                            <option value="two">dddddddddddddddddd</option>
+                            <option value="three">Thirdvvvvvvvvvvvv</option>
                         </select>
                     </td>
                 </tr>

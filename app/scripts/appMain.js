@@ -7,22 +7,38 @@ require.config({
     // Paths config could be for a directory
     paths: {
         jquery: ['../lib/jquery/jquery.min'],
+        jqueryUi: ['../lib/jquery-ui/ui/jquery-ui'],
         angular: ['../lib/angular/angular'],
-		uiRouter: ['../lib/angular-ui-router/release/angular-ui-router.min'],
+        angularUiDate : ['../lib/angular-ui-date/src/date'],
+        angularUiSelect2 : ['../lib/angular-ui-select2/src/select2'],
+        select2 : ['../lib/select2/select2.min'],
+        uiRouter: ['../lib/angular-ui-router/release/angular-ui-router.min'],
         jqueryLoadMask : ['../lib/jquery-loadmask/jquery.loadmask.min'],
-		helpers: ['./helpers/eshop.helpers'],
-        config: ['./configs/eshop.configs'],      
+        helpers: ['./helpers/eshop.helpers'],
+        config: ['./configs/eshop.configs'],
         adminModule: ['./modules/adminModule'],
         interceptors: ['./modules/interceptors/interceptors'],
         commonModule: ['./modules/commonModule'],
         directiveDefinition: ['./directives/directiveDefinition'],
     },
     shim: {
-		"uiRouter":{
-			deps : ['angular']
-		},
-		"jqueryLoadMask": {
-		    deps: ['jquery']
+        "angular":{
+            deps : ['jquery']
+        },
+        "uiRouter":{
+            deps : ['angular']
+        },
+        "jqueryUi":{
+            deps : ['jquery']
+        },
+        "angularUiDate":{
+            deps : ['jqueryUi','angular']
+        },
+        "angularUiSelect2":{
+            deps : ['jquery','select2','angular']
+        },
+        "jqueryLoadMask": {
+            deps: ['jquery']
         },
         'config': {
             deps: ['jquery']
@@ -35,5 +51,5 @@ require.config({
 
 require(['adminModule'], function () {
 	// Manual boostrapp application 
-    angular.bootstrap(document, ['adminModule']);  
+    angular.bootstrap(document, ['adminModule']);
 });

@@ -10,6 +10,7 @@ define(['adminModule'], function (adminModule) {
         adminProductService.getCategoryAndStatus().then(function (data) {
             $scope.cats = data.cat;
             $scope.status = data.status;
+
         });
         //if exist product id
         if ($stateParams.productId) {
@@ -32,8 +33,16 @@ define(['adminModule'], function (adminModule) {
             adminProductService.setProductModel($scope.product);
             $location.path('/admin/product/confirm');
         }
-
-
+        $scope.dateOptions = {
+            changeYear: true,
+            changeMonth: true,
+            showButtonPanel: true,
+            yearRange: '1900:-0'
+        };
+        $scope.select2Options = {
+            allowClear:true
+        };
+        $scope.myDate = "Thursday, 11 October, 2012";
 
 
 

@@ -31,7 +31,7 @@ String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
 
 (function(parent, $, undefined) {
     var helpers = parent.helpers = parent.helpers || {};
-	
+	console.log('helpers load');
 	/**  Render node HMTL. Find all childs node to render recursively
 	 *   @param node  element render 
 	 *	 @param level keep track node level 
