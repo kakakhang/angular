@@ -14,7 +14,7 @@
                     <th>Name<span class="attention"> *</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="name"    ng-model="product.name"  maxlength="100" style="" size="60" class="box60" />
+                        <input type="text" name="name"  required  ng-model="product.name"  maxlength="100" style="" size="60" class="box60" />
                         <span class="attention"> (Max 100 Char)</span>
                     </td>
                 </tr>
@@ -93,30 +93,46 @@
                 <tr>
                     <th>test khang</th>
                     <td>
-                        <div input-validation>
+
                           <!--  <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="4" required  />-->
-                           <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" />
+                        <div input-validation>
+                        <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" />
                         </div>
+
                     </td>
                 </tr>
                 <tr>
                     <th>test khang</th>
                     <td>
-                        <div input-validation>
-                            <input type='text' required  ui-date-format="DD, d MM, yy" ng-model="myDate" ui-date="dateOptions" name="DateOfBirth">
 
+                        <div ngh-transclude-element="2" style="background-color: lightyellow;">
+                            <h4>[Yellow is the transcluded content]</h4>
+                            <label>Scope variable: <input type="text" ng-model="scopeVar"/></label><br />
+                            <br />
+                            <strong>Scope ID:</strong> {{$id}}<br />
+                            <strong>Parent scope ID:</strong> {{$parent.$id}}<br />
+                            <strong>Scope variable:</strong> {{scopeVar}}<br />
                         </div>
-                        <select ui-select2 ng-model="select2">
-                            <option value="one">Firstdddddddddddd</option>
-                            <option value="two">dddddddddddddddddd</option>
-                            <option value="three">Thirdvvvvvvvvvvvv</option>
-                        </select>
+
+                        <!--    <input test type='text' required  ui-date-format="DD, d MM, yy" ng-model="myDate" ui-date="dateOptions" name="DateOfBirth">-->
+                        <div test> 1+1 +1= {{1+1+1}} </div>
+                        <input test type='text' ng-model="kk"/>
+<!--                        <div input-validation>
+                        <input type="hidden"
+                                name="testkhang"
+                                ui-select2="select2Options"
+                                ng-model="$parent.list_of_string"
+                                ng-required="true"
+                                >
+                        </div>-->
+
                     </td>
                 </tr>
             </table>
 
             <div class="btn-area">
                 <ul>
+                    <li><a class="btn-action" href="javascript:;" ng-click="test()"><span class="btn-prev">test</span></a></li>
                     <li><a class="btn-action" href="javascript:;" ng-click="goToSearchForm()"><span class="btn-prev">Search</span></a></li>
                     <li><a class="btn-action" href="javascript:;" ng-click="changeToConfirmView()"><span class="btn-next">Preview</span></a></li>
                 </ul>

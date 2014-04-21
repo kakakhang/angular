@@ -103,6 +103,7 @@ define([], function () {
         };
 
         var linker = function(scope,elem,attrs){
+            debugger;
             //find form name
             var  input       =   $('input',elem),
                  formName    =   $(input).parents().find('form').attr('name'),
@@ -120,6 +121,17 @@ define([], function () {
             var errorTag = buildErrorMessgeTag(options, inputName);
 
             //watch error condition to notify
+           /* var ngModel = options['model'];
+            console.log('scope validation');
+            console.log(scope);
+            scope.$watch(ngModel,  function(current, old) {
+                console.log(ngModel);
+                debugger;
+                console.log('current');
+                console.log(current);
+                console.log('old');
+                console.log(old);
+            });*/
 
             scope.$watch(('{0}.$valid').format([inputName]), function (validity) {
 
@@ -139,6 +151,7 @@ define([], function () {
 
             //recompile template
             var templateCompiled = angular.element($compile(errorTag)(scope));
+
             elem.append(templateCompiled);
         }
 
