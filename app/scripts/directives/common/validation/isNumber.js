@@ -6,8 +6,6 @@ define([], function () {
             restrict: 'AE',
             require: 'ngModel',
             link: function(scope, elem, attrs, ngModelCtrl) {
-                console.log('scope is number');
-                console.log(scope);
                 if (!ngModelCtrl) return;
 
                 //format to display in view
@@ -23,7 +21,9 @@ define([], function () {
                     ngModelCtrl.$setValidity('isnumber', valid);
                     return viewValue;
                 });
-            }
+            },
+            headerName:'1111',
+            errorMsg:'11111'
         };
     };
     return isNumber;

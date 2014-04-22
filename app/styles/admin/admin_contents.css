@@ -1646,3 +1646,8 @@ body#popup {
     -moz-box-shadow: 0 0 6px #f8b9b7 !important;;
     box-shadow: 0 0 6px #f8b9b7 !important;;
 }
+
+
+.select2-container {
+    width: 150px;
+}

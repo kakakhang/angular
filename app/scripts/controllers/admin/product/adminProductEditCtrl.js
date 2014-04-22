@@ -8,15 +8,12 @@ define(['adminModule'], function (adminModule) {
         $scope.product = {};
         $scope.tags = [];
 
+
         adminProductService.getCategoryAndStatus().then(function (data) {
 
             $scope.cats = data.cat;
             $scope.status = data.status;
-            angular.forEach( data.cat, function(item) {
-                $scope.tags.push( {id:item.category_id,text:item.category_name} );
-            });
-            console.log($scope.tags);
-
+            eshopApp.helpers.convertSelect2Option($scope.tags,data.cat,'category_id','category_name');
         });
 
 
@@ -24,20 +21,14 @@ define(['adminModule'], function (adminModule) {
 
 
          $scope.select2Options = {
-          multiple : true,
           data:  $scope.tags
          };
 
 
 
-        $scope.list_of_string = null;
-       // $scope.$watch('list_of_string',function(){console.log($scope.list_of_string)});
+        $scope.list_of_string = [];
 
-        $scope.test = function(){
-            $scope.product.name = [];
-            console.log('watch list of string');
-            console.log($scope.list_of_string ) ;
-        };
+
         //if exist product id
         if ($stateParams.productId) {
             adminProductService.getProduct($stateParams.productId)
@@ -59,7 +50,8 @@ define(['adminModule'], function (adminModule) {
         $scope.changeToConfirmView = function(){
             adminProductService.setProductModel($scope.product);
             $location.path('/admin/product/confirm');
-        }
+        };
+
         $scope.dateOptions = {
             changeYear: true,
             changeMonth: true,

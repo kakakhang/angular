@@ -25,6 +25,9 @@ require.config({
         "angular":{
             deps : ['jquery']
         },
+        "select2":{
+            deps : ['jquery']
+        },
         "uiRouter":{
             deps : ['angular']
         },

@@ -101,16 +101,21 @@ String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
 				});
 			}
 		});
-	}
+	},
     helpers.isNotUndefined = function(value){
         return (typeof value !== 'undefined');
-    }
+    },
     helpers.isEmpty = function isEmpty(str) {
         return (!str || 0 === str.length);
-    }
+    },
     helpers.isNotEmpty = function isEmpty(str) {
         return !eshopApp.helpers.isEmpty(str)
-}
+    },
+    helpers.convertSelect2Option = function (scope,dataSource,idFieldName,textFieldName) {
+        angular.forEach(dataSource, function(item) {
+            scope.push( {id:item[idFieldName],text:item[textFieldName]} );
+        });
+    }
 
 
 }(window.eshopApp = window.eshopApp || {}, jQuery));

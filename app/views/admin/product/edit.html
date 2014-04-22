@@ -95,9 +95,18 @@
                     <td>
 
                           <!--  <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="4" required  />-->
-                        <div input-validation>
-                        <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" />
-                        </div>
+                 <!--       <div input-validation>
+                        <input required ng-model="product.name" name="khang"  type="text" class="box30" />
+                        </div>-->
+                       <input  type='text' input-validation  ng-minlength="5"  ng-model="product.name" name="khang"  class="box30" />
+
+                       <input type="hidden"
+                               name="kk"
+                               ui-select2="select2Options"
+                               ng-model="list_of_string"
+                               required
+                               input-validation
+                                />
 
                     </td>
                 </tr>
@@ -105,20 +114,25 @@
                     <th>test khang</th>
                     <td>
 
-                        <div ngh-transclude-element="2" style="background-color: lightyellow;">
-                            <h4>[Yellow is the transcluded content]</h4>
-                            <label>Scope variable: <input type="text" ng-model="scopeVar"/></label><br />
-                            <br />
-                            <strong>Scope ID:</strong> {{$id}}<br />
-                            <strong>Parent scope ID:</strong> {{$parent.$id}}<br />
-                            <strong>Scope variable:</strong> {{scopeVar}}<br />
+                        <div  style="background-color: lightyellow;">
+
+                         <!--   <input  ngh-transclude-element="2" type="text" name="kk" required ng-model="scopeVar"/>-->
+
                         </div>
 
                         <!--    <input test type='text' required  ui-date-format="DD, d MM, yy" ng-model="myDate" ui-date="dateOptions" name="DateOfBirth">-->
-                        <div test> 1+1 +1= {{1+1+1}} </div>
-                        <input test type='text' ng-model="kk"/>
+        <!--                <input type="hidden"
+                               name="kk"
+                               ui-select2="select2Options"
+                               ng-model="list_of_string"
+                               requireds
+                               input-validation
+                               error-message='{"required":"met qua"}'
+                                />
+                        <p ng-show="form1.kk.$error.required" class="attention ng-scope ng-binding ng-hide"> 2This field is required</p>-->
 <!--                        <div input-validation>
                         <input type="hidden"
+                                 ngh-transclude-element
                                 name="testkhang"
                                 ui-select2="select2Options"
                                 ng-model="$parent.list_of_string"
