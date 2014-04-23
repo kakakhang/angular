@@ -22,9 +22,10 @@
                     <th>Category<span class="attention"> *</span></th>
                     <td>
     
-                            <select  ng-model="product.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
+                           <!-- <select  ng-model="product.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
                                 <option>  </option>
-                            </select>
+                            </select>-->
+                        <input type="hidden" name="category" ui-select2="categoryDataSource" ng-model="product.category" />
 
                         </select>
                     </td>
@@ -41,23 +42,21 @@
                     <th>Price Standard</th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="price_standard"  ng-model="product.price_standard"  style="" size="30" class="box30" />
+                        <input type="text" name="price_standard"   format-model='number' ng-model="product.price_standard"  style="" size="30" class="box30" />
                     </td>
                 </tr>
                 <tr>
                     <th>Price Sale<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text"  ng-model="product.price_sale"  format-model='number' name="price_sale" style="" size="30" class="box30" />
+                        <input type="text"  ng-model="product.price_sale"  format-model='number' name="price_sale" style="" size="30" class="box30"  input-validation/>
                     </td>
                 </tr>
                 <tr>
                     <th>Stock<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text"  ng-minlength="3" ng-maxlength="9" ng-model="product.stock"  name="stock"  style="" size="30" class="box30" />
-                        <span ng-show="form1.stock.$error.minlength && !form1.stock.$pristine" >nhap hon 3 </span>
-                        <span ng-show="form1.stock.$error.maxlength && !form1.stock.$pristine" >nhap hon 9 </span>
+                        <input type="text"   format-model='number'  ng-model="product.stock"  name="stock"  style="" size="30" class="box30" input-validation/>
                     </td>
                 </tr>
 
@@ -89,64 +88,11 @@
                         <image-upload image-src="product.main_image" img-width="200px" img-height="200px"/>
                     </td>
                 </tr>
-
-                <tr>
-                    <th>test khang</th>
-                    <td>
-
-                          <!--  <input minvalue="800" isnumber  ng-model="product.name" name="khang"  type="text" class="box30" ng-minlength="3" ng-maxlength="4" required  />-->
-                 <!--       <div input-validation>
-                        <input required ng-model="product.name" name="khang"  type="text" class="box30" />
-                        </div>-->
-                       <input  type='text' input-validation  ng-minlength="5"  ng-model="product.name" name="khang"  class="box30" />
-
-                       <input type="hidden"
-                               name="kk"
-                               ui-select2="select2Options"
-                               ng-model="list_of_string"
-                               required
-                               input-validation
-                                />
-
-                    </td>
-                </tr>
-                <tr>
-                    <th>test khang</th>
-                    <td>
-
-                        <div  style="background-color: lightyellow;">
-
-                         <!--   <input  ngh-transclude-element="2" type="text" name="kk" required ng-model="scopeVar"/>-->
-
-                        </div>
-
-                        <!--    <input test type='text' required  ui-date-format="DD, d MM, yy" ng-model="myDate" ui-date="dateOptions" name="DateOfBirth">-->
-        <!--                <input type="hidden"
-                               name="kk"
-                               ui-select2="select2Options"
-                               ng-model="list_of_string"
-                               requireds
-                               input-validation
-                               error-message='{"required":"met qua"}'
-                                />
-                        <p ng-show="form1.kk.$error.required" class="attention ng-scope ng-binding ng-hide"> 2This field is required</p>-->
-<!--                        <div input-validation>
-                        <input type="hidden"
-                                 ngh-transclude-element
-                                name="testkhang"
-                                ui-select2="select2Options"
-                                ng-model="$parent.list_of_string"
-                                ng-required="true"
-                                >
-                        </div>-->
-
-                    </td>
-                </tr>
             </table>
 
             <div class="btn-area">
                 <ul>
-                    <li><a class="btn-action" href="javascript:;" ng-click="test()"><span class="btn-prev">test</span></a></li>
+                   <!-- <li><a class="btn-action" href="javascript:;" ng-click="test()"><span class="btn-prev">test</span></a></li>-->
                     <li><a class="btn-action" href="javascript:;" ng-click="goToSearchForm()"><span class="btn-prev">Search</span></a></li>
                     <li><a class="btn-action" href="javascript:;" ng-click="changeToConfirmView()"><span class="btn-next">Preview</span></a></li>
                 </ul>

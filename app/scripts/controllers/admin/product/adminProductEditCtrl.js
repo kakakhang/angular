@@ -6,29 +6,17 @@ define(['adminModule'], function (adminModule) {
     adminModule.lazy.controller('adminProductEditCtrl', function ($timeout,$scope, $stateParams, $location,$http,adminProductService) {
 
         $scope.product = {};
-        $scope.tags = [];
-
+        $scope.cats = [];
 
         adminProductService.getCategoryAndStatus().then(function (data) {
-
-            $scope.cats = data.cat;
             $scope.status = data.status;
-            eshopApp.helpers.convertSelect2Option($scope.tags,data.cat,'category_id','category_name');
+            eshopApp.helpers.convertSelect2Option($scope.cats,data.cat,'category_id','category_name');
+
         });
 
-
-
-
-
-         $scope.select2Options = {
-          data:  $scope.tags
-         };
-
-
-
-        $scope.list_of_string = [];
-
-
+        $scope.categoryDataSource = {
+            data:  $scope.cats
+        };
         //if exist product id
         if ($stateParams.productId) {
             adminProductService.getProduct($stateParams.productId)
@@ -58,8 +46,6 @@ define(['adminModule'], function (adminModule) {
             showButtonPanel: true,
             yearRange: '1900:-0'
         };
-       // $scope.list_of_string =  [{category_id:0,tag:'enhancement'}];
-       // var data=[{category_id:0,tag:'enhancement'},{category_id:1,tag:'bug'},{category_id:2,tag:'duplicate'},{category_id:3,tag:'invalid'},{category_id:4,tag:'wontfix'}];
         $scope.scopeVar = "Base scope value";
 
         $scope.myDate = "Thursday, 11 October, 2012";

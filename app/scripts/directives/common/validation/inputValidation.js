@@ -30,7 +30,6 @@ define([], function () {
                 resultTag = '';
 
             //parse error message
-            debugger;
             if(isNotUndefined(attrs.errorMessage))
                 messages =  JSON.parse(attrs.errorMessage);
 
@@ -38,7 +37,7 @@ define([], function () {
                 if (isNotUndefined(attrs[value])) {
 
                     errorCondition = getErrorCondition(errorType[value],inputName);
-                    debugger;
+
                     if(isNotEmpty(messages[value]))
                         resultTag += errorWrapTpl.format([errorCondition, messages[value]]);
                     else
@@ -104,7 +103,7 @@ define([], function () {
         };
 
         var linker = function(scope,elem,attrs,controller, transcludeFn){
-            debugger;
+
             //find form name
             var  formName    =   $(elem).parents().find('form').attr('name'),
                  options     =   attrs.$attr,
@@ -132,7 +131,7 @@ define([], function () {
             var errorTag = buildErrorMessgeTag(attrs, inputName);
 
             scope.$watch(('{0}.$valid').format([inputName]), function (validity) {
-                debugger;
+
                 if (validity)
                     $(input).removeClass('has-error');
                 else {
