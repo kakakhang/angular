@@ -4,7 +4,7 @@ define(['adminModule'], function (adminModule) {
     adminModule.lazy = adminModule.lazy || adminModule;
 
     adminModule.lazy.controller('adminProductConfirmCtrl', function ($scope, $stateParams, $location,$http,adminProductService) {
-
+        debugger;
         $scope.product = adminProductService.getProductModel();
 
         //redirect to search page if user access from address bar

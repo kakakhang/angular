@@ -8,7 +8,7 @@ require.config({
     paths: {
         jquery: ['../lib/jquery/jquery.min'],
         jqueryUi: ['../lib/jquery-ui/ui/jquery-ui'],
-        angular: ['http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min','../lib/angular/angular'],
+        angular: ['../lib/angular/angular'],
         angularUiDate : ['../lib/angular-ui-date/src/date'],
         angularUiSelect2 : ['../lib/angular-ui-select2/src/select2'],
         select2 : ['../lib/select2/select2.min'],

@@ -1,5 +1,5 @@
 <div ng-controller="adminProductEditCtrl" >
-    <form name="form1" id="form1" method="post" action="?" enctype="multipart/form-data">
+    <form name="form1" id="form1" novalidate>
         <input type='hidden' id="image_key" name='image_key' value=''/>
         <input type="hidden" id="mode" name="mode" value="" />
         <input type='hidden' ng-model="product.product_id" name='product_id' value='{{product.product_id}}'/>
@@ -13,9 +13,7 @@
                 <tr>
                     <th>Name<span class="attention"> *</span></th>
                     <td>
-                        <span class="attention"></span>
-                        <input type="text" name="name"  required  ng-model="product.name"  maxlength="100" style="" size="60" class="box60" />
-                        <span class="attention"> (Max 100 Char)</span>
+                        <input type="text" name="name" isnumber error-message='{"required":"Gia tri bat buoc nhap","isnumber":"chi nhap so "}' required   input-validation ng-model="product.name"  maxlength="100" style="" size="60" class="box60" />
                     </td>
                 </tr>
                 <tr>
@@ -25,7 +23,7 @@
                            <!-- <select  ng-model="product.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
                                 <option>  </option>
                             </select>-->
-                        <input type="hidden" name="category" ui-select2="categoryDataSource" ng-model="product.category" />
+                        <input type="hidden" name="category" required  input-validation ui-select2="categoryDataSource" ng-model="product.category" />
 
                         </select>
                     </td>
@@ -33,30 +31,30 @@
                 <tr>
                     <th>Status</th>
                     <td>
-                         <span ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"  ng-repeat="s in status">
+                         <span ng-repeat="s in status">
                             <input type="checkbox" checklist-model="product.status" checklist-value="s.status_id"> {{s.name}} &nbsp;
-                          </span>
+                         </span>
                     </td>
                 </tr>
                 <tr>
                     <th>Price Standard</th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="price_standard"   format-model='number' ng-model="product.price_standard"  style="" size="30" class="box30" />
+                        <input type="text" name="price_standard" required  input-validation  format-model='number' ng-model="product.price_standard"  style="" size="30" class="box30" />
                     </td>
                 </tr>
                 <tr>
                     <th>Price Sale<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text"  ng-model="product.price_sale"  format-model='number' name="price_sale" style="" size="30" class="box30"  input-validation/>
+                        <input type="text"  ng-model="product.price_sale" required   isnumber format-model='number' name="price_sale" style="" size="30" class="box30"  input-validation/>
                     </td>
                 </tr>
                 <tr>
                     <th>Stock<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text"   format-model='number'  ng-model="product.stock"  name="stock"  style="" size="30" class="box30" input-validation/>
+                        <input type="text"   format-model='number' required  ng-model="product.stock"  name="stock"  style="" size="30" class="box30" input-validation/>
                     </td>
                 </tr>
 
@@ -94,7 +92,7 @@
                 <ul>
                    <!-- <li><a class="btn-action" href="javascript:;" ng-click="test()"><span class="btn-prev">test</span></a></li>-->
                     <li><a class="btn-action" href="javascript:;" ng-click="goToSearchForm()"><span class="btn-prev">Search</span></a></li>
-                    <li><a class="btn-action" href="javascript:;" ng-click="changeToConfirmView()"><span class="btn-next">Preview</span></a></li>
+                    <li><a class="btn-action" href="javascript:;" type="submit" ng-click="changeToConfirmView()"><span class="btn-next">Preview</span></a></li>
                 </ul>
             </div>
         </div>

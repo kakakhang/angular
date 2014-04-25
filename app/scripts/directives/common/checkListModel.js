@@ -2,7 +2,7 @@
 
 define([], function () {
 
-    var checkListModel = ['$parse', '$compile', function($parse, $compile) {
+    var checkListModel =  function($parse, $compile) {
         // contains
 
         function contains(arr, item) {
@@ -98,6 +98,6 @@ define([], function () {
                 return postLinkFn;
             }
         };
-    }];
+    };
     return checkListModel;
 });

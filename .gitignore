@@ -3,4 +3,5 @@ dist
 build
 .tmp
 .sass-cache
-app/bower_components
+app/lib
+api/upload

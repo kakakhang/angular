@@ -1,7 +1,7 @@
 "use strict";
 define([], function () {
 
-    var formatModel = ['$filter', function ($filter) {
+    var formatModel = function ($filter) {
         return {
             restrict: 'AE',
             require: 'ngModel',
@@ -11,7 +11,7 @@ define([], function () {
 
                 //format to display in view
                 ngModelCtrl.$formatters.push(function (modelValue) {
-                    return $filter(attrs.formatModel)(modelValue)
+                    return $filter(attrs.formatModel)(modelValue);
                 });
 
                 //parse to receive origin model
@@ -25,7 +25,7 @@ define([], function () {
                 });
             }
         };
-    }];
+    };
     return formatModel;
 });
 

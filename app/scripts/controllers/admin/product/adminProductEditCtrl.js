@@ -4,7 +4,7 @@ define(['adminModule'], function (adminModule) {
     adminModule.lazy = adminModule.lazy || adminModule;
 
     adminModule.lazy.controller('adminProductEditCtrl', function ($timeout,$scope, $stateParams, $location,$http,adminProductService) {
-
+        $scope.submitted = false;
         $scope.product = {};
         $scope.cats = [];
 
@@ -31,14 +31,19 @@ define(['adminModule'], function (adminModule) {
         }
 
         $scope.goToSearchForm = function(){
-            console.log( $scope.list_of_string );
             $location.path('/admin/product/search');
         };
-
-        $scope.changeToConfirmView = function(){
-            adminProductService.setProductModel($scope.product);
-            $location.path('/admin/product/confirm');
+        
+        $scope.changeToConfirmView = function () {
+            $scope.submitted = true;        // magic 
+            if ($scope.form1.$valid) {
+                adminProductService.setProductModel($scope.product);
+                $location.path('/admin/product/confirm');
+            }
+            return;
         };
+    
+       
 
         $scope.dateOptions = {
             changeYear: true,
