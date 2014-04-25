@@ -9,7 +9,24 @@ class Product extends Base {
 	}
 
 	function getProduct($product_id) {
+        $sqlStatus = "   Select   product_status.status_id  as id,
+                                  m_status.name             as text
+                          From product_status
+                          Join m_status on product_status.status_id = m_status.status_id
+                          Where product_status.product_id = ?";
+
+        $sqlCategory = "   Select   product_category.category_id as id,
+                                    m_category.category_name    as text
+                          From product_category
+                          Join m_category on product_category.category_id = m_category.category_id
+                          Where product_category.product_id = ?";
+
+       // $product = $this->objQuery->getOne($sql,array($product_id));
 		$product = $this->objQuery->select('*','product', ' product_id = ?', array($product_id),\PDO::FETCH_OBJ);
+        $status = $this->objQuery->getAll($sqlStatus,array($product_id));
+        $category = $this->objQuery->getAll($sqlCategory,array($product_id));
+        $product[0]->category = $category;
+        $product[0]->status = $status;
 		echo  json_encode($product[0]);
 	}
     function getProductSearchCondition(){
@@ -159,7 +176,6 @@ class Product extends Base {
 
 
     function uploadImage(){
-        $this->objService->responseError();
         //check if this is an ajax request
         $isXHR = $this->objService->isAjax();
         if (!$isXHR){

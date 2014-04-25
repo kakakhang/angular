@@ -1236,10 +1236,6 @@ body > #container {
     color: #444757;
 }
 
-
-/* 受注管理
------------------------------------------------ */
-/* 対応状況管理 */
 #order-status-list th.id {
     width: 40px;
 }
@@ -1277,7 +1273,7 @@ body > #container {
 .design-layout #MainHead, .design-layout #MainFoot, .design-layout #RightNavi, .design-layout #BottomNavi,
 .design-layout #FooterBottomNavi, .design-layout #HeaderInternalNavi, .design-layout #Unused {
     padding-bottom: 20px;
-    height: 10px; /*IE6応急処置 */
+    height: 10px; 
 }
 
 .design-layout div.sort {
@@ -1465,13 +1461,13 @@ div.btn,p.remark {
     height: 523px;
 }/*W99?H40*/
 
-/*COLOR*/
+
 .red {
     color: #f00;
 }
 
 
-/*FONT*/
+
 .bold {
     font-weight:bold;
 }
@@ -1577,7 +1573,7 @@ body#popup {
     width:100%;
 }
 
-/*以上インストールページと共通■触るべからず*/
+
 .nav_title h1{
     line-height: 30px;
     margin:0;
@@ -1649,4 +1645,14 @@ body#popup {
     -webkit-box-shadow: 0 0 6px #f8b9b7 !important;;
     -moz-box-shadow: 0 0 6px #f8b9b7 !important;;
     box-shadow: 0 0 6px #f8b9b7 !important;;
+}
+
+
+.select2-container {
+    width: 235px;
+}
+.select2-choices{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }

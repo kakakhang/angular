@@ -130,7 +130,7 @@ define(['adminModule'], function (adminModule) {
         };
 
         var saveOrUpdateProduct = function(product, category, status){
-            debugger;
+
             if(typeof product.product_id !== 'undefined' && product.product_id > 0){
                 return updateProduct(product, category, status);
             }

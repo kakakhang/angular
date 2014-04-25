@@ -2,732 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8146aee4-f2a8-4a88-a89f-ea68d74121ef" name="Default" comment="filter &amp; validation">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/modules/commonModule.js" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-local-storage\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-local-storage\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-local-storage\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-local-storage\angular-local-storage.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-local-storage\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-mocks\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-mocks\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-mocks\angular-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-mocks\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-scenario\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-scenario\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-scenario\angular-scenario.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-scenario\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-scenario\jstd-scenario-adapter-config.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-scenario\jstd-scenario-adapter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\_gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\_travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\config\jsdoc.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\config\karma.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\lib\angular-1.0.6.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\lib\angular-1.1.4.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\$resolve.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\$templateFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\$urlMatcherFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\UrlMatcher.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\global.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\scripts\prettify\Apache-License-2.0.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\scripts\prettify\lang-css.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\scripts\prettify\prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\styles\jsdoc-default.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\styles\prettify-jsdoc.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\release\doc\styles\prettify-tomorrow.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\contacts.detail.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\contacts.detail.item.edit.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\contacts.detail.item.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\contacts.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\contacts.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\contacts.list.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\factory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\states.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\sample\styles.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\compat.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\resolve.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\state.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\stateDirectives.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\templateFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\urlMatcherFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\urlRouter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\view.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\src\viewDirective.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\compat\matchers.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\compat\routeParamsSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\compat\routeSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\lib\angular-mocks-1.0.4.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\lib\angular-mocks-1.1.4.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\resolveSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\stateDirectivesSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\stateSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\templateFactorySpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\testUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\urlMatcherFactorySpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\urlRouterSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui-router\test\viewDirectiveSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\_gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\_travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\build\angular-ui-ieshiv.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\build\angular-ui-ieshiv.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\build\angular-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\build\angular-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\build\angular-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\build\angular-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\common\ieshiv\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\common\ieshiv\ieshiv.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\common\module.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\common\stylesheets\angular-ui.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\common\stylesheets\mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\grunt.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\animate\animate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\animate\test\animateSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\calendar\calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\calendar\dependencies.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\calendar\test\calendarSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\codemirror\codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\codemirror\dependencies.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\codemirror\test\codemirrorSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\currency\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\currency\currency.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\currency\stylesheets\currency.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\currency\test\currencySpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\date\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\date\date.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\date\dependencies.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\date\test\dateSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\event\event.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\event\test\eventSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\if\if.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\if\test\ifSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\jq\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\jq\jq.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\jq\test\jqSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\keypress\keypress.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\keypress\test\keydownSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\keypress\test\keypressSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\keypress\test\keyupSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\map\map.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\map\test\mapSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\mask\dependencies.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\mask\mask.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\mask\test\maskSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\reset\reset.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\reset\stylesheets\reset.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\reset\test\resetSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\route\route.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\route\test\routeSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\scrollfix\scrollfix.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\scrollfix\test\scrollfixSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\select2\dependencies.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\select2\select2.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\select2\test\select2Spec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\showhide\showhide.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\showhide\test\showhideSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\sortable\REDME.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\sortable\sortable.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\sortable\test\sortableSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\tinymce\dependencies.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\tinymce\test\tinymceSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\tinymce\tinymce.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\validate\test\validateSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\directives\validate\validate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\format\format.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\format\test\formatSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\highlight\highlight.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\highlight\highlight.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\highlight\test\highlightSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\inflector\inflector.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\inflector\test\inflectorSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\unique\test\uniqueSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\modules\filters\unique\unique.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\templates\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\templates\dependencies.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\templates\stylesheets\template.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\templates\template.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\templates\test\templateSpec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\angular-1.0.1\angular-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\angular-1.0.1\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\angular\angular-1.0.0rc4.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\angular\angular-1.0.0rc5.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\angular\angular-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\bootstrap\bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\calendar\calendar.js.min" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\codemirror\codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\googlemaps\googlemaps.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\jquery\jquery-1.7.2.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\jquery\jquery-ui-1.8.18.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\maskedinput\jquery.maskedinput-1.3.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\select2\select2.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\tinymce\jquery.tinymce.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\lib\tinymce\tiny_mce.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular-ui\test\test-config.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular\angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular\angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular\angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\angular\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\_gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\bootstrap-2.3.2.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\bootstrap-2.3.2.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\bootstrap-responsive-2.3.2.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\bootstrap-responsive-2.3.2.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\component.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\css\docs.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\ico\apple-touch-icon-114-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\ico\apple-touch-icon-144-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\ico\apple-touch-icon-57-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\ico\apple-touch-icon-72-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\ico\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\ico\favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\bootstrap-docs-readme.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\bootstrap-mdo-sfmoma-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\bootstrap-mdo-sfmoma-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\bootstrap-mdo-sfmoma-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\bs-docs-bootstrap-features.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\bs-docs-masthead-pattern.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\bs-docs-responsive-illustrations.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\bs-docs-twitter-github.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\example-sites\8020select.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\example-sites\adoptahydrant.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\example-sites\breakingnews.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\example-sites\fleetio.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\example-sites\gathercontent.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\example-sites\jshint.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\example-sites\kippt.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\example-sites\soundready.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\bootstrap-example-carousel.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\bootstrap-example-fluid.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\bootstrap-example-justified-nav.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\bootstrap-example-marketing-narrow.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\bootstrap-example-marketing.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\bootstrap-example-signin.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\bootstrap-example-starter.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\bootstrap-example-sticky-footer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\browser-icon-chrome.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\browser-icon-firefox.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\browser-icon-safari.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\slide-01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\slide-02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\examples\slide-03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\grid-baseline-20px.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\less-logo-large.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\img\responsive-illustrations.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\application.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-affix.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-alert.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-button.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-popover.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-tab.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-transition.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap-typeahead.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\google-code-prettify\prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\google-code-prettify\prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\holder\holder.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\assets\js\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\base-css.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\.bin\hulk" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\_git_ignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\_gitmodules" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\bin\hulk" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\lib\compiler.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\lib\hogan.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\lib\template.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\html\list.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\mustache.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\Changes" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\Rakefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\TESTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\comments.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\comments.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\delimiters.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\delimiters.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\interpolation.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\interpolation.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\inverted.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\inverted.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\partials.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\partials.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\sections.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\sections.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\~lambdas.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\spec\specs\~lambdas.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\test\templates\list.mustache" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\tools\release.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\tools\web_templates.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\1.0.0\hogan.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\1.0.0\hogan.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.0\hogan.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.0\hogan.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.3\hogan.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.3\hogan.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.amd.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.min.amd.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.min.common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.min.mustache.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\hogan-1.0.5.mustache.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\template-1.0.5.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\builds\1.0.5\template-1.0.5.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\images\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\images\noise.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\images\small-hogan-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\images\stripes.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\index.html.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\stylesheets\layout.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\web\stylesheets\skeleton.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\wrappers\amd.js.mustache" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\wrappers\common.js.mustache" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\wrappers\js.mustache" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\node_modules\hogan.js\wrappers\mustache.js.mustache" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\build\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\components.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\customize.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\carousel.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\fluid.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\hero.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\justified-nav.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\marketing-narrow.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\signin.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\starter-template.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\sticky-footer-navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\examples\sticky-footer.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\extend.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\getting-started.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\javascript.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\scaffolding.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\layout.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\pages\base-css.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\pages\components.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\pages\customize.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\pages\extend.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\pages\getting-started.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\pages\index.mustache" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\pages\javascript.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\docs\templates\pages\scaffolding.mustache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\img\glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\img\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\_jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-affix.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-alert.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-button.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-popover.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-tab.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-transition.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\bootstrap-typeahead.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\phantom.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\server.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-affix.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-alert.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-button.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-phantom.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-popover.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-tab.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-transition.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\unit\bootstrap-typeahead.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\vendor\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\vendor\qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\js\tests\vendor\qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_accordion.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_button-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_close.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_component-animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_dropdowns.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_hero-unit.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_labels-badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_layouts.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_modals.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_navs.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_pager.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_popovers.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_progress-bars.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_responsive-1200px-min.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_responsive-767px-max.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_responsive-768px-979px.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_responsive-navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_responsive-utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_sprites.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_thumbnails.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\_wells.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\responsive.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\tests\buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\tests\css-tests.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\tests\css-tests.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\tests\forms-responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\tests\forms.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\tests\navbar-fixed-top.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\tests\navbar-static-top.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\lib\tests\navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\bootstrap-sass\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\CHANGES" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\CONTRIBUTORS.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\_gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\es5-sham.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\es5-sham.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\es5-sham.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\es5-shim.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\es5-shim.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\es5-shim.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\helpers\h-kill.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\helpers\h-matchers.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\helpers\h.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\index.min.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\lib\jasmine-html.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\lib\jasmine.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\lib\jasmine.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\lib\jasmine_favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\lib\json2.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\spec\s-array.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\spec\s-date.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\spec\s-function.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\spec\s-number.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\spec\s-object.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\es5-shim\tests\spec\s-string.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\AUTHORS.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\MANIFEST" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\_gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.accordion.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.all.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.autocomplete.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.base.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.button.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.core.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.dialog.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.menu.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.progressbar.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.resizable.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.selectable.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.slider.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.spinner.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.tabs.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\jquery.ui.tooltip.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-icons_888888_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.accordion.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.autocomplete.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.button.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.core.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.datepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.dialog.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.menu.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.progressbar.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.resizable.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.selectable.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.slider.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.spinner.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.tabs.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\base\minified\jquery.ui.tooltip.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_diagonals-thick_8_333333_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_flat_65_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_glass_40_111111_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_glass_55_1c1c1c_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_highlight-hard_100_f9f9f9_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_highlight-hard_40_aaaaaa_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_highlight-soft_50_aaaaaa_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_inset-hard_45_cd0a0a_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-bg_inset-hard_55_ffeb80_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-icons_4ca300_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-icons_bbbbbb_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-icons_ededed_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-icons_ffcf29_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\black-tie\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_dots-small_65_a6a6a6_2x2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_flat_0_333333_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_flat_65_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_glass_55_fbf8ee_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-bg_highlight-soft_15_cc0000_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-icons_004276_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-icons_cc0000_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\blitzer\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-icons_2694e8_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-icons_2e83ff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-icons_3d80b3_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-icons_72a7cf_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\cupertino\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_flat_30_cccccc_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_flat_50_5c5c5c_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_glass_40_ffc73d_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_highlight-hard_20_0972a5_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_highlight-soft_33_003147_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_highlight-soft_35_222222_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_highlight-soft_44_444444_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-bg_loop_25_000000_21x21.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-icons_4b8e0b_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-icons_a83300_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-icons_cccccc_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dark-hive\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-bg_diagonals-thick_15_0b3e6f_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-bg_dots-medium_30_0b58a2_4x4.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-bg_dots-small_20_333333_2x2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-bg_dots-small_30_a32d00_2x2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-bg_dots-small_40_00498f_2x2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-bg_flat_40_292929_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-bg_gloss-wave_20_111111_500x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-icons_00498f_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-icons_98d2fb_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-icons_9ccdfc_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\dot-luv\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_flat_0_eeeeee_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_flat_55_994d53_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_flat_55_fafafa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_gloss-wave_30_3d3644_500x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_highlight-soft_100_dcd9de_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_highlight-soft_100_eae6ea_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_highlight-soft_25_30273a_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-bg_highlight-soft_45_5f5964_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-icons_734d99_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-icons_8d78a5_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-icons_a8a3ae_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-icons_ebccce_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\eggplant\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-bg_diagonals-small_25_c5ddfc_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-bg_diagonals-thick_20_e69700_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-bg_diagonals-thick_22_1484e6_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-bg_diagonals-thick_26_2293f7_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-bg_flat_0_e69700_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-bg_flat_0_e6b900_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-bg_highlight-soft_100_f9f9f9_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-bg_inset-hard_100_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-icons_0a82eb_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-icons_0b54d5_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-icons_5fa5e3_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-icons_fcdd4a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\excite-bike\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-bg_flat_0_eeeeee_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-bg_flat_55_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-bg_highlight-soft_25_0073ea_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-bg_highlight-soft_50_dddddd_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-icons_0073ea_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-icons_454545_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-icons_666666_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-icons_ff0084_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\images\ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\flick\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\hot-sneaks\images\animated-overlay.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\hot-sneaks\images\ui-bg_diagonals-small_40_db4865_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\hot-sneaks\images\ui-bg_diagonals-small_50_93c3cd_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\hot-sneaks\images\ui-bg_diagonals-small_50_ff3853_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\hot-sneaks\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\hot-sneaks\jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\hot-sneaks\jquery.ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-ui\themes\humanity\jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\_bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\_gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\component.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\jquery-migrate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\jquery-migrate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\bower_components\requirejs\require.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\scripts\WebApp\DebugScripts\adminModule.js\adminModule.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\scripts\WebApp\DebugScripts\states\adminModuleStates.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\app\bower_components\jquery-loadmask\jquery.loadmask.min.js" afterPath="$PROJECT_DIR$/app/lib/jquery-loadmask/jquery.loadmask.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/APIProfile/Product.php" afterPath="$PROJECT_DIR$/api/Service/APIProfile/Product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/Implement/Product.php" afterPath="$PROJECT_DIR$/api/Service/Implement/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/adminModule.js" afterPath="$PROJECT_DIR$/app/scripts/modules/adminModule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/appMain.js" afterPath="$PROJECT_DIR$/app/scripts/appMain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js" afterPath="$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/admin/admin_contents.css" afterPath="$PROJECT_DIR$/app/styles/admin/admin_contents.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/product/edit.html" afterPath="$PROJECT_DIR$/app/views/admin/product/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/imageUpload.js" afterPath="$PROJECT_DIR$/app/scripts/directives/imageUpload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/common/validation/inputValidation.js" afterPath="$PROJECT_DIR$/app/scripts/directives/common/validation/inputValidation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angular.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397604016155" ignored="false" />
+    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398214679943" ignored="false" />
     <file path="/ServiceAPI.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383987548828" ignored="false" />
     <file path="/index.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383988303375" ignored="false" />
     <file path="/BaseService.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383986461251" ignored="false" />
-    <file path="/a.dummy" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1395668059112" ignored="false" />
-    <file path="/Product.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397572959293" ignored="false" />
+    <file path="/a.dummy" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398215923802" ignored="false" />
+    <file path="/Product.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398217923521" ignored="false" />
     <file path="/ServiceProfile.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1384053921560" ignored="false" />
     <file path="/fragment.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1395792049015" ignored="false" />
     <file path="/AbstractQuery.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1384077500039" ignored="false" />
@@ -746,13 +36,13 @@
     <file path="/Slim.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1384098381945" ignored="false" />
     <file path="/navigation.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1385216236689" ignored="false" />
     <file path="/subnavi.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1385216628517" ignored="false" />
-    <file path="/index.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397603041921" ignored="false" />
+    <file path="/index.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397905211202" ignored="false" />
     <file path="/app.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394969426091" ignored="false" />
     <file path="/main.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394965378529" ignored="false" />
-    <file path="/main_frame.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397354130750" ignored="false" />
+    <file path="/main_frame.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397898494780" ignored="false" />
     <file path="/Security.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1393855850860" ignored="false" />
-    <file path="/admin_contents.css" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396974049406" ignored="false" />
-    <file path="/edit.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397599320812" ignored="false" />
+    <file path="/admin_contents.css" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398090890245" ignored="false" />
+    <file path="/edit.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398215489615" ignored="false" />
     <file path="/helper.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1385851052718" ignored="false" />
     <file path="/config.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394379200745" ignored="false" />
     <file path="/product_search.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394992315256" ignored="false" />
@@ -762,30 +52,36 @@
     <file path="/checklist_model.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394894474890" ignored="false" />
     <file path="/product_edit.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394993148038" ignored="false" />
     <file path="/product.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394993721633" ignored="false" />
-    <file path="/adminProductEditCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396450259139" ignored="false" />
+    <file path="/adminProductEditCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398218233068" ignored="false" />
     <file path="/ImageUpload.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1395791996515" ignored="false" />
     <file path="/adminProductService.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396656848263" ignored="false" />
-    <file path="/eshop.configs.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396401642604" ignored="false" />
+    <file path="/eshop.configs.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397890424140" ignored="false" />
     <file path="/imageUpload.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397491937133" ignored="false" />
     <file path="/imageUpload.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396175536937" ignored="false" />
     <file path="/adminModuleStates.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396451320280" ignored="false" />
     <file path="/adminProductConfirmCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396656359638" ignored="false" />
     <file path="/confirm.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396449339280" ignored="false" />
-    <file path="/eshop.helpers.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397177883502" ignored="false" />
+    <file path="/eshop.helpers.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398095889824" ignored="false" />
     <file path="/complete.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396451752389" ignored="false" />
     <file path="/adminProductCompleteCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396452663968" ignored="false" />
-    <file path="/adminModule.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397574918903" ignored="false" />
+    <file path="/adminModule.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397898605155" ignored="false" />
     <file path="/adminProductSearchCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397296781687" ignored="false" />
-    <file path="/inputValidation.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397357712421" ignored="false" />
+    <file path="/inputValidation.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398180775428" ignored="false" />
     <file path="/formatModel.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397093681015" ignored="false" />
     <file path="/minValue.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397277479453" ignored="false" />
-    <file path="/isNumber.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397277242171" ignored="false" />
+    <file path="/isNumber.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398097389058" ignored="false" />
     <file path="/maxValue.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397276585125" ignored="false" />
     <file path="/bootstrap.css" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397279160468" ignored="false" />
-    <file path="/appMain.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397574763481" ignored="false" />
-    <file path="/commonModule.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397573813168" ignored="false" />
-    <file path="/bower.json" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397602283155" ignored="false" />
+    <file path="/appMain.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398178007397" ignored="false" />
+    <file path="/commonModule.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398006640421" ignored="false" />
+    <file path="/bower.json" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397777748484" ignored="false" />
     <file path="/.bowerrc" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397602120093" ignored="false" />
+    <file path="/angular-kendo.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397895739483" ignored="false" />
+    <file path="/angular-kendo.min.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397881544733" ignored="false" />
+    <file path="/date.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397903486952" ignored="false" />
+    <file path="/select2.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398096239824" ignored="false" />
+    <file path="/test.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398044725753" ignored="false" />
+    <file path="/directiveDefinition.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398006625703" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -810,101 +106,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="adminModule.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/modules/adminModule.js">
+      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="127" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+            <state line="27" column="119" selection-start="1535" selection-end="1535" vertical-scroll-proportion="-6.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <file leaf-file-name="inputValidation.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/validation/inputValidation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="0" selection-start="4041" selection-end="4041" vertical-scroll-proportion="0.0">
+            <state line="133" column="0" selection-start="5156" selection-end="5156" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminProductService.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="12" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Service/Implement/Product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="39" selection-start="1435" selection-end="1435" vertical-scroll-proportion="-3.6666667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IQuery.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/DataAccess/IQuery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="17" selection-start="233" selection-end="233" vertical-scroll-proportion="-5.8846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Slim.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Slim/Slim.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1323" column="0" selection-start="44135" selection-end="44135" vertical-scroll-proportion="-2.6153846">
               <folding>
-                <element signature="e#3120#3591#0" expanded="false" />
-                <element signature="e#3726#4039#0" expanded="false" />
-                <element signature="e#4060#4171#0" expanded="false" />
-                <element signature="e#4185#4355#0" expanded="false" />
-                <element signature="e#4371#4580#0" expanded="false" />
-                <element signature="e#4594#4792#0" expanded="false" />
+                <marker date="1395540492000" expanded="true" signature="45921:45994" placeholder="{...}" />
+                <marker date="1395540492000" expanded="true" signature="45996:46058" placeholder="{...}" />
+                <marker date="1395540492000" expanded="true" signature="46064:46098" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower.json">
+      <file leaf-file-name="PrettyExceptions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Slim/Middleware/PrettyExceptions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="177" selection-end="177" vertical-scroll-proportion="-5.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="484" selection-end="484" vertical-scroll-proportion="0.5210728">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="karma.conf.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/karma.conf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="68" column="0" selection-start="2056" selection-end="2056" vertical-scroll-proportion="-2.6153846">
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1395540492000" expanded="true" signature="3758:3831" placeholder="{...}" />
+                <marker date="1395540492000" expanded="true" signature="3833:3895" placeholder="{...}" />
+                <marker date="1395540492000" expanded="true" signature="3901:3935" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="robots.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/robots.txt">
+      <file leaf-file-name="admin_contents.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/admin/admin_contents.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="1651" column="17" selection-start="29171" selection-end="29171" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".buildignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/.buildignore">
+      <file leaf-file-name="test.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="13" column="16" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
+      <file leaf-file-name="adminProductEditCtrl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/basic/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subnavi.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/basic/subnavi.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
+            <state line="15" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="-0.21794872">
+              <folding>
+                <element signature="e#1130#1244#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -927,22 +224,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/admin/product/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchCtrl.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js" />
-        <option value="$PROJECT_DIR$/app/views/admin/main_frame.html" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/validation/inputValidation.js" />
-        <option value="$PROJECT_DIR$/app/styles/admin/admin_contents.css" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/imageUpload.js" />
-        <option value="$PROJECT_DIR$/api/Service/APIProfile/Product.php" />
-        <option value="$PROJECT_DIR$/api/Service/Implement/Product.php" />
-        <option value="$PROJECT_DIR$/app/scripts/modules/commonModule.js" />
-        <option value="$PROJECT_DIR$/app/views/admin/product/edit.html" />
-        <option value="$PROJECT_DIR$/.bowerrc" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/modules/adminModule.js" />
-        <option value="$PROJECT_DIR$/app/scripts/appMain.js" />
         <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/directiveDefinition.js" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/common/test.js" />
+        <option value="$PROJECT_DIR$/app/scripts/modules/commonModule.js" />
+        <option value="$PROJECT_DIR$/app/scripts/helpers/eshop.helpers.js" />
+        <option value="$PROJECT_DIR$/app/lib/angular-ui-select2/src/select2.js" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/common/validation/isNumber.js" />
+        <option value="$PROJECT_DIR$/app/scripts/appMain.js" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/common/validation/inputValidation.js" />
+        <option value="$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js" />
+        <option value="$PROJECT_DIR$/app/styles/admin/admin_contents.css" />
+        <option value="$PROJECT_DIR$/api/DataAccess/IQuery.php" />
+        <option value="$PROJECT_DIR$/api/Service/Implement/Product.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/product/edit.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" />
       </list>
     </option>
   </component>
@@ -1012,13 +309,13 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="154" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="158" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="158" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="160" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="840" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="840" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="153" />
     <property name="GoToClass.includeJavaFiles" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="147" />
@@ -1053,11 +350,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\angular\app\scripts\directives\common" />
+      <recent name="C:\xampp\htdocs\angular\app\lib\angular-kendo" />
       <recent name="C:\xampp\htdocs\angular\app\external_component" />
       <recent name="C:\xampp\htdocs\angular\app\scripts\modules" />
       <recent name="C:\xampp\htdocs\angular\app\scripts\directives" />
-      <recent name="C:\xampp\htdocs\angular\app\scripts\directives\validation" />
-      <recent name="C:\xampp\htdocs\angular\app\scripts\controllers\admin\product" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\angular\app\scripts\directives\validation" />
@@ -1230,7 +527,19 @@
       <created>1397438680923</created>
       <updated>1397438680923</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="datepicker and select 2">
+      <created>1397906155483</created>
+      <updated>1397906155483</updated>
+    </task>
+    <task id="LOCAL-00029" summary="test select 2">
+      <created>1398039685441</created>
+      <updated>1398039685441</updated>
+    </task>
+    <task id="LOCAL-00030" summary="filter &amp; validation">
+      <created>1398180884178</created>
+      <updated>1398180884178</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1259,11 +568,12 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16526139" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21922429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22954546" sideWeight="0.5531197" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24318182" sideWeight="0.6722689" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25227273" sideWeight="0.72605044" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27346277" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.7588533" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24114671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1271,7 +581,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40809444" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33052278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16287878" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -1340,6 +649,8 @@
     <MESSAGE value="search product" />
     <MESSAGE value="add service product" />
     <MESSAGE value="add upload image service" />
+    <MESSAGE value="datepicker and select 2" />
+    <MESSAGE value="test select 2" />
     <MESSAGE value="filter &amp; validation" />
   </component>
   <component name="XDebuggerManager">
@@ -1347,34 +658,48 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/api/Service/Implement/Product.php</url>
-          <line>65</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/api/Service/Implement/Product.php</url>
-          <line>59</line>
+          <line>76</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/api/Service/Implement/Product.php</url>
-          <line>32</line>
-          <option name="timeStamp" value="69" />
+          <line>24</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="70" />
+      <option name="time" value="78" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/lib/angular/angular.min.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/modules/commonModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="26" column="12" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/angular-ui-router/release/angular-ui-router.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/helpers/eshop.helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="32" selection-start="3763" selection-end="3783" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/angular-ui-select2/src/select2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="34" selection-start="2922" selection-end="2922" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/validation/isNumber.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="14" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/paging.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1383,106 +708,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/appMain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="363" selection-end="363" vertical-scroll-proportion="-2.6666667">
+        <state line="28" column="29" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/404.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="13" column="16" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/validation/inputValidation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="54" selection-start="463" selection-end="463" vertical-scroll-proportion="-7.1923075">
+        <state line="133" column="0" selection-start="5156" selection-end="5156" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/robots.txt">
+    <entry file="file://$PROJECT_DIR$/app/styles/admin/admin_contents.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1651" column="17" selection-start="29171" selection-end="29171" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/.buildignore">
+    <entry file="file://$PROJECT_DIR$/api/Slim/Slim.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/basic/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/basic/subnavi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/modules/adminModule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="127" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1323" column="0" selection-start="44135" selection-end="44135" vertical-scroll-proportion="-2.6153846">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1395540492000" expanded="true" signature="45921:45994" placeholder="{...}" />
+            <marker date="1395540492000" expanded="true" signature="45996:46058" placeholder="{...}" />
+            <marker date="1395540492000" expanded="true" signature="46064:46098" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/api/Slim/Middleware/PrettyExceptions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="0" selection-start="4041" selection-end="4041" vertical-scroll-proportion="0.0">
+        <state line="68" column="0" selection-start="2056" selection-end="2056" vertical-scroll-proportion="-2.6153846">
           <folding>
-            <element signature="e#3120#3591#0" expanded="false" />
-            <element signature="e#3726#4039#0" expanded="false" />
-            <element signature="e#4060#4171#0" expanded="false" />
-            <element signature="e#4185#4355#0" expanded="false" />
-            <element signature="e#4371#4580#0" expanded="false" />
-            <element signature="e#4594#4792#0" expanded="false" />
+            <marker date="1395540492000" expanded="true" signature="3758:3831" placeholder="{...}" />
+            <marker date="1395540492000" expanded="true" signature="3833:3895" placeholder="{...}" />
+            <marker date="1395540492000" expanded="true" signature="3901:3935" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
+    <entry file="file://$PROJECT_DIR$/api/DataAccess/IQuery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="177" selection-end="177" vertical-scroll-proportion="-5.230769">
+        <state line="9" column="17" selection-start="233" selection-end="233" vertical-scroll-proportion="-5.8846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/composer.json">
+    <entry file="file://$PROJECT_DIR$/api/Service/Implement/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="484" selection-end="484" vertical-scroll-proportion="0.5210728">
+        <state line="29" column="39" selection-start="1435" selection-end="1435" vertical-scroll-proportion="-3.6666667">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="12" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="119" selection-start="1535" selection-end="1535" vertical-scroll-proportion="-6.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="-0.21794872">
+          <folding>
+            <element signature="e#1130#1244#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
