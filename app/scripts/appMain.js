@@ -23,10 +23,10 @@ require.config({
     },
     shim: {
         "angular":{
-            deps : ['jquery']
+            deps: ['jquery']
         },
         "select2":{
-            deps : ['jquery']
+            deps: ['jquery']
         },
         "uiRouter":{
             deps : ['angular']
@@ -38,7 +38,7 @@ require.config({
             deps : ['jqueryUi','angular']
         },
         "angularUiSelect2":{
-            deps : ['jquery','select2','angular']
+            deps: ['jquery', 'select2', 'angular']
         },
         "jqueryLoadMask": {
             deps: ['jquery']

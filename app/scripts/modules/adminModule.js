@@ -28,7 +28,8 @@ define(['./modules/states/adminModuleStates',
                 filter: $filterProvider.register,
                 factory: $provide.factory,
                 service: $provide.service,
-                value : $provide.value
+                value: $provide.value,
+                constant: $provide.constant
             };
 
             // Config state for angular module
@@ -106,7 +107,6 @@ define(['./modules/states/adminModuleStates',
              *     replace  product/edit/3 to product/edit
              */
             scope.$on('$stateChangeSuccess', function () {
-                debugger;
                 scope.navTitle = getNavTitle(locationService, navTitle);
             });
 

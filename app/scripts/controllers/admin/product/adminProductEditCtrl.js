@@ -3,12 +3,12 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy = adminModule.lazy || adminModule;
 
-    adminModule.lazy.controller('adminProductEditCtrl', function ($timeout,$scope, $stateParams, $location,$http,adminProductService) {
+    adminModule.lazy.controller('adminProductEditCtrl', function ($timeout, $scope, $stateParams, $location, $http, adminProductService, formState, ADMIN_FORM_STATE,ADMIN_FORM_TYPE) {
         $scope.submitted = false;
         $scope.product = {};
         $scope.cats = [];
-        var STATE = adminProductModel.STATE;
-
+        var state = new formState(ADMIN_FORM_TYPE.PRODUCT);
+        
         adminProductService.getCategoryAndStatus().then(function (data) {
             $scope.status = data.status;
             eshopApp.helpers.convertSelect2Option($scope.cats,data.cat,'category_id','category_name');
@@ -20,8 +20,8 @@ define(['adminModule'], function (adminModule) {
         };
 
 
-        if(adminProductModel.state == STATE.EDIT){
-            $scope.product = adminProductModel.value;
+        if (state.getState() == ADMIN_FORM_STATE.EDIT) {
+            $scope.product = state.getValue();
         }
         else{
             if ($stateParams.productId) {        //if exist product id
@@ -40,16 +40,13 @@ define(['adminModule'], function (adminModule) {
         $scope.changeToConfirmView = function () {
             $scope.submitted = true;        // magic 
             if ($scope.form1.$valid) {
-                debugger;
-                adminProductModel.init(STATE.CONFIRM,$scope.product);
-/*                adminProductModel.state = STATE.CONFIRM;
-                adminProductModel.value = $scope.product;*/
+                state.setStateValue(ADMIN_FORM_STATE.CONFIRM, $scope.product);
                 $location.path('/admin/product/confirm');
             }
             return;
         };
 
-        adminProductModel.state = STATE.NONE;
+        state.setState(ADMIN_FORM_STATE.NONE);
 
         $scope.dateOptions = {
             changeYear: true,

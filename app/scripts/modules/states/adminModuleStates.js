@@ -10,7 +10,9 @@ define(['config'], function () {
                 templateUrl: eshopApp.config.viewDir + 'admin/main_frame.html',				
                 dependencies: [
                     'services/admin/adminProductService',
-                    'services/admin/adminProductModel'
+                    'services/admin/adminValue',
+                     'services/admin/adminConstant',
+				    'factories/admin/formState'
                 ]
             },
 			'adminLogin': {
@@ -61,6 +63,15 @@ define(['config'], function () {
                     'controllers/admin/product/adminProductEditCtrl',
                     'directives/imageUpload'
                 ]
+			},
+			'adminProductEditOnMemory': {
+			    parent: 'admin',
+			    path: '/product/edit',
+			    templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
+			    dependencies: [
+                    'controllers/admin/product/adminProductEditCtrl',
+                    'directives/imageUpload'
+			    ]
 			},
             'adminProductConfirm': {
                 parent: 'admin',

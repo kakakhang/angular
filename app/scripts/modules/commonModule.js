@@ -7,7 +7,7 @@ define(['directiveDefinition','interceptors', 'config', 'helpers', 'jquery' ,'an
         var commonModule = angular.module('commonModule', ['ui.date','ui.select2']);
         commonModule.directive('formatModel',['$filter',  directiveDefinition.common.formatModel]);
         commonModule.directive('paging', directiveDefinition.common.paging);
-        commonModule.directive('checklistModel', ['$parse', '$compile',directiveDefinition.common.checkListModel]);
+        commonModule.directive('checklistModel', ['$parse', '$compile', directiveDefinition.common.checkListModel]);
         commonModule.directive('isnumber', directiveDefinition.common.isNumber);
         commonModule.directive('maxvalue', directiveDefinition.common.maxValue);
         commonModule.directive('minvalue', directiveDefinition.common.minValue);

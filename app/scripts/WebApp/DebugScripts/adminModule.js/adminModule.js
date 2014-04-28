@@ -27,7 +27,9 @@ define(['./modules/states/adminModuleStates',
                 directive: $compileProvider.directive,
                 filter: $filterProvider.register,
                 factory: $provide.factory,
-                service: $provide.service
+                service: $provide.service,
+                value: $provide.value,
+                constant: $provide.constant
             };
 
             // Config state for angular module
@@ -105,9 +107,10 @@ define(['./modules/states/adminModuleStates',
              *     replace  product/edit/3 to product/edit
              */
             scope.$on('$stateChangeSuccess', function () {
-                debugger;
                 scope.navTitle = getNavTitle(locationService, navTitle);
             });
+
+            scope.imagePath = eshopApp.config.imagePath;
         };
         moduleRunner.$inject = ["$rootScope", "$location", "$sce"];
 

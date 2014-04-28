@@ -10,9 +10,9 @@ define([], function () {
         directiveObj = function() {
             return {
                 restrict: 'AE',
-                priority: 2000,
                 require: 'ngModel',
-                link: function(scope, elem, attrs, ngModelCtrl) {
+                link: function (scope, elem, attrs, ngModelCtrl) {
+                    debugger;
                     if (!ngModelCtrl) return;
 
                     //format to display in view

@@ -74,7 +74,7 @@ define([], function () {
             },
             
             linker = function (scope, elem, attrs, ctrl, transcludeFn) {
-            
+        
                 //find form name
                 var formName = $(elem).parents().find('form').attr('name'),
                     inputName = '',
@@ -102,13 +102,11 @@ define([], function () {
 
                 
                 scope.$watch(('{0}.$pristine').format([inputName]), function (isPristine) {
-                    debugger;
                     if (isPristine)
                         $(input).removeClass('has-error');
                     else {
                         var arrFormName = inputName.split("."),
                             formElement = scope[arrFormName[0]][arrFormName[1]];
-                        debugger;
                         if (!formElement.$valid) {
                             $(input).addClass('has-error');
                         }
@@ -138,7 +136,7 @@ define([], function () {
         
         return {
             transclude: 'element',
-            priority: 1000,
+            priority: 20,
             restrict: 'AE',
             replace: true,
             link: linker,
