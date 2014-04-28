@@ -3,28 +3,31 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy = adminModule.lazy || adminModule;
 
-    adminModule.lazy.controller('adminProductConfirmCtrl', function ($scope, $stateParams, $location,$http,adminProductService) {
+    adminModule.lazy.controller('adminProductConfirmCtrl', function ($scope, $stateParams, $location,$http,adminProductService,adminProductModel) {
         debugger;
-        $scope.product = adminProductService.getProductModel();
+        var STATE = adminProductModel.STATE;
+        $scope.product = adminProductModel.value;
 
         //redirect to search page if user access from address bar
-        if($scope.product == null)
+        if(adminProductModel.state != STATE.CONFIRM)
             $location.path('/admin/product/search');
 
         //back to edit product page
         $scope.editProduct = function(){
+            adminProductModel.state = STATE.EDIT;
             $location.path('/admin/product/edit');
         };
 
-        $scope.imagePath = eshopApp.config.imagePath;
-
         //save
         $scope.saveProduct = function(){
+
             adminProductService.saveOrUpdateProduct($scope.product).then(function(){
+                adminProductModel.state = STATE.COMPLETE;
                 $location.path('/admin/product/complete');
             });
         };
-
+        //reset state if user click on hyperlink;
+        adminProductModel.state = STATE.NONE;
 
     });
 });

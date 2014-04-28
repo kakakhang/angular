@@ -32,7 +32,7 @@ define(['adminModule'], function (adminModule) {
 								});
 			$scope.form = {};
 
-            $scope.imagePath = eshopApp.config.imagePath;
+            //$scope.imagePath = eshopApp.config.imagePath;
 			$scope.form.display_mode =1;
 			$scope.products = [];
 

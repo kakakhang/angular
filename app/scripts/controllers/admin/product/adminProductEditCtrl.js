@@ -3,10 +3,11 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy = adminModule.lazy || adminModule;
 
-    adminModule.lazy.controller('adminProductEditCtrl', function ($timeout,$scope, $stateParams, $location,$http,adminProductService) {
+    adminModule.lazy.controller('adminProductEditCtrl', function ($timeout,$scope, $stateParams, $location,$http,adminProductService,adminProductModel) {
         $scope.submitted = false;
         $scope.product = {};
         $scope.cats = [];
+        var STATE = adminProductModel.STATE;
 
         adminProductService.getCategoryAndStatus().then(function (data) {
             $scope.status = data.status;
@@ -17,18 +18,20 @@ define(['adminModule'], function (adminModule) {
         $scope.categoryDataSource = {
             data:  $scope.cats
         };
-        //if exist product id
-        if ($stateParams.productId) {
-            adminProductService.getProduct($stateParams.productId)
-                          .then(function (data) {
-                              $scope.product = data;
-                          });
-        }else{
-            var productTemp = adminProductService.getProductModel();
-            if( productTemp != null ){
-                $scope.product = productTemp;
+
+
+        if(adminProductModel.state == STATE.EDIT){
+            $scope.product = adminProductModel.value;
+        }
+        else{
+            if ($stateParams.productId) {        //if exist product id
+                adminProductService.getProduct($stateParams.productId)
+                    .then(function (data) {
+                        $scope.product = data;
+                    });
             }
         }
+
 
         $scope.goToSearchForm = function(){
             $location.path('/admin/product/search');
@@ -37,13 +40,16 @@ define(['adminModule'], function (adminModule) {
         $scope.changeToConfirmView = function () {
             $scope.submitted = true;        // magic 
             if ($scope.form1.$valid) {
-                adminProductService.setProductModel($scope.product);
+                debugger;
+                adminProductModel.init(STATE.CONFIRM,$scope.product);
+/*                adminProductModel.state = STATE.CONFIRM;
+                adminProductModel.value = $scope.product;*/
                 $location.path('/admin/product/confirm');
             }
             return;
         };
-    
-       
+
+        adminProductModel.state = STATE.NONE;
 
         $scope.dateOptions = {
             changeYear: true,

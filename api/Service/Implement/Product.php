@@ -39,13 +39,13 @@ class Product extends Base {
 
 		$request = $this->objService->get_request();
 		$params = json_decode($request->getBody());
-        $price_standard = !empty($params->price_standard) ? $params->price_standard : null;
-        $price_sale = !empty($params->price_sale) ? $params->price_sale : null;
-        $list_image = !empty($params->list_image) ? $params->list_image : null;
-        $main_image = !empty($params->main_image) ? $params->main_image : null;
-        $description = !empty($params->description) ? $params->description : '';
-        $name = !empty($params->name) ? $params->name : '';
-        $stock = !empty($params->stock) ? $params->stock : null;
+        $price_standard = !empty($params->price_standard) ? $params->price_standard : 'NULL';
+        $price_sale = !empty($params->price_sale) ? $params->price_sale : 'NULL';
+        $list_image = !empty($params->list_image) ? $params->list_image : 'NULL';
+        $main_image = !empty($params->main_image) ? $params->main_image : 'NULL';
+        $description = !empty($params->description) ? $params->description : 'NULL';
+        $name = !empty($params->name) ? $params->name : 'NULL';
+        $stock = !empty($params->stock) ? $params->stock : 'NULL';
 
 		$result = $this->objQuery->insert(	'product',
 											'	price_standard,

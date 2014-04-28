@@ -5,7 +5,7 @@ define(['adminModule'], function (adminModule) {
     adminModule.lazy = adminModule.lazy || adminModule;
 
     adminModule.lazy.service('adminProductService', function ($http, $q) {
-        var productModel = null;
+
         /* Search product by search condition
         *  Params: object
         */
@@ -92,13 +92,13 @@ define(['adminModule'], function (adminModule) {
             });
             return defer.promise;
         };
-        //store temporary to pass through controller
+/*        //store temporary to pass through controller
         var setProductModel = function(data){
             productModel =  data;
         };
         var getProductModel = function(){
             return productModel;
-        };
+        };*/
 
 
         var saveProduct = function (product, category, status){
@@ -147,8 +147,6 @@ define(['adminModule'], function (adminModule) {
             getProduct: getProduct,
             imageUpload: imageUpload,
             deleteImage: deleteImage,
-            setProductModel: setProductModel,
-            getProductModel: getProductModel,
             saveOrUpdateProduct: saveOrUpdateProduct
         };
 

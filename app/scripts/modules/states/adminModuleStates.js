@@ -9,7 +9,8 @@ define(['config'], function () {
 				path : '/admin',
                 templateUrl: eshopApp.config.viewDir + 'admin/main_frame.html',				
                 dependencies: [
-                    'services/admin/adminProductService'
+                    'services/admin/adminProductService',
+                    'services/admin/adminProductModel'
                 ]
             },
 			'adminLogin': {

@@ -27,7 +27,8 @@ define(['./modules/states/adminModuleStates',
                 directive: $compileProvider.directive,
                 filter: $filterProvider.register,
                 factory: $provide.factory,
-                service: $provide.service
+                service: $provide.service,
+                value : $provide.value
             };
 
             // Config state for angular module
@@ -107,6 +108,8 @@ define(['./modules/states/adminModuleStates',
             scope.$on('$stateChangeSuccess', function () {
                 scope.navTitle = getNavTitle(locationService, navTitle);
             });
+
+            scope.imagePath = eshopApp.config.imagePath;
         };
         moduleRunner.$inject = ["$rootScope", "$location", "$sce"];
 
