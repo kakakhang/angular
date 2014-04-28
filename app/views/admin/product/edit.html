@@ -1,8 +1,10 @@
 <div ng-controller="adminProductEditCtrl" >
     <form name="form1" id="form1" novalidate>
+        <input type='hidden' id="image_key" name='image_key' value=''/>
+        <input type="hidden" id="mode" name="mode" value="" />
         <input type='hidden' ng-model="product.product_id" name='product_id' value='{{product.product_id}}'/>
         <div id="products" class="contents-main">
-            <h2>Edit Product</h2>
+            <h2>Product Information</h2>
             <table class="form">
                 <tr>
                     <th>Product ID</th>
@@ -11,7 +13,7 @@
                 <tr>
                     <th>Name<span class="attention"> *</span></th>
                     <td>
-                        <input type="text" name="name"  error-message='{"required":"Gia tri bat buoc nhap"}' required   input-validation ng-model="product.name"  maxlength="100" style="" size="60" class="box60" />
+                        <input type="text" name="name" isnumber error-message='{"required":"Gia tri bat buoc nhap","isnumber":"chi nhap so "}' required   input-validation ng-model="product.name"  maxlength="100" style="" size="60" class="box60" />
                     </td>
                 </tr>
                 <tr>
@@ -45,7 +47,7 @@
                     <th>Price Sale<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text"  ng-model="product.price_sale" required  format-model='number' name="price_sale" style="" size="30" class="box30"  input-validation/>
+                        <input type="text"  ng-model="product.price_sale" required   isnumber format-model='number' name="price_sale" style="" size="30" class="box30"  input-validation/>
                     </td>
                 </tr>
                 <tr>
@@ -88,7 +90,7 @@
 
             <div class="btn-area">
                 <ul>
-
+                   <!-- <li><a class="btn-action" href="javascript:;" ng-click="test()"><span class="btn-prev">test</span></a></li>-->
                     <li><a class="btn-action" href="javascript:;" ng-click="goToSearchForm()"><span class="btn-prev">Search</span></a></li>
                     <li><a class="btn-action" href="javascript:;" type="submit" ng-click="changeToConfirmView()"><span class="btn-next">Preview</span></a></li>
                 </ul>

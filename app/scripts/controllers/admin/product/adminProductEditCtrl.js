@@ -3,7 +3,7 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy = adminModule.lazy || adminModule;
 
-    adminModule.lazy.controller('adminProductEditCtrl', function ($timeout,$scope, $stateParams, $location,$http,adminProductService,adminProductModel) {
+    adminModule.lazy.controller('adminProductEditCtrl', function ($timeout,$scope, $stateParams, $location,$http,adminProductService) {
         $scope.submitted = false;
         $scope.product = {};
         $scope.cats = [];

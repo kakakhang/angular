@@ -102,13 +102,13 @@ define([], function () {
 
                 
                 scope.$watch(('{0}.$pristine').format([inputName]), function (isPristine) {
-
+                    debugger;
                     if (isPristine)
                         $(input).removeClass('has-error');
                     else {
                         var arrFormName = inputName.split("."),
                             formElement = scope[arrFormName[0]][arrFormName[1]];
-
+                        debugger;
                         if (!formElement.$valid) {
                             $(input).addClass('has-error');
                         }

@@ -17,7 +17,12 @@ define([], function () {
                 //parse to receive origin model
                 ngModelCtrl.$parsers.push(function (viewValue) {
                     //replace - . space to blank
-                    var plainNumber = viewValue.replace(/[^\d|\-+|\.+]/g, '');
+                    var plainNumber;
+                    if (eshopApp.helpers.isNotUndefined(viewValue))
+                        plainNumber = viewValue.replace(/[^\d|\-+|\.+]/g, '');
+                    else {
+                        plainNumber = 0;
+                    }
 
                     elem.val($filter(attrs.formatModel)(plainNumber));
 

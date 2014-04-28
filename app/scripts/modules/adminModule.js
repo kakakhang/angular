@@ -106,6 +106,7 @@ define(['./modules/states/adminModuleStates',
              *     replace  product/edit/3 to product/edit
              */
             scope.$on('$stateChangeSuccess', function () {
+                debugger;
                 scope.navTitle = getNavTitle(locationService, navTitle);
             });
 

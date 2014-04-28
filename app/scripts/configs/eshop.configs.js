@@ -28,8 +28,13 @@
                 text: "Search Product"
             },
             {
-                url: "#/admin/product/edit",
-                text: "Edit Product"
+                url: "#/admin/product/add",
+                text: "Add New Product"
+            },
+            {
+                 url: "#/admin/product/edit",
+                 text: "Update Product",
+                 display: "none"
             },
             {
                 url: "#/admin/product/confirm",

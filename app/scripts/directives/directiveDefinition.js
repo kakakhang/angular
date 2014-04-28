@@ -14,14 +14,16 @@ function (paging, formatModel, checkListModel, inputValidation, isNumber, maxVal
     common.paging = paging;
     common.formatModel = formatModel;
     common.checkListModel = checkListModel;
-    inputValidation().registerValidation(isNumber);
-    inputValidation().registerValidation(maxValue);
-    inputValidation().registerValidation(minValue);
     common.inputValidation = inputValidation;
     common.isNumber = isNumber.directiveDefinition;
     common.maxValue = maxValue.directiveDefinition;
     common.minValue = minValue.directiveDefinition;
-
+    
+    //Register custom validation types
+    inputValidation().registerValidation(isNumber);
+    inputValidation().registerValidation(maxValue);
+    inputValidation().registerValidation(minValue);
+    
     return {
         common: common
 };

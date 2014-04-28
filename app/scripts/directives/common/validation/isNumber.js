@@ -10,6 +10,7 @@ define([], function () {
         directiveObj = function() {
             return {
                 restrict: 'AE',
+                priority: 2000,
                 require: 'ngModel',
                 link: function(scope, elem, attrs, ngModelCtrl) {
                     if (!ngModelCtrl) return;
@@ -17,14 +18,15 @@ define([], function () {
                     //format to display in view
                     ngModelCtrl.$formatters.push(function(modelValue) {
                         var valid = !isNaN(modelValue);
-                        ngModelCtrl.$setValidity('isnumber', valid);
+                        ngModelCtrl.$setValidity(name, valid);
                         return modelValue;
                     });
 
                     //parse to receive origin model
-                    ngModelCtrl.$parsers.push(function(viewValue) {
+                    ngModelCtrl.$parsers.push(function (viewValue) {
+                        debugger;
                         var valid = !isNaN(viewValue);
-                        ngModelCtrl.$setValidity('isnumber', valid);
+                        ngModelCtrl.$setValidity(name, valid);
                         return viewValue;
                     });
                 },
