@@ -26,17 +26,17 @@
 
     <tr>
         <th>Price Standard</th>
-        <td>{{product.price_standard}}</td>
+        <td>{{product.price_standard | number:0}}</td>
     </tr>
 
     <tr>
         <th>Price Sale</th>
-        <td>{{product.price_sale}}</td>
+        <td>{{product.price_sale | number:0}}</td>
     </tr>
 
     <tr>
         <th>Stock</th>
-        <td>{{product.stock}}</td>
+        <td>{{product.stock | number:0}}</td>
     </tr>
 
     <tr>
@@ -49,15 +49,14 @@
         <td>{{product.description}}</td>
     </tr>
 
-
-    <tr>
+    <tr ng-show="{{product.list_image.length > 0}}">
         <th>List image</th>
         <td>
             <img ng-src="{{imagePath}}{{product.list_image}}" /><br />
         </td>
     </tr>
 
-    <tr>
+    <tr ng-show="{{product.main_image.length > 0}}">
         <th>Main image</th>
         <td>
             <img ng-src="{{imagePath}}{{product.main_image}}" /><br />

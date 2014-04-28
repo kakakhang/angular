@@ -45,7 +45,7 @@ define(['config'], function () {
             },
 			'adminProductAdd': {
 				parent: 'admin',
-				path: '/product/edit',
+				path: '/product/add',
                 templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
                 dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
@@ -60,7 +60,7 @@ define(['config'], function () {
                     'controllers/admin/product/adminProductEditCtrl',
                     'directives/imageUpload'
                 ]
-            },
+			},
             'adminProductConfirm': {
                 parent: 'admin',
                 path: '/product/confirm',

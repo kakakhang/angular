@@ -8,7 +8,7 @@ define(['adminModule'], function (adminModule) {
         var product = adminProductService.getProductModel();
         if(product == null)
             $location.path('/admin/product/search');
-        //release product temp in memory  after update.
+        //release temporary product  in memory  after updated.
         adminProductService.setProductModel(null);
 
 

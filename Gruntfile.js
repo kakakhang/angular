@@ -16,6 +16,9 @@ module.exports = function(grunt) {
             files: [
                 {expand: true, cwd: 'app/',src: ['*'], dest: 'build/',filter: 'isFile'},
                 {expand: true, cwd: 'app/',src: ['images/**/*'], dest: 'build/'},
+				{expand: true, cwd: 'app/',src: ['lib/select2/select2.png'], dest: 'build/images/select2/', flatten: true},
+				{expand: true, cwd: 'app/',src: ['lib/select2/select2x2.png'], dest: 'build/images/select2/', flatten: true},
+				{expand: true, cwd: 'app/',src: ['lib/select2/select2-spinner.gif'], dest: 'build/images/select2/', flatten: true},
                 {expand: true, cwd: 'app/',src: ['views/**/*'], dest: 'build/'},
 				// flattens results to a single level
                 {expand: true, cwd: 'app/',src: ['lib/requirejs/require.js'], dest: 'build/', flatten: true},
@@ -35,7 +38,10 @@ module.exports = function(grunt) {
         },
 		replaceCss: { expand:true, cwd: 'build/', src: 'application.css', dest: 'build/',
             options: {
-                processContent: function (content, srcpath) {				
+                processContent: function (content, srcpath) {
+					content = content.replace(/select2\.png/gi,"images/select2/select2.png");
+					content = content.replace(/select2x2\.png/gi,"images/select2/select2x2.png");
+					content = content.replace(/select2-spinner\.gif/gi,"images/select2/select2-spinner.gif");
                     return content.replace(/\.\.\/\.\.\/images/gi,"images");
                 }
             },            
@@ -64,7 +70,7 @@ module.exports = function(grunt) {
 	cssmin: {
 	  build: {
 		files: {
-		  'build/application.css': [ 'app/styles/**/*.css' ]
+		  'build/application.css': [ 'app/styles/**/*.css','app/lib/jquery-ui/themes/smoothness/jquery-ui.css' ,'app/lib/select2/select2.css']
 		}
 	  }
 	},
@@ -78,7 +84,11 @@ module.exports = function(grunt) {
 				baseUrl: "./app/scripts",
 				paths: {
 					jquery: '../lib/jquery/jquery.min',
+					jqueryUi: '../lib/jquery-ui/ui/jquery-ui',
 					angular: '../lib/angular/angular.min',
+					angularUiDate : '../lib/angular-ui-date/src/date',
+					angularUiSelect2 : '../lib/angular-ui-select2/src/select2',
+					select2 : '../lib/select2/select2.min',
 					uiRouter: '../lib/angular-ui-router/release/angular-ui-router.min',
 					jqueryLoadMask : '../lib/jquery-loadmask/jquery.loadmask.min',
 					helpers: './helpers/eshop.helpers',
@@ -89,12 +99,27 @@ module.exports = function(grunt) {
 					directiveDefinition: './directives/directiveDefinition',
 				},
 				shim: {
+					"angular":{
+						deps : ['jquery']
+					},
+					"select2":{
+						deps : ['jquery']
+					},
 					"uiRouter":{
 						deps : ['angular']
 					},
-					"jqueryLoadMask":{
+					"jqueryUi":{
+						deps : ['jquery']
+					},
+					"angularUiDate":{
+						deps : ['jqueryUi','angular']
+					},
+					"angularUiSelect2":{
+						deps : ['jquery','select2','angular']
+					},
+					"jqueryLoadMask": {
 						deps: ['jquery']
-					},					
+					},
 					'config': {
 						deps: ['jquery']
 					},
