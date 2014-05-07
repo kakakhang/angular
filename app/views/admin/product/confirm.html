@@ -12,17 +12,22 @@
     <tr>
         <th>Category</th>
         <td>
-            {{product.name}}
+            <span ng-repeat="cat in product.category">
+                {{cat.text}} </br>
+            </span>
         </td>
     </tr>
-
     <tr>
         <th>Product Status</th>
         <td>
+            <ul class="status_icon clearfix">
+                <li ng-repeat="status in product.status" class="status_{{status.status_id}}">
+                    <span id="icon{{status.status_id}}">{{status.name}}</span>
+                </li>
 
+            </ul>
         </td>
     </tr>
-
 
     <tr>
         <th>Price Standard</th>

@@ -48,7 +48,7 @@ define([], function () {
         function postLinkFn(scope, elem, attrs) {
             // compile with `ng-model` pointing to `checked`
             $compile(elem)(scope);
-
+             
             // getter / setter for original model
             var getter = $parse(attrs.checklistModel);
             var setter = getter.assign;
@@ -58,6 +58,7 @@ define([], function () {
 
             // watch UI checked change
             scope.$watch('checked', function(newValue, oldValue) {
+                 
                 if (newValue === oldValue) {
                     return;
                 }
@@ -71,6 +72,7 @@ define([], function () {
 
             // watch original model change
             scope.$parent.$watch(attrs.checklistModel, function(newArr, oldArr) {
+                 
                 scope.checked = contains(newArr, value);
             }, true);
         }

@@ -23,16 +23,18 @@
                            <!-- <select  ng-model="product.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
                                 <option>  </option>
                             </select>-->
-                        <input type="hidden" name="category" required  input-validation ui-select2="categoryDataSource" ng-model="product.category" />
+                        <input type="hidden" name="category" input-validation select2-required ui-select2="categoryDataSource" ng-model="product.category" />
 
                         </select>
                     </td>
                 </tr>
-                <tr>
+
+
+               <tr>
                     <th>Status</th>
                     <td>
                          <span ng-repeat="s in status">
-                            <input type="checkbox" checklist-model="product.status" checklist-value="s.status_id"> {{s.name}} &nbsp;
+                            <input type="checkbox" checklist-model="product.status" checklist-value="s"> {{s.name}} &nbsp;
                          </span>
                     </td>
                 </tr>
@@ -43,6 +45,7 @@
                         <input type="text" name="price_standard" required  input-validation  format-model='number' ng-model="product.price_standard"  style="" size="30" class="box30" />
                     </td>
                 </tr>
+
                 <tr>
                     <th>Price Sale<span class="attention">*</span></th>
                     <td>
@@ -70,7 +73,7 @@
                     <th>Description</th>
                     <td>
                         <span class="attention"></span>
-                        <textarea name="description" ng-model="product.description"  cols="60" rows="8" class="area60" maxlength="1000"></textarea><br />
+                        <textarea   name="description" ng-model="product.description"  cols="60" rows="8" class="area60" maxlength="1000"></textarea><br />
                         <span class="attention"> (Max 1000 Char)</span>
                     </td>
                 </tr>

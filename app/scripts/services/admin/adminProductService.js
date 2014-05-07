@@ -35,6 +35,9 @@ define(['adminModule'], function (adminModule) {
             });
             return defer.promise;
         };
+        var getStatusText = function(status){
+
+        };
         //get product by product id
         var getProduct = function (productId) {
             var defer = $q.defer();
@@ -130,7 +133,7 @@ define(['adminModule'], function (adminModule) {
         };
 
         var saveOrUpdateProduct = function(product, category, status){
-
+            debugger;
             if(typeof product.product_id !== 'undefined' && product.product_id > 0){
                 return updateProduct(product, category, status);
             }

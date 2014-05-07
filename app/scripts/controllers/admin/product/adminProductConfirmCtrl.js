@@ -4,10 +4,14 @@ define(['adminModule'], function (adminModule) {
     adminModule.lazy = adminModule.lazy || adminModule;
 
     adminModule.lazy.controller('adminProductConfirmCtrl', function ($scope, $stateParams, $location, $http, adminProductService, formState, ADMIN_FORM_STATE, ADMIN_FORM_TYPE) {
-
+        debugger;
         var state = new formState(ADMIN_FORM_TYPE.PRODUCT);
         $scope.product = state.getValue();
 
+        adminProductService.getCategoryAndStatus().then(function (data) {
+            debugger;
+            $scope.status = data.status;
+        });
         //redirect to search page if user access from address bar
         if (state.getState() != ADMIN_FORM_STATE.CONFIRM)
             $location.path('/admin/product/search');
@@ -20,7 +24,7 @@ define(['adminModule'], function (adminModule) {
 
         //save
         $scope.saveProduct = function(){
-
+            debugger;
             adminProductService.saveOrUpdateProduct($scope.product).then(function(){
                 state.setState(ADMIN_FORM_STATE.COMPLETE);
                 $location.path('/admin/product/complete');

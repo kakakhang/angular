@@ -5,7 +5,7 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy.controller('adminProductEditCtrl', function ($timeout, $scope, $stateParams, $location, $http, adminProductService, formState, ADMIN_FORM_STATE,ADMIN_FORM_TYPE) {
         $scope.submitted = false;
-        $scope.product = {};
+        $scope.product = {display_mode:1};
         $scope.cats = [];
         var state = new formState(ADMIN_FORM_TYPE.PRODUCT);
         
