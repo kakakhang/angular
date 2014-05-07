@@ -21,8 +21,8 @@
         <th>Product Status</th>
         <td>
             <ul class="status_icon clearfix">
-                <li ng-repeat="status in product.status" class="status_{{status.status_id}}">
-                    <span id="icon{{status.status_id}}">{{status.name}}</span>
+                <li ng-repeat="status in product.status" class="status_{{status.id}}">
+                    <span id="icon{{status.id}}">{{status.text}}</span>
                 </li>
 
             </ul>

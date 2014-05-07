@@ -11,7 +11,7 @@ define(['adminModule'], function (adminModule) {
         
         adminProductService.getCategoryAndStatus().then(function (data) {
             $scope.status = data.status;
-            eshopApp.helpers.convertSelect2Option($scope.cats,data.cat,'category_id','category_name');
+            eshopApp.helpers.convertSelect2Option($scope.cats,data.cat,'id','text');
 
         });
 

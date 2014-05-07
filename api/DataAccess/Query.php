@@ -20,7 +20,10 @@ class Query extends  \DataAccess\AbstractQuery{
     }
     function get($col, $table, $where, $arrWhereVal,$fetch = PDO::FETCH_ASSOC){
     	return $this->IQuery->get($col, $table, $where, $arrWhereVal,$fetch);
-    }      
+    }
+    function execute($sql,$arrVal = array()){
+        return $this->IQuery->execute($sql,$arrVal);
+    }
 }
 
 ?>

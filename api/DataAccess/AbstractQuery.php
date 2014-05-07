@@ -93,6 +93,8 @@ class AbstractQuery  {
     function delete($table, $where , $arrval ) {
 		return $this->IQuery->delete($table, $where , $arrval );
 	}
+
+
 }
 
 ?>

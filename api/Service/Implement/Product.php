@@ -30,9 +30,27 @@ class Product extends Base {
 		echo  json_encode($product[0]);
 	}
     function getProductSearchCondition(){
-        $status = $this->objQuery->select('*','m_status', ' type = ?', array(1),\PDO::FETCH_OBJ);
-        $category = $this->objQuery->select('*','m_category',\PDO::FETCH_OBJ);
+        $status = $this->objQuery->select('status_id  as id, name as text','m_status', ' type = ?', array(1),\PDO::FETCH_OBJ);
+        $category = $this->objQuery->select('category_id as id, category_name as text','m_category',\PDO::FETCH_OBJ);
         echo  json_encode(array('cat'=>$category,'status'=>$status));
+    }
+
+    function updateProductStatus($product_id,$status){
+        $result = $this->objQuery->delete('product_status', 'product_id = ?', array($product_id));
+        $sql = "";
+        foreach($status as $s){
+            $sql .=  "INSERT INTO product_status (status_id,product_id) VALUES ($s->id,$product_id);";
+        }
+        $this->objQuery->execute($sql);
+    }
+
+    function updateProductCategory($product_id,$cats){
+        $result = $this->objQuery->delete('product_category', 'product_id = ?', array($product_id));
+        $sql = "";
+        foreach($cats as $cat){
+            $sql .=  "INSERT INTO product_category (category_id,product_id) VALUES ($cat->id,$product_id);";
+        }
+        $this->objQuery->execute($sql);
     }
 
 	function addProduct() {
@@ -74,6 +92,7 @@ class Product extends Base {
 												$params->display_mode
 											)
 		);
+
 		echo  json_encode($result);
 	}
 
@@ -97,6 +116,8 @@ class Product extends Base {
 										   	'product_id = ?',
 										   	array($product_id)
 		);
+        $this->updateProductStatus($product_id,$params->status);
+        $this->updateProductCategory($product_id,$params->category);
 		echo  json_encode($result);
 	}
 

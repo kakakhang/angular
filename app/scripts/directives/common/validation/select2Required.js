@@ -24,7 +24,7 @@ define([], function () {
                     $timeout(function(){
                         var valid = eshopApp.helpers.isNotEmpty(elem.val());
                         ngModelCtrl.$setValidity(name, valid);
-                    },500);
+                    },1000);
 
                     ngModelCtrl.$parsers.push(function (viewValue) {
 

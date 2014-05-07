@@ -9,6 +9,7 @@ interface IQuery
     function begin();
     function rollback();    
     function getOne($sql, $arrval);
+    function execute($sql,$arrval);
     function getAll($sql, $arrval, $fetchmode);
 	function insert($table, $strcol,$arrVal);
 	function delete($table, $where, $arrval);

@@ -43,7 +43,7 @@
                         <th>Category</th>
                         <td>
                             <span class="attention"></span>
-                            <select ng-model="form.category_id" ng-options="cat.category_id as cat.category_name for cat in cats">
+                            <select ng-model="form.category_id" ng-options="cat.id as cat.text for cat in cats">
                                 <option>  </option>
                             </select>
                         </td>
@@ -51,7 +51,7 @@
                         <td>
                             <span class="attention"></span>
                              <span  ng-repeat="s in status">
-                                 <input type="checkbox" checklist-model="form.status" checklist-value="s.status_id"> {{s.name}} &nbsp;
+                                 <input type="checkbox" checklist-model="form.status" checklist-value="s.id"> {{s.text}} &nbsp;
                              </span>
                         </td>
                     </tr>
