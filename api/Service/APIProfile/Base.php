@@ -22,7 +22,12 @@ abstract class Base {
     abstract protected function api_profile();
 
     protected function init_profile(){
-        $this->arrAPI = $this->api_profile();
+        $arrAPI = $this->api_profile();
+        foreach($arrAPI as $api){
+            $api->setObject($this->obj);
+        }
+
+        $this->arrAPI = $arrAPI;
     }
 
     function get_api(){

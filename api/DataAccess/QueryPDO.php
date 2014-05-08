@@ -223,10 +223,10 @@ class QueryPDO implements \DataAccess\IQuery{
 		    }  		
 	}
 
-    function execute($sql,$arrVal){
+    function execute($sql){
         try {
             $sth= $this->db->prepare($sql);
-            $ret = $sth->execute($arrVal);
+            $ret = $sth->execute();
             return $ret;
         }
         catch (\PDOException $e){

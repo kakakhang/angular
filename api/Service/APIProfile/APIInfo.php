@@ -17,11 +17,14 @@ class APIInfo {
     var $http_method;
     var $obj;
     var $function;
-    function __construct($path='',$http_method='',$obj=null,$function='' )
+    function __construct($path='',$http_method='',$function='' ,$obj=null)
     {
         $this->path = $path;
         $this->http_method=$http_method;
-        $this->obj=$obj;
         $this->function=$function;
+        $this->obj=$obj;
+    }
+    function setObject($obj){
+        $this->obj=$obj;
     }
 }

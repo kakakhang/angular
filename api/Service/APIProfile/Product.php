@@ -23,16 +23,16 @@ class Product extends Base{
     protected function api_profile()
     {
         return array(
-            new APIInfo('/products', APIInfo::HTTP_GET, $this->obj, 'getProducts'),
-            new APIInfo('/products/start/:start/limit/:limit', APIInfo::HTTP_GET, $this->obj, 'getProducts'),
-            new APIInfo('/product/:id', APIInfo::HTTP_GET, $this->obj, 'getProduct'),
-            new APIInfo('/product', APIInfo::HTTP_POST, $this->obj, 'addProduct'),
-            new APIInfo('/product/:id', APIInfo::HTTP_PUT, $this->obj, 'updateProduct'),
-            new APIInfo('/product/:id', APIInfo::HTTP_DELETE, $this->obj, 'deleteProduct'),
-            new APIInfo('/productSearchCondition', APIInfo::HTTP_GET, $this->obj, 'getProductSearchCondition'),
-            new APIInfo('/product/search/:condition', APIInfo::HTTP_GET, $this->obj, 'getProductBySearchCondition'),
-            new APIInfo('/productImage', APIInfo::HTTP_POST, $this->obj, 'uploadImage'),
-            new APIInfo('/productImage/:imageName', APIInfo::HTTP_DELETE, $this->obj, 'deleteImage'),
+            new APIInfo('/products', APIInfo::HTTP_GET, 'getProducts'),
+            new APIInfo('/products/start/:start/limit/:limit', APIInfo::HTTP_GET,  'getProducts'),
+            new APIInfo('/product/:id', APIInfo::HTTP_GET,  'getProduct'),
+            new APIInfo('/product', APIInfo::HTTP_POST,  'addProduct'),
+            new APIInfo('/product/:id', APIInfo::HTTP_PUT, 'updateProduct'),
+            new APIInfo('/product/:id', APIInfo::HTTP_DELETE, 'deleteProduct'),
+            new APIInfo('/productSearchCondition', APIInfo::HTTP_GET,  'getProductSearchCondition'),
+            new APIInfo('/product/search/:condition', APIInfo::HTTP_GET, 'getProductBySearchCondition'),
+            new APIInfo('/productImage', APIInfo::HTTP_POST, 'uploadImage'),
+            new APIInfo('/productImage/:imageName', APIInfo::HTTP_DELETE, 'deleteImage'),
         );
     }
 

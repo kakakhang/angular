@@ -2,40 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8146aee4-f2a8-4a88-a89f-ea68d74121ef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/DataAccess/AbstractQuery.php" afterPath="$PROJECT_DIR$/api/DataAccess/AbstractQuery.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Environment.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Environment.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Exception\Pass.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Exception/Pass.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Exception\Stop.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Exception/Stop.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Helper\Set.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Helper/Set.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Http\Cookies.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Http/Cookies.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Http\Headers.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Http/Headers.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Http\Request.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Http/Request.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Http\Response.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Http/Response.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Http\Util.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Http/Util.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Log.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Log.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\LogWriter.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/LogWriter.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Middleware.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Middleware.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Middleware\ContentTypes.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Middleware/ContentTypes.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Middleware\Flash.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Middleware/Flash.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Middleware\MethodOverride.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Middleware/MethodOverride.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Middleware\PrettyExceptions.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Middleware/PrettyExceptions.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Middleware\SessionCookie.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Middleware/SessionCookie.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Route.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Route.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Router.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Router.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\Slim.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/Slim.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\angular\api\Slim\View.php" afterPath="$PROJECT_DIR$/api/Lib/Slim/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/APIProfile/APIInfo.php" afterPath="$PROJECT_DIR$/api/Service/APIProfile/APIInfo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/Interceptor/AdminInterceptor.php" afterPath="$PROJECT_DIR$/api/Service/Interceptor/AdminInterceptor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/APIProfile/Base.php" afterPath="$PROJECT_DIR$/api/Service/APIProfile/Base.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/DataAccess/IQuery.php" afterPath="$PROJECT_DIR$/api/DataAccess/IQuery.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/Implement/Product.php" afterPath="$PROJECT_DIR$/api/Service/Implement/Product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/APIProfile/Product.php" afterPath="$PROJECT_DIR$/api/Service/APIProfile/Product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/DataAccess/Query.php" afterPath="$PROJECT_DIR$/api/DataAccess/Query.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/DataAccess/QueryPDO.php" afterPath="$PROJECT_DIR$/api/DataAccess/QueryPDO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/product/confirm.html" afterPath="$PROJECT_DIR$/app/views/admin/product/confirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/product/edit.html" afterPath="$PROJECT_DIR$/app/views/admin/product/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/product/index.html" afterPath="$PROJECT_DIR$/app/views/admin/product/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/common/validation/select2Required.js" afterPath="$PROJECT_DIR$/app/scripts/directives/common/validation/select2Required.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/APIProfile/Security.php" afterPath="$PROJECT_DIR$/api/Service/APIProfile/Security.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/Service/Service.php" afterPath="$PROJECT_DIR$/api/Service/Service.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angular.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399474215603" ignored="false" />
+    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399510137349" ignored="false" />
     <file path="/ServiceAPI.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383987548828" ignored="false" />
     <file path="/index.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383988303375" ignored="false" />
     <file path="/BaseService.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383986461251" ignored="false" />
     <file path="/a.dummy" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398215923802" ignored="false" />
-    <file path="/Product.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399479817540" ignored="false" />
+    <file path="/Product.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399511913005" ignored="false" />
     <file path="/ServiceProfile.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1384053921560" ignored="false" />
-    <file path="/fragment.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399478300697" ignored="false" />
+    <file path="/fragment.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399513693771" ignored="false" />
     <file path="/AbstractQuery.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399477680743" ignored="false" />
     <file path="/Database.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383988642266" ignored="false" />
     <file path="/IQuery.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399477889947" ignored="false" />
-    <file path="/Query.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399477744322" ignored="false" />
+    <file path="/Query.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399511506208" ignored="false" />
     <file path="/Query_PDO.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383988710719" ignored="false" />
-    <file path="/Base.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1384620007019" ignored="false" />
+    <file path="/Base.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399513616052" ignored="false" />
     <file path="/AbstractInterceptor.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383990530719" ignored="false" />
     <file path="/AdminInterceptor.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1384094134773" ignored="false" />
     <file path="/BaseProfile.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383990606360" ignored="false" />
     <file path="/ProductProfile.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383990869844" ignored="false" />
     <file path="/Service.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1395792276218" ignored="false" />
-    <file path="/APIInfo.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1384076460133" ignored="false" />
+    <file path="/APIInfo.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399513342521" ignored="false" />
     <file path="/QueryPDO.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399477909275" ignored="false" />
     <file path="/Slim.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1384098381945" ignored="false" />
     <file path="/navigation.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1385216236689" ignored="false" />
@@ -115,80 +135,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
+      <file leaf-file-name="Service.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Service/Service.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="125" selection-start="1455" selection-end="1473" vertical-scroll-proportion="-9.153846">
+            <state line="84" column="0" selection-start="2386" selection-end="2386" vertical-scroll-proportion="-4.8076925">
+              <folding>
+                <element signature="e#322#721#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Base.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Base.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminProductEditCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
+      <file leaf-file-name="Slim.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Slim.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="84" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+            <state line="220" column="0" selection-start="6745" selection-end="6745" vertical-scroll-proportion="-4.6153846">
+              <folding>
+                <marker date="1395540492000" expanded="true" signature="45921:45994" placeholder="{...}" />
+                <marker date="1395540492000" expanded="true" signature="45996:46058" placeholder="{...}" />
+                <marker date="1395540492000" expanded="true" signature="46064:46098" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodOverride.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Middleware/MethodOverride.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="0" selection-start="2163" selection-end="2163" vertical-scroll-proportion="-4.8076925">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Service/Implement/Product.php">
+      <file leaf-file-name="Set.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Helper/Set.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="5" selection-start="2166" selection-end="2166" vertical-scroll-proportion="-3.6470587">
+            <state line="49" column="0" selection-start="1770" selection-end="1770" vertical-scroll-proportion="-4.6153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirm.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/product/confirm.html">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="12" selection-start="433" selection-end="433" vertical-scroll-proportion="-9.807693">
+            <state line="8" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="-5.230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eshop.helpers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/helpers/eshop.helpers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="24" selection-start="3919" selection-end="3919" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="select2Required.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/validation/select2Required.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="24" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Query.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/DataAccess/Query.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="669" selection-end="669" vertical-scroll-proportion="-4.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IQuery.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/DataAccess/IQuery.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="20" selection-start="294" selection-end="301" vertical-scroll-proportion="-1.8846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/DataAccess/Database.php">
+      <file leaf-file-name="Router.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Router.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -196,17 +204,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractQuery.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/DataAccess/AbstractQuery.php">
+      <file leaf-file-name="Environment.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Environment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.4820144">
-              <folding>
-                <element signature="e#119#179#0" expanded="false" />
-                <element signature="e#338#456#0" expanded="false" />
-                <element signature="e#1184#1469#0" expanded="false" />
-                <element signature="e#2140#2228#0" expanded="false" />
-                <element signature="e#2238#2348#0" expanded="false" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContentTypes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Middleware/ContentTypes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Middleware.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Middleware.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.115384616">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -229,22 +249,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/lib/angular-ui-select2/src/select2.js" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/common/validation/inputValidation.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductConfirmCtrl.js" />
-        <option value="$PROJECT_DIR$/app/styles/admin/admin_contents.css" />
-        <option value="$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/common/checkListModel.js" />
         <option value="$PROJECT_DIR$/api/DataAccess/AbstractQuery.php" />
-        <option value="$PROJECT_DIR$/api/DataAccess/Query.php" />
-        <option value="$PROJECT_DIR$/api/DataAccess/IQuery.php" />
-        <option value="$PROJECT_DIR$/api/DataAccess/QueryPDO.php" />
         <option value="$PROJECT_DIR$/app/views/admin/product/index.html" />
         <option value="$PROJECT_DIR$/app/views/admin/product/edit.html" />
         <option value="$PROJECT_DIR$/app/views/admin/product/confirm.html" />
-        <option value="$PROJECT_DIR$/api/Service/Implement/Product.php" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/common/validation/select2Required.js" />
+        <option value="$PROJECT_DIR$/api/Service/Interceptor/AdminInterceptor.php" />
+        <option value="$PROJECT_DIR$/api/DataAccess/Query.php" />
+        <option value="$PROJECT_DIR$/api/DataAccess/QueryPDO.php" />
+        <option value="$PROJECT_DIR$/api/DataAccess/IQuery.php" />
+        <option value="$PROJECT_DIR$/api/Service/Implement/Product.php" />
+        <option value="$PROJECT_DIR$/api/Service/APIProfile/APIInfo.php" />
+        <option value="$PROJECT_DIR$/api/Service/APIProfile/Product.php" />
+        <option value="$PROJECT_DIR$/api/Service/APIProfile/Base.php" />
+        <option value="$PROJECT_DIR$/api/Service/APIProfile/Security.php" />
+        <option value="$PROJECT_DIR$/api/Service/Service.php" />
       </list>
     </option>
   </component>
@@ -286,6 +306,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,7 +327,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,13 +334,13 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="154" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="158" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="158" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="160" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="840" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="840" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="153" />
     <property name="GoToClass.includeJavaFiles" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="147" />
@@ -362,6 +382,7 @@
       <recent name="C:\xampp\htdocs\angular\app\scripts\modules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\angular\api\Lib" />
       <recent name="C:\xampp\htdocs\angular\app\scripts\directives\validation" />
       <recent name="C:\xampp\htdocs\angular\app\views\admin\basic" />
       <recent name="C:\xampp\htdocs\angular\api\Service\APIProfile" />
@@ -556,7 +577,11 @@
       <created>1399428137859</created>
       <updated>1399428137859</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="refactor">
+      <created>1399480712134</created>
+      <updated>1399480712134</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -588,8 +613,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22954546" sideWeight="0.5531197" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24318182" sideWeight="0.6722689" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27727273" sideWeight="0.5919056" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40809444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23863636" sideWeight="0.7529412" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24705882" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -674,11 +699,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/api/Service/Implement/Product.php</url>
-          <line>67</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/api/DataAccess/QueryPDO.php</url>
           <line>125</line>
           <option name="timeStamp" value="80" />
@@ -689,159 +709,149 @@
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/api/Service/Implement/Product.php</url>
-          <line>43</line>
-          <option name="timeStamp" value="93" />
+          <url>file://$PROJECT_DIR$/api/DataAccess/Query.php</url>
+          <line>18</line>
+          <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/api/Service/Implement/Product.php</url>
-          <line>118</line>
-          <option name="timeStamp" value="94" />
+          <url>file://$PROJECT_DIR$/api/Service/Service.php</url>
+          <line>11</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="95" />
+      <option name="time" value="101" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/Slim/Middleware/PrettyExceptions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="2056" selection-end="2056" vertical-scroll-proportion="-3.6153846">
-          <folding>
-            <marker date="1395540492000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395540492000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395540492000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Slim/Slim.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1323" column="0" selection-start="44135" selection-end="44135" vertical-scroll-proportion="-3.6153846">
-          <folding>
-            <marker date="1395540492000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395540492000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395540492000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/DataAccess/QueryPDO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="0" selection-start="6283" selection-end="6283" vertical-scroll-proportion="-1.7647059">
-          <folding>
-            <element signature="e#307#453#0" expanded="false" />
-            <element signature="e#827#1038#0" expanded="false" />
-            <element signature="e#1043#1292#0" expanded="false" />
-            <element signature="e#1299#1360#0" expanded="false" />
-            <element signature="e#1367#1437#0" expanded="false" />
-            <element signature="e#1515#1948#0" expanded="false" />
-            <element signature="e#1950#2006#0" expanded="false" />
-            <element signature="e#2011#2656#0" expanded="false" />
-            <element signature="e#2662#2947#0" expanded="false" />
-            <element signature="e#2952#3584#0" expanded="false" />
-            <element signature="e#3759#4417#0" expanded="false" />
-            <element signature="e#4424#4576#0" expanded="false" />
-            <element signature="e#4583#4735#0" expanded="false" />
-            <element signature="e#4742#5233#0" expanded="false" />
-            <element signature="e#5584#5694#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Service/Interceptor/AbstractInterceptor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1137" selection-end="1137" vertical-scroll-proportion="-7.6923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Service/Implement/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="193" selection-end="193" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/product/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="118" selection-start="2747" selection-end="2747" vertical-scroll-proportion="-11.115385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/product/confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="433" selection-end="433" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/Service/Implement/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="5" selection-start="2166" selection-end="2166" vertical-scroll-proportion="-3.6470587">
-          <folding />
+        <state line="4" column="6" selection-start="65" selection-end="65" vertical-scroll-proportion="1.6666666">
+          <folding>
+            <element signature="e#261#1438#0" expanded="false" />
+            <element signature="e#1443#1801#0" expanded="false" />
+            <element signature="e#1807#2166#0" expanded="false" />
+            <element signature="e#2172#2539#0" expanded="false" />
+            <element signature="e#4077#5091#0" expanded="false" />
+            <element signature="e#5094#5250#0" expanded="false" />
+            <element signature="e#5256#8441#0" expanded="false" />
+            <element signature="e#8448#9173#0" expanded="false" />
+            <element signature="e#9179#9407#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
+    <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/APIInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="125" selection-start="1455" selection-end="1473" vertical-scroll-proportion="-9.153846">
+        <state line="18" column="18" selection-start="403" selection-end="403" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/helpers/eshop.helpers.js">
+    <entry file="file://$PROJECT_DIR$/api/Service/ServiceProfile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="24" selection-start="3919" selection-end="3919" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="340" selection-end="340" vertical-scroll-proportion="-2.4230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="84" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/validation/select2Required.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/DataAccess/Query.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="669" selection-end="669" vertical-scroll-proportion="-4.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/DataAccess/IQuery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="294" selection-end="301" vertical-scroll-proportion="-1.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/DataAccess/Database.php">
+    <entry file="file://$PROJECT_DIR$/api/Service/Implement/Security.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/DataAccess/AbstractQuery.php">
+    <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.4820144">
+        <state line="16" column="25" selection-start="374" selection-end="374" vertical-scroll-proportion="-0.65384614">
           <folding>
-            <element signature="e#119#179#0" expanded="false" />
-            <element signature="e#338#456#0" expanded="false" />
-            <element signature="e#1184#1469#0" expanded="false" />
-            <element signature="e#2140#2228#0" expanded="false" />
-            <element signature="e#2238#2348#0" expanded="false" />
+            <element signature="e#198#226#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="10" selection-start="649" selection-end="649" vertical-scroll-proportion="-5.076923">
+          <folding>
+            <element signature="e#198#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Middleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.115384616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Environment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Middleware/ContentTypes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Helper/Set.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1770" selection-end="1770" vertical-scroll-proportion="-4.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Middleware/MethodOverride.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="2163" selection-end="2163" vertical-scroll-proportion="-4.8076925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Lib/Slim/Slim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="0" selection-start="6745" selection-end="6745" vertical-scroll-proportion="-4.6153846">
+          <folding>
+            <marker date="1395540492000" expanded="true" signature="45921:45994" placeholder="{...}" />
+            <marker date="1395540492000" expanded="true" signature="45996:46058" placeholder="{...}" />
+            <marker date="1395540492000" expanded="true" signature="46064:46098" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Service/Service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="2386" selection-end="2386" vertical-scroll-proportion="-4.8076925">
+          <folding>
+            <element signature="e#322#721#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.33333334">
+          <folding />
         </state>
       </provider>
     </entry>

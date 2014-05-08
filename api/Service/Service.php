@@ -1,7 +1,7 @@
 <?php
 
 namespace Service;
-require '/Slim/Slim.php';
+require '/Lib/Slim/Slim.php';
 
 class Service {
 	var $slim; 
@@ -9,6 +9,7 @@ class Service {
     var $service_config;
     private static $instance;
 	function __construct(){
+        \Slim\Slim::registerAutoloader();
 		$this->slim =  new \Slim\Slim();
 		$this->slim->contentType('application/json;charset=utf-8');
 	}

@@ -23,7 +23,7 @@ class Security extends Base{
     protected function api_profile()
     {
         return array(
-            new APIInfo('/admin/login', APIInfo::HTTP_POST, $this->obj, 'login'),
+            new APIInfo('/admin/login', APIInfo::HTTP_POST, 'login'),
         );
     }
 
