@@ -1,0 +1,82 @@
+<div ng-controller="adminShopInfoCtrl" >
+    <form name="form" id="form">
+
+        <div id="products" class="contents-main">
+            <h2>Shop Information</h2>
+            <table class="form">
+                <tr>
+                    <th>Company name</th>
+                    <td>
+
+                            <input type="text" ng-model="shopinfo.company_name" name="company_name" maxlength="100" style="" size="60" class="box60 form-control" />
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>Shop name<span class="attention"> *</span></th>
+                    <td>
+                        <input type="text" input-validation required  ng-model="shopinfo.name"  name="name" maxlength="100" style="" size="60" class="box60  form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>SHOP address <span class="attention"> *</span></th>
+                    <td>
+                        <input type="text"  input-validation required  ng-model="shopinfo.address"  name="address" maxlength="100" style="" size="60" class="box60  form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone 01</th>
+                    <td>
+                        <input type="text" placeholder="(xxx) - xxx - xxxx" ui-mask="(999) - 999 - 9999" ng-model="shopinfo.phone01"  name="phone01" maxlength="100" style="" size="60" class="box60  form-control" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone 02</th>
+                    <td>
+
+                        <input type="text" placeholder="(xxx) - xxx - xxxx" ui-mask="(999) - 999 - 9999" ng-model="shopinfo.phone02"  name="phone02" maxlength="100" style="" size="60" class="box60  form-control" />
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Email contact</th>
+                    <td>
+
+                        <input type="email" input-validation placeholder="example@mail.com"  ng-model="shopinfo.email01"  name="email01" maxlength="100" style="" size="60" class="box60  form-control" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email order</th>
+                    <td>
+
+                        <input type="email" input-validation  placeholder="example@mail.com"  ng-model="shopinfo.email02"  name="email02" maxlength="100" style="" size="60" class="box60  form-control" />
+
+                    </td>
+                </tr>
+
+            </table>
+
+            <h2>Map setting</h2>
+            <table class="form">
+                <tr>
+                    <th>Latitude/longitude information</th>
+                    <td  class="form-inline">
+                        Latitude : <input type="text" ng-model="shopinfo.latitude" name="latitude" maxlength="100" style="" size="30" class="form-control" />
+                        Longitude : <input type="text" ng-model="shopinfo.longitude" name="longitude" maxlength="100" style="" size="30" class="form-control" />
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="btn-area">
+                <ul>
+                    <li><a class="btn-action" href="javascript:;" type="submit" ng-click="updateShopInfo()"><span class="btn-next">Save</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>

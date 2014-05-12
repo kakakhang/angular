@@ -108,8 +108,14 @@ define(['./modules/states/adminModuleStates',
              */
             scope.$on('$stateChangeSuccess', function () {
                 scope.navTitle = getNavTitle(locationService, navTitle);
+                if(locationService.path() == '/admin'){
+                    locationService.path('/admin/index');
+                }
             });
 
+            scope.scrollTop = function(){
+                $('body').scrollTop(0);
+            };
             scope.imagePath = eshopApp.config.imagePath;
         };
         moduleRunner.$inject = ["$rootScope", "$location", "$sce"];

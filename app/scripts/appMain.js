@@ -11,6 +11,7 @@ require.config({
         angular: ['../lib/angular/angular'],
         angularUiDate : ['../lib/angular-ui-date/src/date'],
         angularUiSelect2 : ['../lib/angular-ui-select2/src/select2'],
+        angularUiUtils : ['../lib/angular-ui-utils/ui-utils.min'],
         select2 : ['../lib/select2/select2.min'],
         uiRouter: ['../lib/angular-ui-router/release/angular-ui-router.min'],
         jqueryLoadMask : ['../lib/jquery-loadmask/jquery.loadmask.min'],
@@ -36,6 +37,9 @@ require.config({
         },
         "angularUiDate":{
             deps : ['jqueryUi','angular']
+        },
+        "angularUiUtils":{
+            deps: ['angular']
         },
         "angularUiSelect2":{
             deps: ['jquery', 'select2', 'angular']

@@ -45,7 +45,7 @@ select.row_page{
     height : 28px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
-
+    display:inline;
 }
 select.top,
 input.top,
@@ -85,6 +85,8 @@ h1 span.title {
     padding-top: 2px;
     padding-left: 20px;
     background: url('../../images/admin/contents/subtitle_back.gif') no-repeat;
+    font-weight: bold;
+    height: 28px;
 }
 
 h1 span.subtitle {
@@ -100,6 +102,7 @@ h1 span.subtitle {
     border-bottom: 3px solid #ccc;
     color: #444757;
     font-size: 100%;
+    font-weight: bold;
 }
 
 h3{
@@ -120,7 +123,7 @@ table {
 }
 
 th, td {
-    padding: 5px;
+    padding: 5px !important;
     border: 1px solid #ccc;
 }
 
@@ -1358,85 +1361,85 @@ div.btn,p.remark {
 }/*W25*/
 
 .box30 {
-    width: 222px;
+    width: 222px  !important;;
 }/*W30*/
 
 .box33 {
-    width: 243px;
+    width: 243px  !important;;
 }/*W33*/
 
 .box35 {
-    width: 257px;
+    width: 257px  !important;;
 }/*W35*/
 
 .box40 {
-    width: 276px;
+    width: 276px  !important;;
 }/*W40*/
 
 .box45 {
-    width: 341px;
+    width: 341px  !important;;
 }/*W45*/
 
 .box50 {
-    width: 362px;
+    width: 362px  !important;;
 }/*W50*/
 
 .box52 {
-    width: 376px;
+    width: 376px  !important;;
 }/*W52*/
 
 .box54 {
-    width: 390px;
+    width: 390px  !important;;
 }/*W54*/
 
 .box60 {
-    width: 432px;
+    width: 432px !important;
 }/*W60*/
 
 .box65 {
-    width: 467px;
+    width: 467px  !important;
 }/*W65*/
 
 .box68 {
-    width: 488px;
+    width: 488px  !important;
 }/*W68*/
 
 .box76 {
-    width: 544px;
+    width: 544px !important;
 }/*W76*/
 
 .area40 {
-    width: 302px;
+    width: 302px !important;
     height: 134px;
 }/*W40×H8*/
 
 .area45 {
-    width: 337px;
+    width: 337px !important;
     height: 290px;
 }/*W40×H20*/
 
 .area46 {
-    width: 337px;
+    width: 337px !important;
     height: 134px;
 }/*W40×H8*/
 
 .area50 {
-    width: 372px;
+    width: 372px !important;
     height: 82px;
 }/*W50?H4*/
 
 .area55 {
-    width: 407px;
+    width: 407px !important;
     height: 82px;
 }/*W50?H4*/
 
 .area59 {
-    width: 432px;
+    width: 432px !important;
     height: 134px;
 }/*W59×H8*/
 
 .area60 {
-    width: 433px;
+    width: 433px  !important;;
     height: 134px;
 }/*W60?H8*/
 

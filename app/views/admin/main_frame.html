@@ -1,39 +1,43 @@
 
-<!--* HEADER *-->
-<a name="top"></a>
-<div id="header">
-    <div id="header-contents">
-        <div id="site-check">
-            <ul>
-                <li><a href="#" class="btn-tool-format" target="_blank"><span>SITE CHECK</span></a></li>
-                <li><a href="#" class="btn-tool-format">LOGOUT</a></li>
-            </ul>
+
+    <!--* HEADER *-->
+    <a name="top"></a>
+    <div id="header">
+        <div id="header-contents">
+            <div id="site-check">
+                <ul>
+                    <li><a href="#" class="btn-tool-format" target="_blank"><span>SITE CHECK</span></a></li>
+                    <li><a href="#" class="btn-tool-format">LOGOUT</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-<!--* HEADER *-->
+    <!--* HEADER *-->
 
-<!--* NAVIGATION BAR *-->
-<div>
-    <div id="navi-wrap" ng-bind-html="adminNavBar">
+    <!--* NAVIGATION BAR *-->
+    <div>
+        <div id="navi-wrap" ng-bind-html="adminNavBar">
+        </div>
+        <div class="nav_title"> <h1><span class="title">{{navTitle}} </span></h1> </div>
     </div>
-    <div class="nav_title"> <h1><span class="title">{{navTitle}} </span></h1> </div>
-</div>
-<!--* NAVIGATION BAR *-->
+    <!--* NAVIGATION BAR *-->
 
-<!--{* CONTENTS *}-->
-<div id='contents' ui-view></div>
-<!--{* CONTENTS *}-->
+    <!--{* CONTENTS *}-->
+    <div id='contents' ui-view></div>
+    <!--{* CONTENTS *}-->
 
-<!--{* FOOTER *}-->
-<div id="footer">
-    <div id="footer-contents">
-        <div id="copyright">Copyright &copy; 2000-2013 ABC CO.,LTD. All Rights Reserved.</div>
-        <div id="topagetop">
-            <ul class="sites">
-                <li><a href="#top" class="btn-tool-format">PAGE TOP</a></li>
-            </ul>
+    <!--{* FOOTER *}-->
+    <div id="footer">
+        <div id="footer-contents">
+            <div id="copyright">Copyright &copy; 2000-2013 ABC CO.,LTD. All Rights Reserved.</div>
+            <div id="topagetop">
+                <ul class="sites">
+                    <li><a href='javascript:;' ng-click="scrollTop()" class="btn-tool-format">PAGE TOP</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-<!--{* FOOTER *}-->
+    <!--{* FOOTER *}-->
+
+
+

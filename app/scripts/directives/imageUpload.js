@@ -15,7 +15,7 @@ define(['adminModule','jqueryLoadMask'], function (adminModule) {
                         '   <img ng-src="'+ imagePath +'{{imageSrc}}" style="width:{{imgWidth}};height:{{imgHeight}} "/> ' +
                         '   <a  href="javascript:;"  ng-click="deleteImage()">[Delete]</a>' +
                         '   </br>'+
-                        '   <input type="file"  name="f_list_image2" size="40"/>' +
+                        '   <input type="file"  name="f_list_image2" style="display:inline" size="40"/>' +
                         '   <a class="btn-normal" href="javascript:;" ng-click="uploadImage()">Upload</a>' +
                         '</div>';
 

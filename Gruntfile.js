@@ -87,6 +87,7 @@ module.exports = function(grunt) {
 					jqueryUi: '../lib/jquery-ui/ui/jquery-ui',
 					angular: '../lib/angular/angular.min',
 					angularUiDate : '../lib/angular-ui-date/src/date',
+                    angularUiUtils : '../lib/angular-ui-utils/ui-utils.min',
 					angularUiSelect2 : '../lib/angular-ui-select2/src/select2',
 					select2 : '../lib/select2/select2.min',
 					uiRouter: '../lib/angular-ui-router/release/angular-ui-router.min',
@@ -114,6 +115,9 @@ module.exports = function(grunt) {
 					"angularUiDate":{
 						deps : ['jqueryUi','angular']
 					},
+                    "angularUiUtils":{
+                        deps : ['angular']
+                    },
 					"angularUiSelect2":{
 						deps : ['jquery','select2','angular']
 					},

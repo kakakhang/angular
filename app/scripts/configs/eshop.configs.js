@@ -5,15 +5,15 @@
 	var general = {
         id: "general",
         url: "#/admin/index",
-        text: "General Infomation",
+        text: "General",
         childs: [
             {
-                url: "#/admin/general/home",
+                url: "#/admin/index",
                 text: "Home"
             },
             {
-                url: "#/admin/general/basic",
-                text: "Basic Information"
+                url: "#/admin/general/shopinfo",
+                text: "Shop's Information"
             }
         ]
     };

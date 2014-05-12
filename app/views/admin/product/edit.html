@@ -1,5 +1,5 @@
 <div ng-controller="adminProductEditCtrl" >
-    <form name="form1" id="form1" novalidate>
+    <form name="form1" id="form1" clas="">
         <input type='hidden' id="image_key" name='image_key' value=''/>
         <input type="hidden" id="mode" name="mode" value="" />
         <input type='hidden' ng-model="product.product_id" name='product_id' value='{{product.product_id}}'/>
@@ -13,7 +13,7 @@
                 <tr>
                     <th>Name<span class="attention"> *</span></th>
                     <td>
-                        <input type="text" name="name" error-message='{"required":"Gia tri bat buoc nhap","isnumber":"chi nhap so "}' required   input-validation ng-model="product.name"  maxlength="100" style="" size="60" class="box60" />
+                        <input type="text" name="name" error-message='{"required":"Gia tri bat buoc nhap","isnumber":"chi nhap so "}' required   input-validation ng-model="product.name"  maxlength="100" style="" size="60" class="box60 form-control" />
                     </td>
                 </tr>
                 <tr>
@@ -42,7 +42,7 @@
                     <th>Price Standard</th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text" name="price_standard" required  input-validation  format-model='number' ng-model="product.price_standard"  style="" size="30" class="box30" />
+                        <input type="text" name="price_standard" required  input-validation  format-model='number' ng-model="product.price_standard"  style="" size="30" class="box30 form-control" />
                     </td>
                 </tr>
 
@@ -50,14 +50,14 @@
                     <th>Price Sale<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text"  ng-model="product.price_sale" required   format-model='number' name="price_sale" style="" size="30" class="box30"  input-validation/>
+                        <input type="text"  ng-model="product.price_sale" required   format-model='number' name="price_sale" style="" size="30" class="box30 form-control"  input-validation/>
                     </td>
                 </tr>
                 <tr>
                     <th>Stock<span class="attention">*</span></th>
                     <td>
                         <span class="attention"></span>
-                        <input type="text"   format-model='number' required  ng-model="product.stock"  name="stock"  style="" size="30" class="box30" input-validation/>
+                        <input type="text"   format-model='number' required  ng-model="product.stock"  name="stock"  style="" size="30" class="box30 form-control" input-validation/>
                     </td>
                 </tr>
 
@@ -73,7 +73,7 @@
                     <th>Description</th>
                     <td>
                         <span class="attention"></span>
-                        <textarea   name="description" ng-model="product.description"  cols="60" rows="8" class="area60" maxlength="1000"></textarea><br />
+                        <textarea   name="description" ng-model="product.description"  cols="60" rows="8" class="area60 form-control" maxlength="1000"></textarea><br />
                         <span class="attention"> (Max 1000 Char)</span>
                     </td>
                 </tr>
