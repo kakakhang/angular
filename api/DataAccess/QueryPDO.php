@@ -106,30 +106,30 @@ class QueryPDO implements \DataAccess\IQuery{
      * @return
      * ex:
      * 	$objQuery = Query::getSingletonInstance();
-     *  $arrVal = array('01','David Beckham Teo');
-	 *	$count  = $objQuery->insert('emp', 'MaNV,TenNv',$arrVal); 
+     *  $arrVal = array('MaNV'=>'01','TenNV'->'David Beckham Teo');
+	 *	$count  = $objQuery->insert('emp',$arrVal); 
      */
-    function insert($table, $strcol,$arrVal) {
-    	if(count($arrVal)==0) return false;
+    function insert($table,$arrKeyVal) {
+    	if(count($arrKeyVal)==0) return 0;
     	try {
-    		$str1= str_replace(array(';','.','/',' ','  ','   ','    '),',',$strcol);
-    		$str1 = trim($str1,',');
-    		$str2=",";
-	    	foreach ($arrVal as $item)
-	    	{
-	    		if(trim($item) != ''){
-	    			$str2.=	"'".trim($item)."',";
-	    		}
-	    	} 
-	    	$str2= trim($str2,',');            
-	        $sqlin = "INSERT INTO $table(" . $str1. ") VALUES (" . $str2 . ")";
-	       	$ret = $this->db->exec($sqlin);
+			$strCol = '';
+			$strVal = '';
+			$arrVal = array();
+			foreach ($arrKeyVal as $col => $val) {				
+				$strCol .= $col . ',';
+				$strVal .=  '?,';
+				$arrVal[] =  $val;
+			}
+			$strCol	= rtrim($strCol,",");	
+			$strVal	= rtrim($strVal,",");	
+			$sth  = $this->db->prepare("INSERT INTO $table( $strCol ) VALUES($strVal)"); 		
+			$sth->execute($arrVal);		   
+			$ret = $this->db->lastInsertId(); 
        		return $ret;	      		
     	}
     	catch (\PDOException $e){
 	          echo  $e->getMessage();
-	    }
-    	
+	    }    	
     }
 	/**
 	 *   $objQuery = new SC_Query_Ex();

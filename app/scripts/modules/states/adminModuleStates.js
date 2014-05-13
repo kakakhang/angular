@@ -61,6 +61,7 @@ define(['config'], function () {
                 templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
                 dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
+                    'controllers/admin/product/adminProductSearchPopUpCtrl',
                     'directives/imageUpload'
                 ]
             },
@@ -70,6 +71,7 @@ define(['config'], function () {
                 templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
                 dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
+                    'controllers/admin/product/adminProductSearchPopUpCtrl',
                     'directives/imageUpload'
                 ]
 			},
@@ -79,6 +81,7 @@ define(['config'], function () {
 			    templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
 			    dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
+			        'controllers/admin/product/adminProductSearchPopUpCtrl',
                     'directives/imageUpload'
 			    ]
 			},

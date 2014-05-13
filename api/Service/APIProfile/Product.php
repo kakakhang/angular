@@ -26,7 +26,7 @@ class Product extends Base{
             new APIInfo('/products', APIInfo::HTTP_GET, 'getProducts'),
             new APIInfo('/products/start/:start/limit/:limit', APIInfo::HTTP_GET,  'getProducts'),
             new APIInfo('/product/:id', APIInfo::HTTP_GET,  'getProduct'),
-            new APIInfo('/product', APIInfo::HTTP_POST,  'addProduct'),
+            new APIInfo('/product', APIInfo::HTTP_POST,  'insertProduct'),
             new APIInfo('/product/:id', APIInfo::HTTP_PUT, 'updateProduct'),
             new APIInfo('/product/:id', APIInfo::HTTP_DELETE, 'deleteProduct'),
             new APIInfo('/productSearchCondition', APIInfo::HTTP_GET,  'getProductSearchCondition'),

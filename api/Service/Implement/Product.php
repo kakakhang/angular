@@ -1,6 +1,7 @@
 <?php
 namespace Service\Implement;
 use Utils\ImageUpload;
+use Utils\Helper;
 
 class Product extends Base {
 	function getProducts($start = 0,$limit = 100) {
@@ -37,62 +38,27 @@ class Product extends Base {
 
     function updateProductStatus($product_id,$status){
         $result = $this->objQuery->delete('product_status', 'product_id = ?', array($product_id));
-        $sql = "";
         foreach($status as $s){
-            $sql .=  "INSERT INTO product_status (status_id,product_id) VALUES ($s->id,$product_id);";
-        }
-        $this->objQuery->execute($sql);
+			$this->objQuery->insert('product_status',array('status_id' => $s->id ,'product_id' =>$product_id));
+        }	
     }
 
     function updateProductCategory($product_id,$cats){
         $result = $this->objQuery->delete('product_category', 'product_id = ?', array($product_id));
-        $sql = "";
         foreach($cats as $cat){
-            $sql .=  "INSERT INTO product_category (category_id,product_id) VALUES ($cat->id,$product_id);";
+			$this->objQuery->insert('product_category',array('category_id' => $cat->id ,'product_id' =>$product_id));
         }
-        $this->objQuery->execute($sql);
     }
 
-	function addProduct() {
+	function insertProduct() {
 
 		$request = $this->objService->get_request();
-		$params = json_decode($request->getBody());
-        $price_standard = !empty($params->price_standard) ? $params->price_standard : 'NULL';
-        $price_sale = !empty($params->price_sale) ? $params->price_sale : 'NULL';
-        $list_image = !empty($params->list_image) ? $params->list_image : 'NULL';
-        $main_image = !empty($params->main_image) ? $params->main_image : 'NULL';
-        $description = !empty($params->description) ? $params->description : 'NULL';
-        $name = !empty($params->name) ? $params->name : 'NULL';
-        $stock = !empty($params->stock) ? $params->stock : 'NULL';
-
-		$result = $this->objQuery->insert(	'product',
-											'	price_standard,
-												price_sale,
-												list_image,
-												main_image,
-												description,
-												name,
-												stock,
-												create_date,
-												update_date,
-												delete_flg,
-												display_mode
-											',
-											array(
-                                                $price_standard,
-                                                $price_sale,
-                                                $list_image,
-												$main_image,
-												$description,
-												$name,
-												$stock,
-                                                date('Y/m/d H:i:s'),
-                                                date('Y/m/d H:i:s'),
-												0,
-												$params->display_mode
-											)
-		);
-
+		$params = json_decode($request->getBody());		
+		$insertArr = Helper::convertRequestParamToArray($params);
+		$insertArr['create_date'] = date('Y/m/d H:i:s');
+		$insertArr['update_date'] = date('Y/m/d H:i:s');
+		$insertArr['delete_flg'] = 0;
+		$result = $this->objQuery->insert('product',$insertArr);
 		echo  json_encode($result);
 	}
 
@@ -219,7 +185,7 @@ class Product extends Base {
         }
     }
 
-    function deleteImage($image_name){
+    function delImage($image_name){
         $image_path = realpath("upload/")."/$image_name";
         if(file_exists($image_path)){
             unlink($image_path);

@@ -1,14 +1,13 @@
 <?php
 
 namespace Service\Interceptor;
+use Service\Interceptor\TransactionWrapper;
 
 class AbstractInterceptor {
 	public $_object;
-	public $_rootObject; 
- 
+	public $_rootObject;  
 	public function __construct($object) {
-		$this->_object = $object;
- 
+		$this->_object = new TransactionWrapper($object); 
 		if (is_a($object, "AbstractInterceptor"))
 			$this->_rootObject = $object->_rootObject;
 		else

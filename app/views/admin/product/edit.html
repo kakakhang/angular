@@ -89,11 +89,46 @@
                         <image-upload image-src="product.main_image" img-width="200px" img-height="200px"/>
                     </td>
                 </tr>
+              
+                 
+              
+               
             </table>
+               <accordion close-others="true">
+                   <accordion-group heading="Sub Information" is-open="status.isFirstOpen" >
+                       <table>
+                         <tr>
+                            <th>Related Items</th>
+                             <td>
+                                 <div class="wrap-btn">
+                                    <button type="button" ng-click="open()" class="btn btn-primary btn-xs">Add Related Product</button> 
+                                </div>
+                                 <table class="list" id="products-search-result">
+                                     <col width="5%" />
+                                     <col width="15%" />
+                                     <col width="30%" />
+                                     <col width="25%" />
+                                     <col width="15%" />
+                                     <col width="10%" />
 
+                                     <tr>
+                                         <td>{{product.product_id}}</td>
+                                         <td>{{product.category_name}}</td>
+                                         <td>{{product.name}}</td>
+                                         <td></td>
+                        
+                                         <td class='right'>{{product.price_sale | number:0}}</td>
+                                         <td class='center'><a href='javascript:;' ng-click="delete()" >Delete</a></td>
+                                     </tr>
+
+
+                                 </table>
+                             </td>
+                        </tr>
+                        </table>
+                </accordion>
             <div class="btn-area">
                 <ul>
-                   <!-- <li><a class="btn-action" href="javascript:;" ng-click="test()"><span class="btn-prev">test</span></a></li>-->
                     <li><a class="btn-action" href="javascript:;" ng-click="goToSearchForm()"><span class="btn-prev">Search</span></a></li>
                     <li><a class="btn-action" href="javascript:;" type="submit" ng-click="changeToConfirmView()"><span class="btn-next">Preview</span></a></li>
                 </ul>

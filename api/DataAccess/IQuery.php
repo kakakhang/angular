@@ -11,7 +11,7 @@ interface IQuery
     function getOne($sql, $arrval);
     function execute($sql);
     function getAll($sql, $arrval, $fetchmode);
-	function insert($table, $strcol,$arrVal);
+	function insert($table, $arrKeyVal);
 	function delete($table, $where, $arrval);
 	function update($table,$sqlval, $where, $arrWhereVal);
 	function max($col, $table, $where , $arrval );

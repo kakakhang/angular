@@ -184,7 +184,8 @@ table tr.last {
 
 .contents-main .btn-area, #popup .btn-area, #form_edit .btn-area{
     margin : 0 0 60px 0;
-    padding: 20px 0;
+   /* padding: 20px 0;*/
+    padding: 10px 0px 1px 0px;
     clear: both;
     width: 100%;
     background:#f5f5f5;
@@ -411,7 +412,7 @@ a.btn-main-category:hover, a.btn-main-category-selected:hover{
 
 /*登録する・検索するボタン*/
 .btn-action, a.btn-action:link, a.btn-action:visited {
-    padding: 5px 10px;
+    padding: 4px 10px;
     border: solid 1px #bcbecb;
     display: inline-block;
     color: #444757;
@@ -1682,4 +1683,8 @@ body#popup {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+}
+
+.wrap-btn {
+    padding: 10px 0px 10px 0px;
 }

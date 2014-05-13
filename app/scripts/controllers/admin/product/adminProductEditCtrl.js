@@ -3,7 +3,7 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy = adminModule.lazy || adminModule;
 
-    adminModule.lazy.controller('adminProductEditCtrl', function ($timeout, $scope, $stateParams, $location, $http, adminProductService, formState, ADMIN_FORM_STATE,ADMIN_FORM_TYPE) {
+    adminModule.lazy.controller('adminProductEditCtrl', function ($modal,$scope, $stateParams, $location, $http, adminProductService, formState, ADMIN_FORM_STATE,ADMIN_FORM_TYPE) {
         $scope.submitted = false;
         $scope.product = {display_mode:1};
         $scope.cats = [];
@@ -58,10 +58,31 @@ define(['adminModule'], function (adminModule) {
 
         $scope.myDate = "Thursday, 11 October, 2012";
 
+        $scope.status = {
+            isFirstOpen: true,
+            isFirstDisabled: false
+        };
+        $scope.items = ['item1', 'item2', 'item3'];
+        $scope.open = function (size) {
 
+            var modalInstance = $modal.open({
+                templateUrl: './views/admin/product/popup/search.html',
+                controller: 'adminProductSearchPopUpCtrl',
+                size: size,
+                resolve: {
+                    items: function () {
+                        return $scope.items;
+                    }
+                }
+            });
 
-
-
+            modalInstance.result.then(function (selectedItem) {
+                $scope.selected = selectedItem;
+            }, function () {
+                console.log('bugs');
+                //$log.info('Modal dismissed at: ' + new Date());
+            });
+        };
 
 
     });

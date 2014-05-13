@@ -1,10 +1,10 @@
 "use strict";
 
-define(['directiveDefinition','interceptors', 'config', 'helpers', 'jquery' ,'angular','jqueryLoadMask','angularUiDate','angularUiSelect2','angularUiUtils'],
+define(['directiveDefinition', 'interceptors', 'config', 'helpers', 'jquery', 'angular', 'jqueryLoadMask', 'angularUiDate', 'angularUiSelect2', 'angularUiUtils', 'angularBootstrap'],
     function (directiveDefinition) {
 
 		// Define module angular 
-        var commonModule = angular.module('commonModule', ['ui.date','ui.select2','ui.utils']);
+        var commonModule = angular.module('commonModule', ['ui.date','ui.select2','ui.utils','ui.bootstrap']);
         commonModule.directive('formatModel',['$filter',  directiveDefinition.common.formatModel]);
         commonModule.directive('paging', directiveDefinition.common.paging);
         commonModule.directive('checklistModel', ['$parse', '$compile', directiveDefinition.common.checkListModel]);

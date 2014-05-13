@@ -10,8 +10,9 @@ define(['config'], function () {
                 templateUrl: eshopApp.config.viewDir + 'admin/main_frame.html',				
                 dependencies: [
                     'services/admin/adminProductService',
+                    'services/admin/adminGeneralService',
                     'services/admin/adminValue',
-                     'services/admin/adminConstant',
+                    'services/admin/adminConstant',
 				    'factories/admin/formState'
                 ]
             },
@@ -22,12 +23,20 @@ define(['config'], function () {
 					'controllers/admin/adminLoginCtrl'
                 ]
             },			
-			'adminBasic': {
+			'adminHome': {
 				parent: 'admin',
 				path: '/index',
-                templateUrl: eshopApp.config.viewDir + 'admin/basic/index.html',
+                templateUrl: eshopApp.config.viewDir + 'admin/general/index.html',
                 dependencies: [
-                    'controllers/admin/mainCtrl'
+                    'controllers/admin/general/adminHomeCtrl'
+                ]
+            },
+            'adminGeneralInfo': {
+                parent: 'admin',
+                path: '/general/shopinfo',
+                templateUrl: eshopApp.config.viewDir + 'admin/general/shop_info.html',
+                dependencies: [
+                    'controllers/admin/general/adminShopInfoCtrl'
                 ]
             },
 			'adminProduct': {
@@ -52,6 +61,7 @@ define(['config'], function () {
                 templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
                 dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
+                    'controllers/admin/product/adminProductSearchPopUpCtrl',
                     'directives/imageUpload'
                 ]
             },
@@ -61,6 +71,7 @@ define(['config'], function () {
                 templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
                 dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
+                    'controllers/admin/product/adminProductSearchPopUpCtrl',
                     'directives/imageUpload'
                 ]
 			},
@@ -70,6 +81,7 @@ define(['config'], function () {
 			    templateUrl: eshopApp.config.viewDir + 'admin/product/edit.html',
 			    dependencies: [
                     'controllers/admin/product/adminProductEditCtrl',
+			        'controllers/admin/product/adminProductSearchPopUpCtrl',
                     'directives/imageUpload'
 			    ]
 			},
