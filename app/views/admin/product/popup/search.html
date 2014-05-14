@@ -9,15 +9,18 @@
         <tbody><tr>
                    <th>Category</th>
                    <td>
-                       <select class="box30 form-control" name="search_category_id">
+                     <!--  <select class="box30 form-control" name="search_category_id">
                            <option value="" selected="selected">Please make a selection</option>
                            <option label=">test01" value="44">&gt;test01</option>
+                       </select>-->
+                       <select  class="box30 form-control" ng-model="form.category_id" ng-options="cat.id as cat.text for cat in cats">
+                           <option>  </option>
                        </select>
                    </td>
                </tr>
             <tr>
                 <th>Product name</th>
-                <td><input type="text" name="search_name" value="" size="35" class="box30 form-control"></td>
+                <td><input type="text" name="search_name" ng-model="form.name" value="" size="35" class="box30 form-control"></td>
             </tr>
         </tbody>
     </table>
@@ -29,9 +32,16 @@
 
 
 
-    <p>1 items were found.</p>
-        
-    
+    <p> <span class="attention">{{form.total | number:0}}&nbsp;items</span>&nbsp;has found.</p>
+
+    <div class="pagination"
+         paging
+         page="form.currentPage"
+         page-size="form.pageSize"
+         ulClass=""
+         paging-action="searchPageProducts('',page)"
+         total="form.total">
+    </div>
         <table class="list">
         <tbody><tr>
             <th>Product image</th>
@@ -39,17 +49,13 @@
             <th>Product name</th>
             <th>Confirm</th>
         </tr>
-                
-                        <tr style="background:#FFFFFF;">
-                <td align="center">
-                    
-                </td>
-                <td>
-                    sushi-set-x6
-                                    </td>
-                <td>Sushi Set x6</td>
-                <td align="center"><a href="#" onclick="return func_submit(51)">Confirm</a></td>
-            </tr>
+
+        <tr ng-repeat="product in products">
+            <td><img ng-src="{{imagePath}}{{product.list_image}}" style="width:100px;height:100px"/></td>
+            <td>{{product.name}}</td>
+            <td class='right'>{{product.price_sale | number:0}}</td>
+            <td class='center'><a href='javascript:;' ng-click="confirm(product)" >Confirm</a></td>
+        </tr>
    
                 </tbody></table>
 

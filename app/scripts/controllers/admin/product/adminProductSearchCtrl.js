@@ -39,12 +39,7 @@ define(['adminModule'], function (adminModule) {
             $scope.form.total= 0;
             $scope.form.pageSize=3;
 
-            $scope.pageSizes = [
-                {value:1, text:'1'},
-                {value:2, text:'2'},
-                {value:3, text:'3'},
-                {value:4, text:'4'},
-            ];
+
 		};
 	});
 });

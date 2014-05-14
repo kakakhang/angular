@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8146aee4-f2a8-4a88-a89f-ea68d74121ef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/DataAccess/IQuery.php" afterPath="$PROJECT_DIR$/api/DataAccess/IQuery.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/DataAccess/QueryPDO.php" afterPath="$PROJECT_DIR$/api/DataAccess/QueryPDO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/adminModule.js" afterPath="$PROJECT_DIR$/app/scripts/modules/adminModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/product/edit.html" afterPath="$PROJECT_DIR$/app/views/admin/product/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/product/popup/search.html" afterPath="$PROJECT_DIR$/app/views/admin/product/popup/search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angular.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400030458601" ignored="false" />
+    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400082045140" ignored="false" />
     <file path="/ServiceAPI.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383987548828" ignored="false" />
     <file path="/index.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383988303375" ignored="false" />
     <file path="/BaseService.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383986461251" ignored="false" />
@@ -38,7 +42,7 @@
     <file path="/main_frame.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399711894774" ignored="false" />
     <file path="/Security.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1393855850860" ignored="false" />
     <file path="/admin_contents.css" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399859404704" ignored="false" />
-    <file path="/edit.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399858805204" ignored="false" />
+    <file path="/edit.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400108981317" ignored="false" />
     <file path="/helper.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1385851052718" ignored="false" />
     <file path="/config.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394379200745" ignored="false" />
     <file path="/product_search.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394992315256" ignored="false" />
@@ -48,7 +52,7 @@
     <file path="/checklist_model.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394894474890" ignored="false" />
     <file path="/product_edit.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394993148038" ignored="false" />
     <file path="/product.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394993721633" ignored="false" />
-    <file path="/adminProductEditCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399480037400" ignored="false" />
+    <file path="/adminProductEditCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400109043583" ignored="false" />
     <file path="/ImageUpload.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1395791996515" ignored="false" />
     <file path="/adminProductService.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399426091156" ignored="false" />
     <file path="/eshop.configs.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397890424140" ignored="false" />
@@ -60,7 +64,7 @@
     <file path="/eshop.helpers.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398095889824" ignored="false" />
     <file path="/complete.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1396451752389" ignored="false" />
     <file path="/adminProductCompleteCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1398572845625" ignored="false" />
-    <file path="/adminModule.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399712441899" ignored="false" />
+    <file path="/adminModule.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400107856520" ignored="false" />
     <file path="/adminProductSearchCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397296781687" ignored="false" />
     <file path="/inputValidation.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400030080148" ignored="false" />
     <file path="/formatModel.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397093681015" ignored="false" />
@@ -90,6 +94,8 @@
     <file path="/General.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399989580156" ignored="false" />
     <file path="/adminShopInfoCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399719452399" ignored="false" />
     <file path="/Helper.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399990692390" ignored="false" />
+    <file path="/search.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400108090973" ignored="false" />
+    <file path="/adminProductSearchPopUpCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400108140364" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,47 +120,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QueryPDO.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/DataAccess/QueryPDO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="640" selection-end="646" vertical-scroll-proportion="-1.4117647">
-              <folding>
-                <element signature="e#827#1038#0" expanded="false" />
-                <element signature="e#1043#1292#0" expanded="false" />
-                <element signature="e#1299#1360#0" expanded="false" />
-                <element signature="e#1367#1437#0" expanded="false" />
-                <element signature="e#1444#1509#0" expanded="false" />
-                <element signature="e#1515#1948#0" expanded="false" />
-                <element signature="e#1950#2006#0" expanded="false" />
-                <element signature="e#2011#2656#0" expanded="false" />
-                <element signature="e#2662#2950#0" expanded="false" />
-                <element signature="e#3566#3733#0" expanded="false" />
-                <element signature="e#3739#4397#0" expanded="false" />
-                <element signature="e#4404#4556#0" expanded="false" />
-                <element signature="e#4722#5213#0" expanded="false" />
-                <element signature="e#5679#6124#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/Service/Implement/Product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="21" selection-start="3928" selection-end="3941" vertical-scroll-proportion="3.1538463">
+            <state line="123" column="9" selection-start="5674" selection-end="5674" vertical-scroll-proportion="-49.73077">
               <folding>
                 <element signature="e#35#57#0" expanded="true" />
                 <element signature="e#279#1456#0" expanded="false" />
                 <element signature="e#1820#2111#0" expanded="false" />
                 <element signature="e#2117#2415#0" expanded="false" />
                 <element signature="e#2418#2966#0" expanded="false" />
-                <element signature="e#3961#4209#0" expanded="false" />
-                <element signature="e#4218#4401#0" expanded="false" />
-                <element signature="e#4410#4575#0" expanded="false" />
-                <element signature="e#4584#4782#0" expanded="false" />
-                <element signature="e#4791#4983#0" expanded="false" />
-                <element signature="e#4992#5511#0" expanded="false" />
-                <element signature="e#5520#5674#0" expanded="false" />
                 <element signature="e#6220#6945#0" expanded="false" />
                 <element signature="e#6951#7176#0" expanded="false" />
               </folding>
@@ -162,60 +137,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Base.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Base.php">
+      <file leaf-file-name="search.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/product/popup/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Security.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Security.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IQuery.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/DataAccess/IQuery.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="35" selection-start="206" selection-end="206" vertical-scroll-proportion="0.34492755">
+            <state line="33" column="0" selection-start="1327" selection-end="1327" vertical-scroll-proportion="4.6923075">
               <folding>
-                <element signature="e#259#401#0" expanded="false" />
-                <element signature="e#444#556#0" expanded="false" />
-                <element signature="e#604#706#0" expanded="false" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#tr#1;n#tbody#0;n#table#1;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminGeneralService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/admin/adminGeneralService.js">
+      <file leaf-file-name="adminProductEditCtrl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="90" column="51" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.3736842">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="General.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/General.php">
+      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="118" column="110" selection-start="6010" selection-end="6027" vertical-scroll-proportion="-15.692307">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Product.php">
+      <file leaf-file-name="adminProductSearchCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="87" selection-start="1130" selection-end="1130" vertical-scroll-proportion="-11.5">
+            <state line="41" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminProductSearchPopUpCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="21" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminModule.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/modules/adminModule.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="125" column="30" selection-start="4970" selection-end="4988" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/product/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="25" selection-start="4946" selection-end="5664" vertical-scroll-proportion="-8.346154">
+              <folding>
+                <element signature="tag#form#0;tag#div#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,7 +207,7 @@
       <file leaf-file-name="AbstractQuery.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/DataAccess/AbstractQuery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="-7.076923">
+            <state line="14" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -256,12 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/general/adminShopInfoCtrl.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/views/admin/general/shop_info.html" />
-        <option value="$PROJECT_DIR$/app/views/admin/product/edit.html" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/imageUpload.js" />
-        <option value="$PROJECT_DIR$/app/views/admin/product/index.html" />
         <option value="$PROJECT_DIR$/app/styles/admin/admin_contents.css" />
         <option value="$PROJECT_DIR$/api/Service/Implement/General.php" />
         <option value="$PROJECT_DIR$/api/Utils/Helper.php" />
@@ -272,6 +250,12 @@
         <option value="$PROJECT_DIR$/api/DataAccess/QueryPDO.php" />
         <option value="$PROJECT_DIR$/api/DataAccess/IQuery.php" />
         <option value="$PROJECT_DIR$/api/Service/Implement/Product.php" />
+        <option value="$PROJECT_DIR$/app/scripts/modules/adminModule.js" />
+        <option value="$PROJECT_DIR$/app/views/admin/product/popup/search.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js" />
+        <option value="$PROJECT_DIR$/app/views/admin/product/edit.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchCtrl.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" />
       </list>
     </option>
   </component>
@@ -313,6 +297,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -341,7 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,33 +340,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implement" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,17 +358,220 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DataAccess" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="popup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,13 +579,13 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="154" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="158" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="158" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="160" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="840" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="840" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="153" />
     <property name="GoToClass.includeJavaFiles" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="147" />
@@ -680,7 +846,11 @@
       <created>1400030467726</created>
       <updated>1400030467726</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="refactor">
+      <created>1400031784319</created>
+      <updated>1400031784319</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -708,21 +878,21 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16470589" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1821248" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24318182" sideWeight="0.6722689" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2951096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47731093" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33052278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22954546" sideWeight="0.5531197" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2659091" sideWeight="0.7048904" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24318182" sideWeight="0.6722689" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27045456" sideWeight="0.7394958" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26050422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47731093" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1821248" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33052278" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16287878" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -802,73 +972,14 @@
           <line>125</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/api/Service/Implement/Product.php</url>
-          <line>132</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="127" />
+      <option name="time" value="130" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/admin/product/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="29" selection-start="2459" selection-end="2459" vertical-scroll-proportion="-0.65384614" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Utils/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="42" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Service/Interceptor/AbstractInterceptor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="202" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Service/Interceptor/TransactionWrapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="12" selection-start="675" selection-end="735" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Service/Implement/General.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="55" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/validation/inputValidation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="12" selection-start="2873" selection-end="2873" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/General.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="87" selection-start="1130" selection-end="1130" vertical-scroll-proportion="-11.5">
           <folding />
         </state>
       </provider>
@@ -887,6 +998,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/DataAccess/QueryPDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="640" selection-end="646" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/DataAccess/IQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="61" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Service/APIProfile/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="87" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/DataAccess/AbstractQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="68" selection-start="1108" selection-end="1122" vertical-scroll-proportion="0.0">
@@ -894,65 +1033,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/DataAccess/AbstractQuery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="-7.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/DataAccess/QueryPDO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="640" selection-end="646" vertical-scroll-proportion="-1.4117647">
-          <folding>
-            <element signature="e#827#1038#0" expanded="false" />
-            <element signature="e#1043#1292#0" expanded="false" />
-            <element signature="e#1299#1360#0" expanded="false" />
-            <element signature="e#1367#1437#0" expanded="false" />
-            <element signature="e#1444#1509#0" expanded="false" />
-            <element signature="e#1515#1948#0" expanded="false" />
-            <element signature="e#1950#2006#0" expanded="false" />
-            <element signature="e#2011#2656#0" expanded="false" />
-            <element signature="e#2662#2950#0" expanded="false" />
-            <element signature="e#3566#3733#0" expanded="false" />
-            <element signature="e#3739#4397#0" expanded="false" />
-            <element signature="e#4404#4556#0" expanded="false" />
-            <element signature="e#4722#5213#0" expanded="false" />
-            <element signature="e#5679#6124#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/Service/Implement/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="21" selection-start="3928" selection-end="3941" vertical-scroll-proportion="3.1538463">
+        <state line="123" column="9" selection-start="5674" selection-end="5674" vertical-scroll-proportion="-49.73077">
           <folding>
             <element signature="e#35#57#0" expanded="true" />
             <element signature="e#279#1456#0" expanded="false" />
             <element signature="e#1820#2111#0" expanded="false" />
             <element signature="e#2117#2415#0" expanded="false" />
             <element signature="e#2418#2966#0" expanded="false" />
-            <element signature="e#3961#4209#0" expanded="false" />
-            <element signature="e#4218#4401#0" expanded="false" />
-            <element signature="e#4410#4575#0" expanded="false" />
-            <element signature="e#4584#4782#0" expanded="false" />
-            <element signature="e#4791#4983#0" expanded="false" />
-            <element signature="e#4992#5511#0" expanded="false" />
-            <element signature="e#5520#5674#0" expanded="false" />
             <element signature="e#6220#6945#0" expanded="false" />
             <element signature="e#6951#7176#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/DataAccess/IQuery.php">
+    <entry file="file://$PROJECT_DIR$/app/scripts/modules/adminModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="206" selection-end="206" vertical-scroll-proportion="0.34492755">
+        <state line="125" column="30" selection-start="4970" selection-end="4988" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="21" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/product/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="25" selection-start="4946" selection-end="5664" vertical-scroll-proportion="-8.346154">
           <folding>
-            <element signature="e#259#401#0" expanded="false" />
-            <element signature="e#444#556#0" expanded="false" />
-            <element signature="e#604#706#0" expanded="false" />
+            <element signature="tag#form#0;tag#div#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/product/popup/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="1327" selection-end="1327" vertical-scroll-proportion="4.6923075">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#1;n#tbody#0;n#table#1;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="110" selection-start="6010" selection-end="6027" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="51" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.3736842">
+          <folding />
         </state>
       </provider>
     </entry>

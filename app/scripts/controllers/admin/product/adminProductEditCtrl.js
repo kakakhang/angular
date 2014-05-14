@@ -63,6 +63,7 @@ define(['adminModule'], function (adminModule) {
             isFirstDisabled: false
         };
         $scope.items = ['item1', 'item2', 'item3'];
+        $scope.relatedProducts = [];
         $scope.open = function (size) {
 
             var modalInstance = $modal.open({
@@ -77,11 +78,17 @@ define(['adminModule'], function (adminModule) {
             });
 
             modalInstance.result.then(function (selectedItem) {
-                $scope.selected = selectedItem;
+                //$scope.selected = selectedItem;
+                debugger;
+                $scope.relatedProducts.push(selectedItem);
+
             }, function () {
                 console.log('bugs');
                 //$log.info('Modal dismissed at: ' + new Date());
             });
+        };
+        $scope.deleteRelatedItem = function(index){
+            $scope.relatedProducts.splice(index,1);
         };
 
 
