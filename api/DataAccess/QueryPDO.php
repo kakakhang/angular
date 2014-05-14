@@ -222,18 +222,6 @@ class QueryPDO implements \DataAccess\IQuery{
 		          echo  $e->getMessage();
 		    }  		
 	}
-
-    function execute($sql){
-        try {
-            $sth= $this->db->prepare($sql);
-            $ret = $sth->execute();
-            return $ret;
-        }
-        catch (\PDOException $e){
-            echo  $e->getMessage();
-        }
-    }
-
 }
 
 ?>
