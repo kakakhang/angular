@@ -1,1 +1,1 @@
-<?phpnamespace Utils;class Helper {	static function convertRequestParamToArray($param) {      // code	   $result = array();	   $properties = get_object_vars($param);	   foreach($properties as $pro){		 $result[$pro] = $param[$pro]; 	   }	   return $result;	}}?>
+<?phpnamespace Utils;class Helper {	static function convertRequestParamToArray($param) {	   $properties = get_object_vars($param);       foreach($properties as $key=>$val){           if(is_array($val)){               unset($properties[$key]);           }       }	   return $properties;	}}?>

@@ -37,54 +37,42 @@ class Product extends Base {
     }
 
     function updateProductStatus($product_id,$status){
-        $result = $this->objQuery->delete('product_status', 'product_id = ?', array($product_id));
+        $this->objQuery->delete('product_status', 'product_id = ?', array($product_id));
         foreach($status as $s){
 			$this->objQuery->insert('product_status',array('status_id' => $s->id ,'product_id' =>$product_id));
         }	
     }
 
     function updateProductCategory($product_id,$cats){
-        $result = $this->objQuery->delete('product_category', 'product_id = ?', array($product_id));
+        $this->objQuery->delete('product_category', 'product_id = ?', array($product_id));
         foreach($cats as $cat){
 			$this->objQuery->insert('product_category',array('category_id' => $cat->id ,'product_id' =>$product_id));
         }
     }
 
 	function insertProduct() {
-
 		$request = $this->objService->get_request();
 		$params = json_decode($request->getBody());		
 		$insertArr = Helper::convertRequestParamToArray($params);
 		$insertArr['create_date'] = date('Y/m/d H:i:s');
 		$insertArr['update_date'] = date('Y/m/d H:i:s');
 		$insertArr['delete_flg'] = 0;
-		$result = $this->objQuery->insert('product',$insertArr);
-		echo  json_encode($result);
+        $product_id = $this->objQuery->insert('product',$insertArr);
+        $this->updateProductStatus($product_id,$params->status);
+        $this->updateProductCategory($product_id,$params->category);
+		echo  json_encode(true);
 	}
 
 	function updateProduct($product_id) {
         $request = $this->objService->get_request();
 		$params = json_decode($request->getBody());
-		$result = $this->objQuery->update(	'product', 
-										   	array(
-										   		'price_standard' => $params->price_standard,
-										   		'price_sale' => $params->price_sale,
-										   		'list_image' => $params->list_image,
-										   		'main_image' => $params->main_image,
-										   		'description' => $params->description,
-										   		'name' => $params->name,
-										   		'stock' => $params->stock,
-										   		'price_standard' => $params->price_standard,
-										   		'update_date' => date('Y/m/d H:i:s'),
-										   		'delete_flg' => 0,
-										   		'display_mode' => $params->display_mode
-										   	),
-										   	'product_id = ?',
-										   	array($product_id)
-		);
+        $arrVal = Helper::convertRequestParamToArray($params);
+        $arrVal['update_date'] = date('Y/m/d H:i:s');
+        $arrVal['delete_flg']  = 0;
+        $this->objQuery->update('product',$arrVal,'product_id = ?',array($product_id));
         $this->updateProductStatus($product_id,$params->status);
         $this->updateProductCategory($product_id,$params->category);
-		echo  json_encode($result);
+		echo  json_encode(true);
 	}
 
 	function deleteProduct($product_id) {
@@ -94,18 +82,7 @@ class Product extends Base {
 
     function getProductBySearchCondition($condition){
         $params = json_decode(urldecode($condition));
-        $select = "    Select  Product.*,
-                            Product_Category.category_id,
-                            m_category.category_name,
-                            Product_Status.status_id,
-                            m_status.name as status_name";
-
-        $from = "
-                    From Product
-                    Left Join Product_Category on Product.Product_id = Product_Category.Product_id
-                    Left Join m_category on m_category.category_id = Product_Category.category_id
-                    Left Join Product_Status on Product.Product_id = Product_Status.Product_id
-                    Left Join m_status on m_status.status_id = Product_Status.status_id ";
+        $select = "    Select  * From Product";
         $where = '';
         if(isset($params)){
             $where .= " Where 1=1 ";
@@ -113,7 +90,7 @@ class Product extends Base {
         $arrCondition = array();
         if(isset($params->category_id) && strlen($params->category_id) > 0){
             $arrCondition[] = $params->category_id;
-            $where .= " and Product_Category.category_id = ? ";
+            $where .= " and Product.product_id In ( Select Product_id From Product_Category Where Category_id = ?) ";
         }
         if(isset($params->product_id) && strlen($params->product_id) > 0 ){
             $arrCondition[] = $params->product_id;
@@ -132,30 +109,27 @@ class Product extends Base {
             $where .= "  and Product.price_sale <= ? ";
         }
         if(isset($params->status) && count($params->status)> 0){
-            $status_sql = "( ";
+            $whereStatus = "(";
             foreach( $params->status as $status_id ){
                 $arrCondition[] = $status_id;
-                $status_sql .= "Product_Status.status_id = ? or ";
+                $whereStatus .= "Product_Status.status_id = ? or ";
             }
-            $status_sql = substr($status_sql,0,strlen($status_sql)-3) . " )";
+            $whereStatus = substr($whereStatus,0,strlen($whereStatus)-3) . " )";
+            $status_sql = " Product.product_id in ( Select Product_id From Product_Status Where  $whereStatus ) ";
             $where .= " and $status_sql ";
         }
         if(isset($params->display_mode )){
             $arrCondition[] = $params->display_mode;
             $where .= "  and Product.display_mode = ? ";
         }
-        if(isset($params->display_mode )){
-            $arrCondition[] = $params->display_mode;
-            $where .= "  and Product.display_mode = ? ";
-        }
 
-        $sql = $select .$from . $where;
+        $sql = $select  . $where;
 
         if(isset($params->currentPage) && isset($params->pageSize)){
             $offset = $params->pageSize * ($params->currentPage - 1);
             $sql .= "  LIMIT $params->pageSize OFFSET $offset";
         }
-        $countSql = " Select count(*) as count $from  $where " ;
+        $countSql = " Select count(*) as count From Product $where " ;
         $rowCount = $this->objQuery->getOne($countSql,$arrCondition);
         $result = $this->objQuery->getAll($sql,$arrCondition);
         echo json_encode(array('count'=>$rowCount->count,'products'=>$result));
