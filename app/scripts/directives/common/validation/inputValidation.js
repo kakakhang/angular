@@ -8,11 +8,10 @@ define([], function () {
             "ngMinlength": "Minimum length is : {0}",
             "ngMaxlength": "Maximum length is : {0}",
         };
-    $.each(validationType, function (index,type) {
+    validationType.forEach(function(type) {
         errorCondition[type] = "{0}.$error." + type + " && (!{0}.$pristine || submitted)";
     });
 
- 
     
     var inputValidation = function ($compile) {
 
@@ -49,7 +48,7 @@ define([], function () {
                 if (isNotUndefined(attrs.errorMessage))
                     messages = JSON.parse(attrs.errorMessage);
 
-                angular.forEach(validationType, function(value) {
+                validationType.forEach(function(value) {
                     if (isNotUndefined(attrs[value])) {
 
                         condition = getErrorCondition(value, inputName);

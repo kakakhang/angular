@@ -30,7 +30,7 @@ class Product extends Base {
         $product[0]->status = $status;
 		echo  json_encode($product[0]);
 	}
-    function getProductSearchCondition(){
+    function getCategoryAndStatus(){
         $status = $this->objQuery->select('status_id  as id, name as text','m_status', ' type = ?', array(1),\PDO::FETCH_OBJ);
         $category = $this->objQuery->select('category_id as id, category_name as text','m_category',\PDO::FETCH_OBJ);
         echo  json_encode(array('cat'=>$category,'status'=>$status));
@@ -80,8 +80,8 @@ class Product extends Base {
 		echo  json_encode($result);
 	}
 
-    function getProductBySearchCondition($condition){
-        $params = json_decode(urldecode($condition));
+    function getProductBySearchCriteria($criteria){
+        $params = json_decode(urldecode($criteria));
         $select = "    Select  * From Product";
         $where = '';
         if(isset($params)){

@@ -26,7 +26,7 @@ define(['adminModule'], function (adminModule) {
         //get category and status of all product
         var getCategoryAndStatus = function () {
             var defer = $q.defer();
-            $http.get(eshopApp.config.apiEndPoint + "/productSearchCondition",{ cache: true})
+            $http.get(eshopApp.config.apiEndPoint + "/categorystatus",{ cache: true})
              .success(function (response) {
                  defer.resolve(response);
              })
