@@ -6,10 +6,11 @@ require.config({
     // Never includes a ".js" extension since
     // Paths config could be for a directory
     paths: {
-        jquery: ['../lib/jquery/jquery.min'],
+        jquery: ['../lib/jquery/dist/jquery.min'],
         jqueryUi: ['../lib/jquery-ui/ui/jquery-ui'],
         angular: ['../lib/angular/angular'],
-        angularUiDate : ['../lib/angular-ui-date/src/date'],
+        angularUiDate: ['../lib/angular-ui-date/src/date'],
+        angularDragDrop: ['../lib/angular-dragdrop/src/angular-dragdrop.min'],
         angularUiSelect2 : ['../lib/angular-ui-select2/src/select2'],
         angularUiUtils: ['../lib/angular-ui-utils/ui-utils.min'],
         angularBootstrap: ['../lib/angular-bootstrap/ui-bootstrap-tpls.min'],
@@ -38,6 +39,9 @@ require.config({
         },
         "angularUiDate":{
             deps : ['jqueryUi','angular']
+        },
+        "angularDragDrop": {
+            deps: ['angular', 'jquery', 'jqueryUi']
         },
         "angularBootstrap": {
             deps : ['angular']
