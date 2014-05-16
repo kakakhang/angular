@@ -98,6 +98,7 @@
                     <col width="5%" />
                     <col width="5%" />
                     <tr>
+                        <th>Index</th>
                         <th>Product ID</th>
                         <th>Category</th>
                         <th >Image</th>
@@ -109,6 +110,7 @@
                     </tr>
 
                     <tr ng-repeat="product in products">
+                         <td>{{$index}}</td>
                         <td>{{product.product_id}}</td>
                         <td>{{product.category_name}}</td>
                         <td><img ng-src="{{imagePath}}{{product.list_image}}" style="width:100px;height:100px"/></td>

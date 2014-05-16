@@ -78,10 +78,15 @@ define(['adminModule'], function (adminModule) {
             });
 
             modalInstance.result.then(function (selectedItem) {
-                //$scope.selected = selectedItem;
-                debugger;
-                $scope.relatedProducts.push(selectedItem);
-
+                var isNotExist = true;
+                $scope.relatedProducts.forEach(function (product) {
+                    if (product.product_id == selectedItem.product_id) {
+                        isNotExist = false;
+                    }
+                });
+                if (isNotExist) {
+                    $scope.relatedProducts.push(selectedItem);
+                }
             }, function () {
                 console.log('bugs');
                 //$log.info('Modal dismissed at: ' + new Date());
@@ -90,7 +95,9 @@ define(['adminModule'], function (adminModule) {
         $scope.deleteRelatedItem = function(index){
             $scope.relatedProducts.splice(index,1);
         };
-
+        $scope.aaa = function() {
+            console.log($scope.relatedProducts);
+        };
 
 
     });

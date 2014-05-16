@@ -25,6 +25,7 @@ module.exports = function(grunt) {
                 // includes files within path
                 {expand: true,cwd: 'app/', src: ['scripts/controllers/**/*'], dest: 'build/'},                
                 {expand: true, cwd: 'app/',src: ['scripts/services/**/*'], dest: 'build/'},
+				{expand: true, cwd: 'app/',src: ['scripts/factories/**/*'], dest: 'build/'},
                 {expand: true, cwd: 'app/',src: ['scripts/directives/imageUpload.js'], dest: 'build/'},
             ],
         },
@@ -83,10 +84,11 @@ module.exports = function(grunt) {
 				// the base path of our optimization
 				baseUrl: "./app/scripts",
 				paths: {
-					jquery: '../lib/jquery/jquery.min',
+					jquery: '../lib/jquery/dist/jquery.min',
 					jqueryUi: '../lib/jquery-ui/ui/jquery-ui',
 					angular: '../lib/angular/angular.min',
 					angularUiDate : '../lib/angular-ui-date/src/date',
+					angularUiSortable: '../lib/angular-ui-sortable/sortable.min',
                     angularUiUtils : '../lib/angular-ui-utils/ui-utils.min',
 					angularUiSelect2 : '../lib/angular-ui-select2/src/select2',
 					select2 : '../lib/select2/select2.min',
@@ -111,6 +113,9 @@ module.exports = function(grunt) {
 					},
 					"jqueryUi":{
 						deps : ['jquery']
+					},
+					"angularUiSortable": {
+						deps: ['angular', 'jquery', 'jqueryUi']
 					},
 					"angularUiDate":{
 						deps : ['jqueryUi','angular']

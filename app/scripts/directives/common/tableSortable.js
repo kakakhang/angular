@@ -6,22 +6,41 @@ define([], function () {
             restrict: 'AE',
             require: 'ngModel',
             link : function(scope,elem,attrs,ngModelCtrl){
-                debugger;
                if (!ngModelCtrl) return;
+               var tbody = elem.find('tbody');
 
-                // Return a helper with preserved width of cells
-                var fixHelper = function(e, ui) {
-                    ui.children().each(function() {
-                        $(this).width($(this).width());
-                    });
-                    return ui;
-                };
+                
+               var sortElement = function (event, ui) {
+                    debugger;
+                    var items = ngModelCtrl.$modelValue;
+                    var temp;
+                    var originPos = 2;
+                    var pos;
+                    var elemHeight = ui.item.height();
+                    var isMoveUp = ui.position.top < ui.originalPosition.top;
+                    var moveDistance = Math.round(Math.abs(ui.position.top - ui.originalPosition.top) / elemHeight);
 
-                elem.find('.moveable').sortable({
-                    helper: fixHelper,
-                    change: function( event, ui ) {
-                        console.log('khang');
+                    if (isMoveUp) {
+                        pos = originPos - moveDistance;
+                    } else {
+                        pos = originPos + moveDistance;
                     }
+                    temp = items[originPos];
+                    items[originPos] = items[pos];
+                    items[pos] = temp;
+                   debugger;
+                   return this;
+               };
+           
+                tbody.sortable({
+                    helper: function(e, ui) {
+                        ui.children().each(function() {
+                            $(this).width($(this).width());
+                        });
+                        return ui;
+                    },
+                    axis: "y",
+                    stop: sortElement
                 }).disableSelection();
 
 
