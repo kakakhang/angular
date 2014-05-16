@@ -104,35 +104,43 @@
                                      <button type="button" ng-click="open()" class="btn btn-primary btn-xs">Add Related Product</button> 
                                  </div>
                                  
-                                 <div class="row"   style="border: 1px solid" ng-repeat="product in relatedProducts"  data-drop="true"  jqyoui-droppable="{index: {{$index}} }" >
+                             <!--    <div class="row"   style="border: 1px solid" ng-repeat="product in relatedProducts"  data-drop="true"  jqyoui-droppable="{index: {{$index}} }" >
                                      <div  style="border: 1px solid" data-jqyoui-options="{revert: 'invalid'}"  jqyoui-draggable="{index: {{$index}},animate:true}"  data-drag="true">
                                          <div class="col-md-1">{{product.product_id}}</div>
                                          <div class="col-md-1">{{product.name}}</div>
                                          <div class="col-md-2">{{product.price_sale | number:0}}</div>
                                          <div class="col-md-2"><a href='javascript:;' ng-click="deleteRelatedItem($index)" >Delete</a></div>
                                       </div>
-                                 </div>
+                                 </div>-->
 
-<!--                                 <table class="list" id="products-search-result">
+                                <table class="list" id="products-search-result" ng-model="relatedProducts" tbl-sortable>
                                      <col width="5%" />
                                      <col width="15%" />
                                      <col width="30%" />
                                      <col width="25%" />
                                      <col width="15%" />
                                      <col width="10%" />
-                                     
-                                     
-                                     <tr ng-repeat="product in relatedProducts" data-drop="true"  jqyoui-droppable="{index: {{$index}} }" data-jqyoui-options="{revert: 'invalid'}"  jqyoui-draggable="{index: {{$index}},animate:true}"  data-drag="true">
-                                              <td>{{product.product_id}}</td>
+                                    <tbody>
+                                    <tr ng-show="relatedProducts.length > 0">
+                                        <th>ID</th>
+                                        <th>Category</th>
+                                        <th >Name</th>
+                                        <th >Price</th>
+                                        <th >Delete</th>
+                                    </tr>
+                                    </tbody>
+                                    <tbody class="moveable">
+
+                                     <tr ng-repeat="product in relatedProducts">
+                                             <td>{{product.product_id}}</td>
                                              <td>{{product.category_name}}</td>
                                              <td>{{product.name}}</td>
                                              <td class='right'>{{product.price_sale | number:0}}</td>
                                              <td class='center'><a href='javascript:;' ng-click="deleteRelatedItem($index)" >Delete</a></td>
 
                                      </tr>
-
-
-                                 </table>-->
+                                    </tbody>
+                                 </table>
                              </td>
                         </tr>
                         </table>

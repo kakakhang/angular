@@ -1,12 +1,13 @@
 "use strict";
 
-define(['directiveDefinition', 'interceptors', 'config', 'helpers', 'jquery', 'angular', 'jqueryLoadMask', 'angularUiDate', 'angularUiSelect2', 'angularUiUtils', 'angularBootstrap','angularDragDrop'],
+define(['directiveDefinition', 'interceptors', 'config', 'helpers', 'jquery', 'angular', 'jqueryLoadMask', 'angularUiDate', 'angularUiSelect2', 'angularUiUtils', 'angularBootstrap','angularUiSortable'],
     function (directiveDefinition) {
 
 		// Define module angular 
-        var commonModule = angular.module('commonModule', ['ui.date', 'ui.select2', 'ui.utils', 'ui.bootstrap', 'ngDragDrop']);
+        var commonModule = angular.module('commonModule', ['ui.date', 'ui.select2', 'ui.utils', 'ui.bootstrap', 'ui.sortable']);
         commonModule.directive('formatModel',['$filter',  directiveDefinition.common.formatModel]);
         commonModule.directive('paging', directiveDefinition.common.paging);
+        commonModule.directive('tblSortable', directiveDefinition.common.tableSortable);
         commonModule.directive('checklistModel', ['$parse', '$compile', directiveDefinition.common.checkListModel]);
         commonModule.directive('isnumber', directiveDefinition.common.isNumber);
         commonModule.directive('maxvalue', directiveDefinition.common.maxValue);

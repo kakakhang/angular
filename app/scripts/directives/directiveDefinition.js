@@ -2,6 +2,7 @@
 define(['./directives/common/paging',
         './directives/common/formatModel',
         './directives/common/checkListModel',
+        './directives/common/tableSortable',
         './directives/common/validation/inputValidation',
         './directives/common/validation/isNumber',
         './directives/common/validation/maxValue',
@@ -9,12 +10,13 @@ define(['./directives/common/paging',
         './directives/common/validation/select2Required',
         'helpers'
     ],
-function (paging, formatModel, checkListModel, inputValidation, isNumber, maxValue, minValue,select2Required) {
+function (paging, formatModel, checkListModel,tableSortable ,inputValidation, isNumber, maxValue, minValue,select2Required) {
     var common = {};
     
     common.paging = paging;
     common.formatModel = formatModel;
     common.checkListModel = checkListModel;
+    common.tableSortable = tableSortable;
     common.inputValidation = inputValidation;
     common.isNumber = isNumber.directiveDefinition;
     common.maxValue = maxValue.directiveDefinition;

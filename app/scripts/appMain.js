@@ -10,7 +10,7 @@ require.config({
         jqueryUi: ['../lib/jquery-ui/ui/jquery-ui'],
         angular: ['../lib/angular/angular'],
         angularUiDate: ['../lib/angular-ui-date/src/date'],
-        angularDragDrop: ['../lib/angular-dragdrop/src/angular-dragdrop.min'],
+        angularUiSortable: ['../lib/angular-ui-sortable/sortable.min'],
         angularUiSelect2 : ['../lib/angular-ui-select2/src/select2'],
         angularUiUtils: ['../lib/angular-ui-utils/ui-utils.min'],
         angularBootstrap: ['../lib/angular-bootstrap/ui-bootstrap-tpls.min'],
@@ -40,7 +40,7 @@ require.config({
         "angularUiDate":{
             deps : ['jqueryUi','angular']
         },
-        "angularDragDrop": {
+        "angularUiSortable": {
             deps: ['angular', 'jquery', 'jqueryUi']
         },
         "angularBootstrap": {
