@@ -10,6 +10,7 @@ require.config({
         jqueryUi: '../lib/jquery-ui/ui/jquery-ui',
         angular: '../lib/angular/angular',
         angularUiDate: '../lib/angular-ui-date/src/date',
+        angularUiTree: '../lib/angular-ui-tree/dist/angular-ui-tree.min',
         angularUiSortable: '../lib/angular-ui-sortable/sortable.min',
         angularUiSelect2 : '../lib/angular-ui-select2/src/select2',
         angularUiUtils: '../lib/angular-ui-utils/ui-utils.min',
@@ -42,6 +43,9 @@ require.config({
         },
         "angularUiSortable": {
             deps: ['angular', 'jquery', 'jqueryUi']
+        },
+        "angularUiTree": {
+            deps: ['angular', 'jquery']
         },
         "angularBootstrap": {
             deps : ['angular']
