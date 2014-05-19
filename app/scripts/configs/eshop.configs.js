@@ -32,6 +32,10 @@
                 text: "Add New Product"
             },
             {
+                url: "#/admin/product/category",
+                text: "Category"
+            },
+            {
                  url: "#/admin/product/edit",
                  text: "Update Product",
                  display: "none"

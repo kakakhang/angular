@@ -10,13 +10,12 @@ define([], function () {
                var tbody = elem.find('tbody');
 
                var sortElement = function (event, ui) {
-                    var items = ngModelCtrl.$modelValue;
-                    var temp;
-                    var originPos =parseInt(ui.item.attr('index')) ;
-                    var pos;
-                    var elemHeight = ui.item.height();
-                    var isMoveUp = ui.position.top < ui.originalPosition.top;
-                    var moveDistance = Math.round(Math.abs(ui.position.top - ui.originalPosition.top) / elemHeight);
+                    var temp, pos,                                  // temp hold item that move, pos: postion of item after moving
+                        items = ngModelCtrl.$modelValue,            // array of items sorable
+                        originPos =parseInt(ui.item.attr('index')), // origin position of item
+                        elemHeight = ui.item.height(),              // row height
+                        isMoveUp = ui.position.top < ui.originalPosition.top,   //determine if item move up or down
+                        moveDistance = Math.round(Math.abs(ui.position.top - ui.originalPosition.top) / elemHeight);    //move distance
 
                     if (isMoveUp) {
                         temp = items[originPos];

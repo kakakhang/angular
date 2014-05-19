@@ -39,6 +39,7 @@ define(['config'], function () {
                     'controllers/admin/general/adminShopInfoCtrl'
                 ]
             },
+          
 			'adminProduct': {
 				parent: 'admin',
 				path: '/product',
@@ -46,7 +47,15 @@ define(['config'], function () {
                 dependencies: [
                     'controllers/admin/product/adminProductSearchCtrl'
                 ]
-            },
+			},
+			'adminCategory': {
+			    parent: 'admin',
+			    path: '/product/category',
+			    templateUrl: eshopApp.config.viewDir + 'admin/product/category.html',
+			    dependencies: [
+                    'controllers/admin/product/adminProductCategoryCtrl'
+			    ]
+			},
 			'adminProductSearch': {
 				parent: 'admin',
 				path: '/product/search',
