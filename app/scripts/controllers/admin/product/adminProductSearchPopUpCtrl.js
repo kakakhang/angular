@@ -37,7 +37,6 @@ define(['adminModule'], function (adminModule) {
 
 
         $scope.confirm = function (product) {
-            debugger;
             $modalInstance.close(product);
         };
 

@@ -9,27 +9,40 @@ define([], function () {
                if (!ngModelCtrl) return;
                var tbody = elem.find('tbody');
 
-                
                var sortElement = function (event, ui) {
-                    debugger;
                     var items = ngModelCtrl.$modelValue;
                     var temp;
-                    var originPos = 2;
+                    var originPos =parseInt(ui.item.attr('index')) ;
                     var pos;
                     var elemHeight = ui.item.height();
                     var isMoveUp = ui.position.top < ui.originalPosition.top;
                     var moveDistance = Math.round(Math.abs(ui.position.top - ui.originalPosition.top) / elemHeight);
 
                     if (isMoveUp) {
+                        temp = items[originPos];
                         pos = originPos - moveDistance;
+                        if(pos < 0){
+                            pos = 0;
+                        }
+                        scope.$apply(function(){
+                            for(var k = originPos; k > pos;k--){
+                                items[k] = items[k-1];
+                            }
+                            items[pos] = temp;
+                        });
                     } else {
+                        temp = items[originPos];
                         pos = originPos + moveDistance;
+                        if(pos > items.length -1){
+                            pos = items.length -1;
+                        }
+                        scope.$apply(function(){
+                            for(var k = originPos; k < pos;k++){
+                                items[k] = items[k+1];
+                            }
+                            items[pos] = temp;
+                        });
                     }
-                    temp = items[originPos];
-                    items[originPos] = items[pos];
-                    items[pos] = temp;
-                   debugger;
-                   return this;
                };
            
                 tbody.sortable({
@@ -40,7 +53,7 @@ define([], function () {
                         return ui;
                     },
                     axis: "y",
-                    stop: sortElement
+                    update: sortElement
                 }).disableSelection();
 
 

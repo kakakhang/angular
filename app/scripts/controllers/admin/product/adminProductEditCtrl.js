@@ -93,7 +93,9 @@ define(['adminModule'], function (adminModule) {
             });
         };
         $scope.deleteRelatedItem = function(index){
+            debugger;
             $scope.relatedProducts.splice(index,1);
+            console.log($scope.relatedProducts);
         };
         $scope.aaa = function() {
             console.log($scope.relatedProducts);

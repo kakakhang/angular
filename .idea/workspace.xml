@@ -2,164 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8146aee4-f2a8-4a88-a89f-ea68d74121ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/directives/common/tableSortable.js" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\.gitmodules" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\AUTHORS.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\build\release-notes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\build\release.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\component.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\jquery-migrate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\jquery-migrate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\benchmark.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\benchmarker.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\benchmarker.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\closest.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\css.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\event.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\filter.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\find.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\jquery-basis.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\speed\slice.vs.concat.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\src\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\src\event-alias.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\src\exports.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\src\sizzle-jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\src\support.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\.jshintignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\csp.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\1x1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\ajax\unreleasedXHR.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\atom+xml.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\badcall.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\badjson.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\cleanScript.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\core\cc_on.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\dashboard.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\dimensions\documentLarge.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\dimensions\documentSmall.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\echoData.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\echoQuery.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\errorWithText.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\etag.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\evalScript.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\event\longLoadScript.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\event\promiseReady.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\event\syncReady.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\headers.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\if_modified_since.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\iframe.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\jquery-1.8.2.ajax_xhr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\json.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\json_obj.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\jsonp.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\manipulation\iframe-denied.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\name.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\name.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\nocontent.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\offset\absolute.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\offset\body.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\offset\fixed.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\offset\relative.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\offset\scroll.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\offset\static.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\offset\table.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\params_html.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\readywaitasset.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\readywaitloader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\script.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\selector\html5_selector.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\selector\sizzle_cache.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\statusText.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\support\bodyBackground.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\support\shrinkWrapBlocks.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\support\testElementCrash.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\test.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\test.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\test.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\test2.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\test3.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\testinit.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\testrunner.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\testsuite.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\text.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\ua.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\with_fries.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\data\with_fries_over_jsonp.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\delegatetest.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\hovertest.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\localfile.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\networkerror.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\polluted.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\readywait.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\callbacks.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\core.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\css.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\data.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\deferred.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\deprecated.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\dimensions.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\effects.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\event.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\exports.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\manipulation.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\offset.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\queue.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\selector.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\serialize.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\support.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\unit\traversing.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\angular\app\lib\jquery\test\xhtml.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/.bower.json" afterPath="$PROJECT_DIR$/app/lib/jquery/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/app/lib/jquery/MIT-LICENSE.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/appMain.js" afterPath="$PROJECT_DIR$/app/scripts/appMain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/modules/commonModule.js" afterPath="$PROJECT_DIR$/app/scripts/modules/commonModule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/core.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/css.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/data.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/deferred.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/dimensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/directiveDefinition.js" afterPath="$PROJECT_DIR$/app/scripts/directives/directiveDefinition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/product/edit.html" afterPath="$PROJECT_DIR$/app/views/admin/product/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/effects.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/event.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/intro.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/intro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/ajax/jsonp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/offset.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/outro.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/outro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/queue.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/ajax/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/serialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/traversing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/common/tableSortable.js" afterPath="$PROJECT_DIR$/app/scripts/directives/common/tableSortable.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/app/lib/jquery/src/ajax/xhr.js" />
     </list>
     <ignored path="angular.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400198313661" ignored="false" />
+    <file path="/Dummy.txt" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400461350067" ignored="false" />
     <file path="/ServiceAPI.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383987548828" ignored="false" />
     <file path="/index.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383988303375" ignored="false" />
     <file path="/BaseService.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1383986461251" ignored="false" />
@@ -189,7 +41,7 @@
     <file path="/main_frame.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399711894774" ignored="false" />
     <file path="/Security.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1393855850860" ignored="false" />
     <file path="/admin_contents.css" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399859404704" ignored="false" />
-    <file path="/edit.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400201366458" ignored="false" />
+    <file path="/edit.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400461422164" ignored="false" />
     <file path="/helper.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1385851052718" ignored="false" />
     <file path="/config.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394379200745" ignored="false" />
     <file path="/product_search.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394992315256" ignored="false" />
@@ -199,7 +51,7 @@
     <file path="/checklist_model.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394894474890" ignored="false" />
     <file path="/product_edit.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394993148038" ignored="false" />
     <file path="/product.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1394993721633" ignored="false" />
-    <file path="/adminProductEditCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400200201896" ignored="false" />
+    <file path="/adminProductEditCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400252069765" ignored="false" />
     <file path="/ImageUpload.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1395791996515" ignored="false" />
     <file path="/adminProductService.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399426091156" ignored="false" />
     <file path="/eshop.configs.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1397890424140" ignored="false" />
@@ -243,7 +95,7 @@
     <file path="/Helper.php" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1399990692390" ignored="false" />
     <file path="/search.html" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400108090973" ignored="false" />
     <file path="/adminProductSearchPopUpCtrl.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400108140364" ignored="false" />
-    <file path="/tableSortable.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400200547458" ignored="false" />
+    <file path="/tableSortable.js" changelist="8146aee4-f2a8-4a88-a89f-ea68d74121ef" time="1400258725062" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,25 +123,34 @@
       <file leaf-file-name="adminProductEditCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.0">
+            <state line="78" column="0" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formatModel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/formatModel.js">
+      <file leaf-file-name="adminProductSearchPopUpCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="38" column="45" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tableSortable.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tableSortable.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/tableSortable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="28" selection-start="606" selection-end="606" vertical-scroll-proportion="0.5915751">
+            <state line="25" column="25" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="101" selection-start="351" selection-end="447" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -304,19 +165,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="edit.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="58" selection-start="7009" selection-end="7017" vertical-scroll-proportion="-11.653846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appMain.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/appMain.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="26" selection-start="1640" selection-end="1657" vertical-scroll-proportion="0.0">
+            <state line="147" column="20" selection-start="7910" selection-end="7910" vertical-scroll-proportion="0.86836934">
               <folding />
             </state>
           </provider>
@@ -325,10 +177,8 @@
       <file leaf-file-name="jquery-ui.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lib/jquery-ui/ui/jquery-ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1581" column="0" selection-start="47221" selection-end="47221" vertical-scroll-proportion="-5.4">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="1581" column="0" selection-start="47221" selection-end="47221" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -338,7 +188,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <marker date="1397903934577" expanded="true" signature="6089:6098" placeholder="{...}" />
               </folding>
             </state>
@@ -357,7 +206,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin/product/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="25" selection-start="4569" selection-end="4925" vertical-scroll-proportion="-11.653846">
+            <state line="108" column="25" selection-start="4569" selection-end="4925" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -381,22 +230,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/services/admin/adminProductService.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/common/validation/inputValidation.js" />
         <option value="$PROJECT_DIR$/api/DataAccess/QueryPDO.php" />
         <option value="$PROJECT_DIR$/api/DataAccess/IQuery.php" />
         <option value="$PROJECT_DIR$/api/Service/Implement/Product.php" />
         <option value="$PROJECT_DIR$/app/scripts/modules/adminModule.js" />
         <option value="$PROJECT_DIR$/app/views/admin/product/popup/search.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchCtrl.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/app/scripts/appMain.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/directiveDefinition.js" />
         <option value="$PROJECT_DIR$/app/scripts/modules/commonModule.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js" />
-        <option value="$PROJECT_DIR$/app/views/admin/product/edit.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/common/tableSortable.js" />
+        <option value="$PROJECT_DIR$/app/views/admin/product/edit.html" />
       </list>
     </option>
   </component>
@@ -438,6 +287,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -594,7 +444,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -616,17 +466,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -941,7 +820,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22954546" sideWeight="0.5531197" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24318182" sideWeight="0.6722689" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28787878" sideWeight="0.7386172" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2969697" sideWeight="0.7386172" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26050422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1036,58 +915,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/Service/Implement/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="9" selection-start="5674" selection-end="5674" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/modules/adminModule.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="30" selection-start="4970" selection-end="4988" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="21" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="125" column="30" selection-start="4970" selection-end="4988" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/product/popup/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="33" column="0" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="41" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="22" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/appMain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="26" selection-start="1640" selection-end="1657" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="42" column="26" selection-start="1640" selection-end="1657" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/formatModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/directiveDefinition.js">
@@ -1108,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <marker date="1397903934577" expanded="true" signature="6089:6098" placeholder="{...}" />
           </folding>
         </state>
@@ -1116,37 +970,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/jquery-ui/ui/jquery-ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1581" column="0" selection-start="47221" selection-end="47221" vertical-scroll-proportion="-5.4">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.0">
+        <state line="1581" column="0" selection-start="47221" selection-end="47221" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/product/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="25" selection-start="4569" selection-end="4925" vertical-scroll-proportion="-11.653846">
+        <state line="108" column="25" selection-start="4569" selection-end="4925" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="58" selection-start="7009" selection-end="7017" vertical-scroll-proportion="-11.653846">
+        <state line="10" column="101" selection-start="351" selection-end="447" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductSearchPopUpCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="45" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/admin/product/adminProductEditCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="2553" selection-end="2553" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/common/tableSortable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="606" selection-end="606" vertical-scroll-proportion="0.5915751">
+        <state line="25" column="25" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/product/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="20" selection-start="7910" selection-end="7910" vertical-scroll-proportion="0.86836934">
           <folding />
         </state>
       </provider>
