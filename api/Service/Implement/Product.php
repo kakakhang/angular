@@ -32,7 +32,7 @@ class Product extends Base {
 	}
     function getCategoryAndStatus(){
         $status = $this->objQuery->select('status_id  as id, name as text','m_status', ' type = ?', array(1),\PDO::FETCH_OBJ);
-        $category = $this->objQuery->select('category_id as id, category_name as text','m_category',\PDO::FETCH_OBJ);
+        $category = $this->objQuery->select('category_id as id, category_name as text','m_category');
         echo  json_encode(array('cat'=>$category,'status'=>$status));
     }
 
@@ -166,6 +166,49 @@ class Product extends Base {
         }
         echo json_encode(array('status'=>'OK'));
     }
+
+    function getCategories(){
+        $category = $this->objQuery->select('*','m_category order by level asc ');
+        $cnt = count($category);
+        $maxLevel = $category[$cnt-1]->level;
+        $catByLevel = array();
+        for($i=0 ; $i < $cnt;$i++){
+            $category[$i]->childs = array();
+            $catByLevel[$category[$i]->level][] =  $category[$i];
+        }
+        for($k = $maxLevel; $k > 1; $k-- ){
+            foreach($catByLevel[$k] as $child){
+                foreach($catByLevel[$k-1] as &$parent){
+                    if($child->parent_id == $parent->category_id){
+                        $parent->childs[] = $child;
+                    }
+                }
+            }
+        }
+        $catSorting = $catByLevel[1];
+        echo json_encode(array('categories'=>$catSorting));
+    }
+    function insertCategory(){
+        $request = $this->objService->get_request();
+        $params = json_decode($request->getBody());
+        $arrVal = Helper::convertRequestParamToArray($params);
+        $category_id = $this->objQuery->insert('m_category',$arrVal);
+        echo json_decode($category_id);
+    }
+    function updateCategory(){
+        $request = $this->objService->get_request();
+        $params = json_decode($request->getBody());
+        $arrVal = Helper::convertRequestParamToArray($params);
+        $category_id = $this->objQuery->update('m_category',$arrVal,'category_id = ?',array($arrVal['category_id']));
+        echo json_decode($category_id);
+    }
+    function deleteCategory(){
+        $request = $this->objService->get_request();
+        $params = json_decode($request->getBody());
+        $result = $this->objQuery->delete('m_category', 'category_id = ?', array($params->id));
+        echo  json_encode($result);
+    }
+
 
 
 }

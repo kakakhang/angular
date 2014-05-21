@@ -5,89 +5,91 @@ define(['adminModule'], function (adminModule) {
 
     adminModule.lazy = adminModule.lazy || adminModule;
     
-    adminModule.lazy.controller('adminProductCategoryCtrl', function ($scope) {
+    adminModule.lazy.controller('adminProductCategoryCtrl', function ($scope,adminProductService) {
 
-        $scope.list = [{
-            "id": 1,
-            "title": "1. dragon-breath",
-            "parent": -1,
-            "level": 0,
-            "items": []
-        }, {
-            "id": 2,
-            "title": "2. moire-vision",
+        $scope.categories =[];
+        adminProductService.getCategories().then(function(data){
+            $scope.categories = data.categories;
+        });
 
-            "items": [{
-                "id": 21,
-                "title": "2.1. tofu-animation",
-                "items": [{
-                    "id": 211,
-                    "title": "2.1.1. spooky-giraffe",
-                    "items": []
-                }, {
-                    "id": 212,
-                    "title": "2.1.2. bubble-burst",
-                    "items": []
-                }],
-            }, {
-                "id": 22,
-                "title": "2.2. barehand-atomsplitting",
-                "items": []
-            }],
-        }, {
-            "id": 3,
-            "title": "3. unicorn-zapper",
-            "parent": -1,
-            "level": 0,
-            "items": []
-        }, {
-            "id": 4,
-            "title": "4. romantic-transclusion",
-            "parent": -1,
-            "level": 0,
-            "items": []
-        }];
-        
-        $scope.showAddNew = function (scope) {
-            scope.$parent.expandAll();
-            $(".form-inline").hide();
-            var input = scope.$parent.$element.find(".form-inline").last();
-            input.show();
-            input.focus();
+        $scope.treeOptions = {
+            dropped: function(event){
+                debugger;
+                console.log(event);
+            }
         };
-        $scope.hideAddNew = function (scope) {
-            var input = scope.$parent.$element.find(".form-inline").last();
+
+        $scope.add = function (scope) {
+            scope.expand();
+            $(".tree-add-region").hide();
+            var addNewRiv = scope.$parent.$element.find(".tree-add-region").last();
+            var input = addNewRiv.find('input');
+            addNewRiv.show();
+            input.focus();
+            input.removeClass('has-error');
+            input.val(null);
+        };
+        $scope.cancel = function (scope) {
+            var input = scope.$parent.$element.find(".tree-add-region").last();
             input.hide();
             input.val('');
         };
-      
-        $scope.editItem = function (scope) {
+        $scope.deleteCategory = function (scope) {
+            scope.$parentNodesScope.removeNode(scope);
+            adminProductService.deleteCategory(scope.$modelValue);
+        }
+        $scope.updateCategory = function (scope) {
             var input = scope.$element.find('input').first();
             var span = scope.$parent.$element.find('.tree-node-title').first();
             span.hide();
             input.css('display', 'inline');
-            $(".form-inline").hide();
+            var originVal = input.val();
+            $(".tree-add-region").hide();
             input.focus();
+
             input.focusout(function() {
-                $(this).hide();
-                span.show();
+                if(!eshopApp.helpers.isNotEmpty(input.val())){
+                    input.addClass('has-error');
+                }else if(originVal != input.val()){
+                    input.removeClass('has-error');
+                    input.hide();
+                    span.show();
+                    adminProductService.updateCategory(scope.$modelValue);
+                }else{
+                    input.removeClass('has-error');
+                    input.hide();
+                    span.show();
+                }
             });
         };
-        $scope.newSubItem = function (scope) {
+        $scope.insertCategory = function (scope) {
+
             var nodeData = scope.$parent.$modelValue;
+            var display_order = nodeData.childs.length;
             var input = scope.$element.find('input').last();
             var inputVal = input.val();
             input.focus();
-            nodeData.items.push({
-                id: nodeData.id * 10 + nodeData.items.length,
-                title: inputVal,
-                items: []
-            });
-           
-            $(".tree-add-region").hide();
-            $('.top-right').notify({
-                message: { text: 'Add new success!' }
-            }).show(); // for the ones that aren't closable and don't fade out there is a .hide() function.
+
+            if(eshopApp.helpers.isNotEmpty(inputVal)){
+                input.removeClass('has-error');
+                $(".tree-add-region").hide();
+                var category = {
+                    "category_name": inputVal,
+                    "parent_id": nodeData.category_id,
+                    "level": parseInt(nodeData.level) + 1,
+                    "display_order": display_order,
+                    "childs": []
+                };
+                adminProductService.insertCategory(category).then(function(data){
+                    category.category_id = data;
+                    nodeData.childs.push(category);
+                });
+                $('.top-right').notify({
+                    message: { text: 'Add new success!' }
+                }).show(); // for the ones that aren't closable and don't fade out there is a .hide() function.
+            }else{
+                input.addClass('has-error');
+            }
         };
 	
 	});

@@ -32,7 +32,11 @@ class Product extends Base{
             new APIInfo('/categorystatus', APIInfo::HTTP_GET,  'getCategoryAndStatus'),
             new APIInfo('/product/search/:condition', APIInfo::HTTP_GET, 'getProductBySearchCriteria'),
             new APIInfo('/productImage', APIInfo::HTTP_POST, 'uploadImage'),
-            new APIInfo('/productImage/:imageName', APIInfo::HTTP_DELETE, 'deleteImage'),
+            new APIInfo('/productImage/:imageName', APIInfo::HTTP_DELETE, 'delImage'),
+            new APIInfo('/category', APIInfo::HTTP_GET, 'getCategories'),
+            new APIInfo('/category', APIInfo::HTTP_POST, 'insertCategory'),
+            new APIInfo('/category', APIInfo::HTTP_PUT, 'updateCategory'),
+            new APIInfo('/category', APIInfo::HTTP_DELETE, 'deleteCategory'),
         );
     }
 

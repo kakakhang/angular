@@ -133,13 +133,65 @@ define(['adminModule'], function (adminModule) {
         };
 
         var saveOrUpdateProduct = function(product, category, status){
-            debugger;
             if(typeof product.product_id !== 'undefined' && product.product_id > 0){
                 return updateProduct(product, category, status);
             }
             return saveProduct(product, category, status);
         }
 
+        var getCategories = function(){
+            var defer = $q.defer();
+            $http.get(eshopApp.config.apiEndPoint + "/category",{headers: {'LoadOverlay': '1','cache':true}})
+                .success(function (response) {
+                    defer.resolve(response);
+                })
+                .error(function (data) {
+                    defer.reject(data);
+                });
+            return defer.promise;
+        }
+        var insertCategory = function(category){
+            var defer = $q.defer();
+            $http({
+                url: eshopApp.config.apiEndPoint + '/category',
+                method: 'POST',
+                data: category
+            }).success(function (response) {
+                    defer.resolve(response);
+                }).error(function (data, status, headers, config) {
+                    defer.reject('data: '+ data + ' status: '+ status);
+                });
+            return defer.promise;
+        }
+        var updateCategory = function(category){
+            var defer = $q.defer();
+            $http({
+                url: eshopApp.config.apiEndPoint + '/category',
+                method: 'PUT',
+                data: {
+                    category_id : category.category_id,
+                    category_name : category.category_name
+                }
+            }).success(function (response) {
+                    defer.resolve(response);
+                }).error(function (data, status, headers, config) {
+                    defer.reject('data: '+ data + ' status: '+ status);
+                });
+            return defer.promise;
+        }
+        var deleteCategory = function(category_id){
+            var defer = $q.defer();
+            $http({
+                url: eshopApp.config.apiEndPoint + '/category',
+                method: 'DELETE',
+                data: {id: category_id.category_id}
+            }).success(function (response) {
+                    defer.resolve(response);
+                }).error(function (data, status, headers, config) {
+                    defer.reject('data: '+ data + ' status: '+ status);
+                });
+            return defer.promise;
+        }
 
 
 
@@ -147,6 +199,10 @@ define(['adminModule'], function (adminModule) {
         return {
             searchProduct: searchProduct,
             getCategoryAndStatus: getCategoryAndStatus,
+            getCategories: getCategories,
+            deleteCategory : deleteCategory,
+            updateCategory: updateCategory,
+            insertCategory: insertCategory,
             getProduct: getProduct,
             imageUpload: imageUpload,
             deleteImage: deleteImage,

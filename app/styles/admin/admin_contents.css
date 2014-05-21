@@ -1700,7 +1700,7 @@ body#popup {
 }
 
 .angular-ui-tree-handle {
-
+   /* background: url('../../images/admin/header/navi_back.jpg') top left repeat-x;*/
     background: #f8faff;
     border: 1px solid #bcbecb;
     color: #7c9eb2;
