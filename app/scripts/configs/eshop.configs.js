@@ -4,15 +4,15 @@
 	// Define navigation bar in admin site
 	var general = {
         id: "general",
-        url: "#/admin/index",
+        url: "/admin/index",
         text: "General",
         childs: [
             {
-                url: "#/admin/index",
+                url: "/admin/index",
                 text: "Home"
             },
             {
-                url: "#/admin/general/shopinfo",
+                url: "/admin/general/shopinfo",
                 text: "Shop's Information"
             }
         ]
@@ -20,33 +20,33 @@
 
     var product = {
         id: "product",
-        url: "#/admin/product",
+        url: "/admin/product",
         text: "Product",
         childs: [
             {
-                url: "#/admin/product/search",
+                url: "/admin/product/search",
                 text: "Search Product"
             },
             {
-                url: "#/admin/product/add",
+                url: "/admin/product/add",
                 text: "Add New Product"
             },
             {
-                url: "#/admin/product/category",
+                url: "/admin/product/category",
                 text: "Category"
             },
             {
-                 url: "#/admin/product/edit",
+                 url: "/admin/product/edit",
                  text: "Update Product",
                  display: "none"
             },
             {
-                url: "#/admin/product/confirm",
+                url: "/admin/product/confirm",
                 text: "Preview",
                 display: "none"
             },
             {
-                url: "#/admin/product/complete",
+                url: "/admin/product/complete",
                 text: "Complete",
                 display: "none"
             }
@@ -58,18 +58,18 @@
     ];
 
 	//API host
-    config.apiEndPoint = 'http://localhost/angular/api';
+    config.apiEndPoint = '/api';
 
     //Image URI
     config.imagePath = config.apiEndPoint + '/upload/';
 
 	//View Directory
-    config.viewDir = '/angular/app/views/';
+    config.viewDir = '/views/';
     
 	//Controller Directory
-    config.controllerDir = '/angular/app/scripts/controllers/';
+    config.controllerDir = '/scripts/controllers/';
     
 	//Directive Directory
-    config.directiveDir = '/angular/app/scripts/directives/';
+    config.directiveDir = '/scripts/directives/';
 
 }(window.eshopApp = window.eshopApp || {}, jQuery));

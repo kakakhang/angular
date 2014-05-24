@@ -1,6 +1,6 @@
 "use strict" ;
 require.config({
-    baseUrl: 'scripts', // the root path to use for all module lookups
+    baseUrl: '/scripts', // the root path to use for all module lookups
     waitSeconds: 200,
 	// Paths config is relative to the baseUrl
     // Never includes a ".js" extension since
@@ -69,6 +69,7 @@ require.config({
 });
 
 require(['adminModule'], function () {
-	// Manual boostrapp application 
+	// Manual boostrapp application
+    debugger;
     angular.bootstrap(document, ['adminModule']);
 });

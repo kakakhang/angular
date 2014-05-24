@@ -14,12 +14,13 @@ define(['./modules/states/adminModuleStates',
         'commonModule'],
     function (adminModuleStates, dependencyResolver, interceptors) {
 		// Define module angular 
+		    debugger;
         var adminModule = angular.module('adminModule', ['ng','ui.router', 'commonModule']);
 
         /**
          * function to load a given css file
         */
-        var moduleConfiguration = function($stateProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $httpProvider) {
+        var moduleConfiguration = function($stateProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $httpProvider,$locationProvider) {
 
             //lazy load controller & service & directive..
             adminModule.lazy = {
@@ -54,14 +55,14 @@ define(['./modules/states/adminModuleStates',
             // Other path not in rule will show default page
             $stateProvider.state("otherwise", {
                 url: "*path",
-                templateUrl: "views/error.html"
+                templateUrl: "/views/error.html"
             });
-
+            $locationProvider.html5Mode(true);
             //Register interceptors
             $httpProvider.interceptors.push(interceptors.loadingOverlay);
 
         };
-        moduleConfiguration.$inject = ["$stateProvider", "$controllerProvider", "$compileProvider", "$filterProvider", "$provide", "$httpProvider"];
+        moduleConfiguration.$inject = ["$stateProvider", "$controllerProvider", "$compileProvider", "$filterProvider", "$provide", "$httpProvider","$locationProvider"];
 
         // Set up configuration for module
         adminModule.config(moduleConfiguration);
@@ -70,7 +71,9 @@ define(['./modules/states/adminModuleStates',
 		// Build nav title base on config ex: Product > Search 
 		var buildNavTitle = function (scope, location, navTitle) {
             eshopApp.helpers.buildNavTitleArray(eshopApp.config.navigationBarInfo, null, navTitle);
-            scope.navTitle = navTitle["#" + location.path()];
+            scope.navTitle = navTitle[location.path()];
+            debugger;
+
         };
         
         //Build Navigation bar in admin site
@@ -81,7 +84,7 @@ define(['./modules/states/adminModuleStates',
 
         //Get display navigation tile on change state (url|route)
         var getNavTitle = function (location, navTitle) {
-            var path = "#" + location.path();
+            var path =  location.path();
             var patt1 = new RegExp("\/\\d+$", "g");
             var result = path.match(patt1);
             if (result) {
@@ -93,7 +96,7 @@ define(['./modules/states/adminModuleStates',
 
         var moduleRunner = function(scope, locationService, sceService) {
             var navTitle = {};
-            // Build nav title base on config ex: Product > Search 
+            // Build nav title base on config ex: Product > Search
             buildNavTitle(scope, locationService, navTitle);
 
             // Build nav bar 
@@ -108,6 +111,7 @@ define(['./modules/states/adminModuleStates',
              */
             scope.$on('$stateChangeSuccess', function () {
                 scope.navTitle = getNavTitle(locationService, navTitle);
+
                 if(locationService.path() == '/admin'){
                     locationService.path('/admin/index');
                 }

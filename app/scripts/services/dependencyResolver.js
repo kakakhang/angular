@@ -5,6 +5,7 @@ define([], function () {
             resolver: ['$q', '$rootScope', function($q, $rootScope) {
                     var deferred = $q.defer();
 					// all dependencies have now been loaded by so resolve the promise
+                debugger;
                     require(dependencies, function() {
                         $rootScope.$apply(function() {
                             deferred.resolve();
