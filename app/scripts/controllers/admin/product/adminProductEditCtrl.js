@@ -97,9 +97,7 @@ define(['adminModule'], function (adminModule) {
             $scope.relatedProducts.splice(index,1);
             console.log($scope.relatedProducts);
         };
-        $scope.aaa = function() {
-            console.log($scope.relatedProducts);
-        };
+
 
 
     });
