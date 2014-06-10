@@ -67,7 +67,7 @@ define(['adminModule'], function (adminModule) {
         $scope.open = function (size) {
 
             var modalInstance = $modal.open({
-                templateUrl: './views/admin/product/popup/search.html',
+                templateUrl: '/views/admin/product/popup/search.html',
                 controller: 'adminProductSearchPopUpCtrl',
                 size: size,
                 resolve: {
