@@ -75,7 +75,7 @@ module.exports = function(grunt) {
 	cssmin: {
 	  build: {
 		files: {
-		  'build/application.css': [ 'app/styles/**/*.css','app/lib/jquery-ui/themes/smoothness/jquery-ui.css' ,'app/lib/select2/select2.css']
+		  'build/application.css': [ 'app/styles/**/*.css','app/lib/jquery-ui/themes/smoothness/jquery-ui.css' ,'app/lib/select2/select2.css','app/lib/angular-ui-tree/source/angular-ui-tree.css']
 		}
 	  }
 	},
