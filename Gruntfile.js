@@ -14,6 +14,10 @@ module.exports = function(grunt) {
 	copy: {
 		main: {
             files: [
+			    
+				{expand: true, src: ['api/**/*'], dest: 'build/'},
+				{expand: true, cwd: 'api/',src: ['.htaccess'], dest: 'build/api/', flatten: true},
+				{expand: true, cwd: 'app/',src: ['.htaccess'], dest: 'build/', flatten: true},
                 {expand: true, cwd: 'app/',src: ['*'], dest: 'build/',filter: 'isFile'},
                 {expand: true, cwd: 'app/',src: ['images/**/*'], dest: 'build/'},
 				{expand: true, cwd: 'app/',src: ['lib/select2/select2.png'], dest: 'build/images/select2/', flatten: true},
@@ -32,7 +36,7 @@ module.exports = function(grunt) {
         replaceDataMain: { expand:true, cwd: 'app/', src: 'index.html', dest: 'build/',
             options: {
                 processContent: function (content, srcpath) {				
-					content = content.replace(/\.\/lib\/requirejs\/require.js/gi,"require.js");
+					content = content.replace(/lib\/requirejs\/require.js/gi,"require.js");
                     return content.replace(/scripts\/appMain/gi,"application");
                 }
             },            
@@ -142,8 +146,8 @@ module.exports = function(grunt) {
 				// use our original main configuration file to avoid
 				// duplication.  this file will pull in all our dependencies
 				mainConfigFile: "app/scripts/appMain.js",
-				//optimize: "none",
-				inlineText: true,
+				optimize: "none",
+				//inlineText: true,
 				removeCombined: true,
 				// the output optimized file name
 				out: "build/application.js"
